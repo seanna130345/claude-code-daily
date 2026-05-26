@@ -2,7 +2,6 @@ import httpx
 import time
 import random
 from datetime import datetime, timedelta
-import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 
 
@@ -88,41 +87,70 @@ def fetch_github(token: str) -> list[dict]:
 
 
 def fetch_bilibili() -> list[dict]:
-    """通过 RSSHub 获取哔哩哔哩 Claude Code 相关视频"""
+    """通过哔哩哔哩网页搜索获取 Claude Code 相关视频"""
     results = []
-    # 尝试多个 RSSHub 公共实例
-    rsshub_instances = [
-        "https://rsshub.app",
-        "https://rss.shab.fun",
-        "https://rsshub.rssforever.com",
-    ]
-    keyword = "Claude Code"
-    for base in rsshub_instances:
-        url = f"{base}/bilibili/search/{keyword}/pubdate"
+    url = "https://search.bilibili.com/all"
+    params = {
+        "keyword": "Claude Code",
+        "order": "pubdate",
+        "duration": 0,
+        "tids": 0,
+        "page": 1,
+    }
+    headers = {
+        **HEADERS,
+        "Referer": "https://www.bilibili.com",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    }
+    try:
+        resp = httpx.get(url, headers=headers, params=params, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for item in soup.select(".bili-video-card, .video-item, [class*='video-card']")[:10]:
+            title_el = item.select_one("h3, .title, [class*='title']")
+            link_el = item.select_one("a[href*='/video/']")
+            if not title_el or not link_el:
+                continue
+            href = link_el.get("href", "")
+            if href.startswith("//"):
+                href = "https:" + href
+            title = title_el.get_text(strip=True)
+            results.append({
+                "source": "哔哩哔哩",
+                "title": title,
+                "url": href,
+                "raw": title,
+                "stars": 0,
+                "published": datetime.now().strftime("%Y-%m-%d"),
+            })
+    except Exception as e:
+        print(f"[哔哩哔哩] 网页抓取失败: {e}")
+
+    # 降级：用 Bing 搜索 B 站视频
+    if not results:
         try:
-            resp = httpx.get(url, headers=HEADERS, timeout=15)
-            resp.raise_for_status()
-            root = ET.fromstring(resp.content)
-            for item in root.findall(".//item")[:10]:
-                title = item.findtext("title", "")
-                link = item.findtext("link", "")
-                desc = BeautifulSoup(item.findtext("description", ""), "html.parser").get_text()[:300]
-                pub = item.findtext("pubDate", "")[:10] if item.findtext("pubDate") else datetime.now().strftime("%Y-%m-%d")
-                if title and link:
+            bing_url = "https://www.bing.com/search"
+            bing_params = {"q": 'site:bilibili.com/video "Claude Code"', "count": 8}
+            resp2 = httpx.get(bing_url, headers=HEADERS, params=bing_params, timeout=15)
+            resp2.raise_for_status()
+            soup2 = BeautifulSoup(resp2.text, "html.parser")
+            for li in soup2.select("li.b_algo")[:8]:
+                a = li.select_one("h2 a")
+                snippet = li.select_one(".b_caption p")
+                if a and "bilibili.com/video" in a.get("href", ""):
                     results.append({
                         "source": "哔哩哔哩",
-                        "title": title,
-                        "url": link,
-                        "raw": title + " " + desc,
+                        "title": a.get_text(strip=True),
+                        "url": a["href"],
+                        "raw": a.get_text(strip=True) + " " + (snippet.get_text(strip=True) if snippet else ""),
                         "stars": 0,
-                        "published": pub,
+                        "published": datetime.now().strftime("%Y-%m-%d"),
                     })
             if results:
-                print(f"  [哔哩哔哩] 使用实例: {base}")
-                break
+                print(f"  [哔哩哔哩] 降级使用 Bing 搜索，获取 {len(results)} 条")
         except Exception as e:
-            print(f"  [哔哩哔哩] {base} 失败: {e}")
-            continue
+            print(f"[哔哩哔哩] Bing降级也失败: {e}")
+
     return results
 
 
