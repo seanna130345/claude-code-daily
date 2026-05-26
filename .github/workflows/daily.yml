@@ -2,7 +2,7 @@ name: 每日科技日报
 
 on:
   schedule:
-    # 每天北京时间 09:00 运行（UTC 01:00）
+    # 每天北京时间 09:00 运行 (UTC 01:00)
     - cron: "0 1 * * *"
   workflow_dispatch:  # 支持手动触发
 
