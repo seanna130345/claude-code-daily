@@ -18,7 +18,7 @@ def fetch_github(token: str) -> list[dict]:
 
     # 搜索仓库
     url = "https://api.github.com/search/repositories"
-    params = {"q": f"claude-code created:>{since[:10]}", "sort": "stars", "order": "desc", "per_page": 10}
+    params = {"q": f'"claude code" OR "claude-code" created:>{since[:10]}', "sort": "stars", "order": "desc", "per_page": 10}
     try:
         resp = httpx.get(url, headers=headers, params=params, timeout=15)
         resp.raise_for_status()
