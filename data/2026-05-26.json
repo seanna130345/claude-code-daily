@@ -6,9 +6,9 @@
         "source": "GitHub",
         "title": "realrossmanngroup/no_ai_slop_writing_rules",
         "url": "https://github.com/realrossmanngroup/no_ai_slop_writing_rules",
-        "raw": "realrossmanngroup/no_ai_slop_writing_rules: Claude Code reference: write in Louis Rossmann's voice, never like AI slop. Portable CLAUDE.md plus skills. Stars:170",
+        "raw": "realrossmanngroup/no_ai_slop_writing_rules: Claude Code reference: write in Louis Rossmann's voice, never like AI slop. Portable CLAUDE.md plus skills. Stars:171",
         "published": "2026-05-25",
-        "summary": "这是一个GitHub项目，旨在指导AI按照Louis Rossmann的风格写作，避免生成AI生成文本的通病，包含可移植的Claude配置文件和相关技能指南。"
+        "summary": "这是一个GitHub项目，旨在指导AI按照Louis Rossmann的风格写作，避免生成AI生成文本的通病。项目包含可移植的Claude配置文件和相关技能，已获得171个星标。"
       },
       {
         "source": "GitHub",
@@ -40,7 +40,7 @@
         "url": "https://github.com/collindjohnson/agent-notify",
         "raw": "collindjohnson/agent-notify: Claude Code, Codex, Gemini, and Cursor CLI Agent notifications Stars:18",
         "published": "2026-05-25",
-        "summary": "Claude、Codex、Gemini和Cursor等AI代码助手的CLI代理通知工具，可实现多种AI模型的集成通知功能，项目获得18个Star。"
+        "summary": "Claude、Codex、Gemini和Cursor等AI代码助手的CLI代理通知工具，可实现跨多个AI编程助手的统一消息通知管理，项目获得18个GitHub星标。"
       },
       {
         "source": "GitHub",
@@ -48,7 +48,7 @@
         "url": "https://github.com/alibaba/webmcp-nexus",
         "raw": "alibaba/webmcp-nexus: 面向 WebMCP 标准的非侵入式前端集成套件：写一个普通 TS 函数加一段 JSDoc，即可被任意 MCP 客户端调用 —— 含 SDK、Vite/Webpack 插件与 AI 编码 Skill。 Stars:18",
         "published": "2026-05-25",
-        "summary": "阿里巴巴开源WebMCP-Nexus项目，提供非侵入式前端集成套件，开发者只需编写TypeScript函数和JSDoc注释，即可被任意MCP客户端调用，包含SDK、构建工具插件和AI编码技能。"
+        "summary": "阿里巴巴开源的WebMCP前端集成套件，通过简单的TypeScript函数和JSDoc注释即可被任意MCP客户端调用，提供SDK、构建工具插件和AI编码能力，目前获得18个Star。"
       },
       {
         "source": "GitHub",
@@ -64,7 +64,7 @@
         "url": "https://github.com/Laith0003/ux-skill",
         "raw": "Laith0003/ux-skill: ux-skill: 18 slash commands, 5 sub-agents, deterministic linter, 72 brand DESIGN.md specs (Apple, Stripe, Linear, Figma, Tesla) for Claude Code. Audit, generate, polish UI; design systems; accessibility; SEO; microcopy; motion. Anti-AI-slop. React, Next, Vue, Blade, Astro. MIT. Stars:13",
         "published": "2026-05-24",
-        "summary": "UX Skill是一个Claude Code扩展工具，提供18个斜杠命令和5个子代理，包含72份品牌设计规范，支持React、Next、Vue等框架，用于UI审计、生成、优化和设计系统构建，强调反对AI生成的低质内容。"
+        "summary": "UX Skill是一个Claude Code扩展工具，提供18个斜杠命令和5个子代理，包含72份品牌设计规范，支持多框架开发，可用于UI审计、生成、优化、设计系统、无障碍访问和SEO等任务。"
       },
       {
         "source": "GitHub",
@@ -72,7 +72,7 @@
         "url": "https://github.com/boheling/deltasci",
         "raw": "boheling/deltasci: Two-perspective co-reasoning for AI4Science hypothesis generation — grounded, falsifiable, with a citation-audit trail. CLI + Claude Code skill. Stars:12",
         "published": "2026-05-24",
-        "summary": "DeltaSci是一个AI4Science假设生成工具，采用双视角协同推理方法，生成可证伪的假设并提供引文审计追踪，支持CLI和Claude Code技能集成，目前获得12个Star。"
+        "summary": "DeltaSci是一个AI4Science假设生成工具，采用双视角协同推理方法，生成可证伪的假设并提供引文审计追踪，支持CLI和Claude Code技能集成。"
       },
       {
         "source": "GitHub",
@@ -90,7 +90,7 @@
         "raw": "DynIP – Dynamic DNS with RFC 2136, IPv6, DNSSEC, and BYOD",
         "published": "2026-05-26",
         "source": "全球AI",
-        "summary": "DynIP是一个支持RFC 2136协议的动态DNS解决方案，具备IPv6、DNSSEC和自带设备(BYOD)支持，可用于动态IP地址的自动DNS更新和管理。"
+        "summary": "DynIP是一个动态DNS解决方案，支持RFC 2136标准、IPv6协议、DNSSEC安全认证和自带设备(BYOD)功能，为用户提供灵活的域名解析和网络安全保障。"
       },
       {
         "title": "Using AI to write better code more slowly",
@@ -114,7 +114,7 @@
         "raw": "Use Boring Languages with LLMs",
         "published": "2026-05-26",
         "source": "全球AI",
-        "summary": "在与大型语言模型协作时，使用成熟稳定的编程语言（如Python、Java、C++等）比新兴语言更具优势，因为这些语言拥有更完善的生态、更好的LLM支持和更丰富的代码示例库。"
+        "summary": "在与大型语言模型协作时，使用成熟稳定的编程语言比追求新颖技术更有优势。这些\"无聊\"的语言具有丰富的库生态、广泛的社区支持和充分的文档，能更好地与LLM集成，提高开发效率和代码质量。"
       },
       {
         "title": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
@@ -122,7 +122,7 @@
         "raw": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
         "published": "2026-05-26",
         "source": "全球AI",
-        "summary": "Earthion是一款新的世嘉创世纪风格射击游戏，采用经典的横版射击玩法设计，为玩家带来复古游戏体验。"
+        "summary": "Earthion是一款新的世嘉创世纪风格射击游戏，采用经典的横版射击玩法设计，致敬了80年代街机游戏的美学风格。"
       },
       {
         "title": "What ClickUp’s mass layoff tells us about the future of work",
@@ -154,7 +154,7 @@
         "raw": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Early Bird savings for TechCrunch Disrupt 2026 in San Francisco end May 29 at 11:59 p.m. PT. Register now to save up to $410 before prices increase.",
         "published": "Mon, 25 Ma",
         "source": "全球AI",
-        "summary": "TechCrunch Disrupt 2026大会早鸟票价优惠将于5月29日截止，购票者可节省最多410美元，会议将在旧金山举办，建议尽快注册以获得最优价格。"
+        "summary": "TechCrunch Disrupt 2026大会早鸟票价优惠将于5月29日截止，购票者可节省最多410美元，大会将在旧金山举办，建议尽快注册以获得最优价格。"
       },
       {
         "title": "Everyone is navigating AI security in real time — even Google",
@@ -180,7 +180,7 @@
         "raw": "The pope’s AI encyclical isn’t really about AI Pope Leo XIV's first encyclical uses AI as a lens to diagnose older problems: concentrated power, eroding democracy, and a tech elite that shapes the world to its own advantage.",
         "published": "Mon, 25 Ma",
         "source": "科技",
-        "summary": "教宗首份通谕以人工智能为切入点，诊断更深层的问题：权力集中、民主衰退和科技精英按自身利益塑造世界的现象。"
+        "summary": "教宗首份通谕以人工智能为切入点，实际上是在诊断更深层的问题：权力集中、民主衰退以及科技精英按自身利益塑造世界的现象。"
       },
       {
         "title": "The pitch trick that helped an eSports startup raise $20M when VCs only wanted AI",
@@ -214,7 +214,7 @@
         "raw": "US launches new strikes on Iran, targeting missile sites and boats US Central Command says the strikes were taken in \"self-defense\". It comes as senior Iranian negotiators are in Qatar for talks to end the war.",
         "published": "Tue, 26 Ma",
         "source": "国际新闻",
-        "summary": "美国中央司令部宣布对伊朗发动新一轮打击，目标包括导弹基地和船只，声称系出于\"自卫\"目的。此举发生在伊朗高级谈判代表在卡塔尔进行结束战争谈判之际。"
+        "summary": "美国中央司令部宣布对伊朗发动新一轮打击，目标包括导弹基地和船只，声称系出于\"自卫\"目的。此举发生之际，伊朗高级谈判代表正在卡塔尔进行旨在结束战争的谈判。"
       },
       {
         "title": "Netanyahu says Israel will intensify strikes against Hezbollah",
@@ -238,7 +238,7 @@
         "raw": "Australia confirms first diphtheria death amid worst outbreak in decades Most cases are in the Northern Territory with some also in Western Australia, South Australia and Queensland.",
         "published": "Tue, 26 Ma",
         "source": "国际新闻",
-        "summary": "澳大利亚确认数十年来最严重白喉疫情中首例死亡病例，大多数病例出现在北领地，部分病例分布在西澳大利亚州、南澳大利亚州和昆士兰州。"
+        "summary": "澳大利亚确认首例白喉死亡病例，这是数十年来最严重的疫情。大多数病例出现在北领地，部分病例也在西澳大利亚州、南澳大利亚州和昆士兰州出现。"
       },
       {
         "title": "China executes man for murdering prominent gaming tycoon",
@@ -246,7 +246,7 @@
         "raw": "China executes man for murdering prominent gaming tycoon The court said the man poisoned the tycoon for sidelining him after he helped secure a deal with Netflix for the 3 Body Problem.",
         "published": "Tue, 26 Ma",
         "source": "国际新闻",
-        "summary": "中国执行了对一名男子的死刑，该男子因毒杀知名游戏大亨而被判罪。法院表示，这名男子因在帮助该大亨与Netflix达成《三体》改编协议后被边缘化而对其下毒。"
+        "summary": "中国一男子因投毒杀害知名游戏大亨被执行死刑。该男子因在帮助该大亨与Netflix达成《三体》改编协议后被边缘化，遂对其下毒。"
       }
     ]
   }
