@@ -1,0 +1,253 @@
+{
+  "date": "2026-05-26",
+  "sections": {
+    "claude_code": [
+      {
+        "source": "GitHub",
+        "title": "realrossmanngroup/no_ai_slop_writing_rules",
+        "url": "https://github.com/realrossmanngroup/no_ai_slop_writing_rules",
+        "raw": "realrossmanngroup/no_ai_slop_writing_rules: Claude Code reference: write in Louis Rossmann's voice, never like AI slop. Portable CLAUDE.md plus skills. Stars:166",
+        "published": "2026-05-25",
+        "summary": "realrossmanngroup/no_ai_slop_writing_rules"
+      },
+      {
+        "source": "GitHub",
+        "title": "cclank/lanshu-awesome-ai-video-kit",
+        "url": "https://github.com/cclank/lanshu-awesome-ai-video-kit",
+        "raw": "cclank/lanshu-awesome-ai-video-kit: 做企业 AI 视频项目逼出来的工具包 · 411 prompt · 15 模型 · 7 Claude Skill · 14 篇方法论 Stars:53",
+        "published": "2026-05-25",
+        "summary": "cclank/lanshu-awesome-ai-video-kit"
+      },
+      {
+        "source": "GitHub",
+        "title": "xiaomoBoy/claude-writing-skills",
+        "url": "https://github.com/xiaomoBoy/claude-writing-skills",
+        "raw": "xiaomoBoy/claude-writing-skills: A toolkit of Claude Code skills for long-form content creators: research, score, rewrite, and publish. Stars:22",
+        "published": "2026-05-25",
+        "summary": "xiaomoBoy/claude-writing-skills"
+      },
+      {
+        "source": "GitHub",
+        "title": "collindjohnson/agent-notify",
+        "url": "https://github.com/collindjohnson/agent-notify",
+        "raw": "collindjohnson/agent-notify: Claude Code, Codex, Gemini, and Cursor CLI Agent notifications Stars:18",
+        "published": "2026-05-25",
+        "summary": "collindjohnson/agent-notify"
+      },
+      {
+        "source": "GitHub",
+        "title": "alibaba/webmcp-nexus",
+        "url": "https://github.com/alibaba/webmcp-nexus",
+        "raw": "alibaba/webmcp-nexus: 面向 WebMCP 标准的非侵入式前端集成套件：写一个普通 TS 函数加一段 JSDoc，即可被任意 MCP 客户端调用 —— 含 SDK、Vite/Webpack 插件与 AI 编码 Skill。 Stars:18",
+        "published": "2026-05-25",
+        "summary": "alibaba/webmcp-nexus"
+      },
+      {
+        "source": "GitHub",
+        "title": "code-yeongyu/lazycodex",
+        "url": "https://github.com/code-yeongyu/lazycodex",
+        "raw": "code-yeongyu/lazycodex: LazyCodex: Codex for no-brainers. You don't need to think. Just prompt with ultrawork. Stars:18",
+        "published": "2026-05-25",
+        "summary": "code-yeongyu/lazycodex"
+      },
+      {
+        "source": "GitHub",
+        "title": "UditAkhourii/adhd",
+        "url": "https://github.com/UditAkhourii/adhd",
+        "raw": "UditAkhourii/adhd: ADHD — a skill for coding agents. Tree-of-thought with pruning, built on the Claude Agent SDK. Fans out parallel divergent thoughts under different cognitive frames, scores, prunes traps, deepens the survivors. The no-brainer skill for creative and interdisciplinary work. Stars:16",
+        "published": "2026-05-25",
+        "summary": "UditAkhourii/adhd"
+      },
+      {
+        "source": "GitHub",
+        "title": "umputun/fya",
+        "url": "https://github.com/umputun/fya",
+        "raw": "umputun/fya: PTY-backed Claude Code wrapper that provides claude -p compatible output Stars:15",
+        "published": "2026-05-24",
+        "summary": "umputun/fya"
+      },
+      {
+        "source": "GitHub",
+        "title": "boheling/deltasci",
+        "url": "https://github.com/boheling/deltasci",
+        "raw": "boheling/deltasci: Two-perspective co-reasoning for AI4Science hypothesis generation — grounded, falsifiable, with a citation-audit trail. CLI + Claude Code skill. Stars:12",
+        "published": "2026-05-24",
+        "summary": "boheling/deltasci"
+      },
+      {
+        "source": "GitHub",
+        "title": "Laith0003/ux-skill",
+        "url": "https://github.com/Laith0003/ux-skill",
+        "raw": "Laith0003/ux-skill: ux-skill: 18 slash commands, 5 sub-agents, deterministic linter, 72 brand DESIGN.md specs (Apple, Stripe, Linear, Figma, Tesla) for Claude Code. Audit, generate, polish UI; design systems; accessibility; SEO; microcopy; motion. Anti-AI-slop. React, Next, Vue, Blade, Astro. MIT. Stars:12",
+        "published": "2026-05-24",
+        "summary": "Laith0003/ux-skill"
+      }
+    ],
+    "ai_news": [
+      {
+        "title": "Using AI to write better code more slowly",
+        "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+        "raw": "Using AI to write better code more slowly",
+        "published": "2026-05-26",
+        "source": "全球AI",
+        "summary": "Using AI to write better code more slowly"
+      },
+      {
+        "title": "The User Is Visibly Frustrated",
+        "url": "https://pscanf.com/s/354/",
+        "raw": "The User Is Visibly Frustrated",
+        "published": "2026-05-26",
+        "source": "全球AI",
+        "summary": "The User Is Visibly Frustrated"
+      },
+      {
+        "title": "Taking a walk may lead to more creativity than sitting, study finds (2014)",
+        "url": "https://www.apa.org/news/press/releases/2014/04/creativity-walk",
+        "raw": "Taking a walk may lead to more creativity than sitting, study finds (2014)",
+        "published": "2026-05-26",
+        "source": "全球AI",
+        "summary": "Taking a walk may lead to more creativity than sitting, study finds (2014)"
+      },
+      {
+        "title": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
+        "url": "https://earthiongame.com/",
+        "raw": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
+        "published": "2026-05-26",
+        "source": "全球AI",
+        "summary": "Earthion: A New Mega Drive-Style Shoot-Em-Up"
+      },
+      {
+        "title": "Ask HN: Is anyone working at least 4 hours daily on an Apple Vision Pro?",
+        "url": "https://news.ycombinator.com/item?id=48275508",
+        "raw": "Ask HN: Is anyone working at least 4 hours daily on an Apple Vision Pro?",
+        "published": "2026-05-26",
+        "source": "全球AI",
+        "summary": "Ask HN: Is anyone working at least 4 hours daily on an Apple Vision Pro?"
+      },
+      {
+        "title": "What ClickUp’s mass layoff tells us about the future of work",
+        "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
+        "raw": "What ClickUp’s mass layoff tells us about the future of work The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+        "published": "Mon, 25 Ma",
+        "source": "全球AI",
+        "summary": "What ClickUp’s mass layoff tells us about the future of work"
+      },
+      {
+        "title": "The pope’s AI encyclical isn’t really about AI",
+        "url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
+        "raw": "The pope’s AI encyclical isn’t really about AI Pope Leo XIV's first encyclical uses AI as a lens to diagnose older problems: concentrated power, eroding democracy, and a tech elite that shapes the world to its own advantage.",
+        "published": "Mon, 25 Ma",
+        "source": "全球AI",
+        "summary": "The pope’s AI encyclical isn’t really about AI"
+      },
+      {
+        "title": "Startup Battlefield 200 applications close in days: Apply before May 27",
+        "url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+        "raw": "Startup Battlefield 200 applications close in days: Apply before May 27 The deadline to apply or nominate for Startup Battlefield 200 is May 27. This is your shot at VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+        "published": "Mon, 25 Ma",
+        "source": "全球AI",
+        "summary": "Startup Battlefield 200 applications close in days: Apply before May 27"
+      },
+      {
+        "title": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase",
+        "url": "https://techcrunch.com/2026/05/25/5-days-left-save-up-to-410-on-techcrunch-disrupt-2026-passes-before-prices-increase/",
+        "raw": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Early Bird savings for TechCrunch Disrupt 2026 in San Francisco end May 29 at 11:59 p.m. PT. Register now to save up to $410 before prices increase.",
+        "published": "Mon, 25 Ma",
+        "source": "全球AI",
+        "summary": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase"
+      },
+      {
+        "title": "Everyone is navigating AI security in real time — even Google",
+        "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
+        "raw": "Everyone is navigating AI security in real time — even Google We're in the transition period -- all of us.",
+        "published": "Sun, 24 Ma",
+        "source": "全球AI",
+        "summary": "Everyone is navigating AI security in real time — even Google"
+      }
+    ],
+    "tech_news": [
+      {
+        "title": "What ClickUp’s mass layoff tells us about the future of work",
+        "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
+        "raw": "What ClickUp’s mass layoff tells us about the future of work The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+        "published": "Mon, 25 Ma",
+        "source": "科技",
+        "summary": "What ClickUp’s mass layoff tells us about the future of work"
+      },
+      {
+        "title": "The pope’s AI encyclical isn’t really about AI",
+        "url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
+        "raw": "The pope’s AI encyclical isn’t really about AI Pope Leo XIV's first encyclical uses AI as a lens to diagnose older problems: concentrated power, eroding democracy, and a tech elite that shapes the world to its own advantage.",
+        "published": "Mon, 25 Ma",
+        "source": "科技",
+        "summary": "The pope’s AI encyclical isn’t really about AI"
+      },
+      {
+        "title": "The pitch trick that helped an eSports startup raise $20M when VCs only wanted AI",
+        "url": "https://techcrunch.com/2026/05/25/the-pitch-trick-that-helped-an-esports-startup-raise-20m-when-vcs-only-wanted-ai/",
+        "raw": "The pitch trick that helped an eSports startup raise $20M when VCs only wanted AI Earlier this year, Lucra Sports founder and CEO Dylan Robbins did something that no one else has ever done. And he shared several secrets on how he did it.",
+        "published": "Mon, 25 Ma",
+        "source": "科技",
+        "summary": "The pitch trick that helped an eSports startup raise $20M when VCs only wanted AI"
+      },
+      {
+        "title": "Startup Battlefield 200 applications close in days: Apply before May 27",
+        "url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+        "raw": "Startup Battlefield 200 applications close in days: Apply before May 27 The deadline to apply or nominate for Startup Battlefield 200 is May 27. This is your shot at VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+        "published": "Mon, 25 Ma",
+        "source": "科技",
+        "summary": "Startup Battlefield 200 applications close in days: Apply before May 27"
+      },
+      {
+        "title": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase",
+        "url": "https://techcrunch.com/2026/05/25/5-days-left-save-up-to-410-on-techcrunch-disrupt-2026-passes-before-prices-increase/",
+        "raw": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Early Bird savings for TechCrunch Disrupt 2026 in San Francisco end May 29 at 11:59 p.m. PT. Register now to save up to $410 before prices increase.",
+        "published": "Mon, 25 Ma",
+        "source": "科技",
+        "summary": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase"
+      }
+    ],
+    "world_news": [
+      {
+        "title": "US launches new strikes on Iran, targeting missile sites and boats",
+        "url": "https://www.bbc.com/news/articles/cvgzzn4y1n8o?at_medium=RSS&at_campaign=rss",
+        "raw": "US launches new strikes on Iran, targeting missile sites and boats US Central Command says the strikes were taken in \"self-defense\". It comes as senior Iranian negotiators are in Qatar for talks to end the war.",
+        "published": "Tue, 26 Ma",
+        "source": "国际新闻",
+        "summary": "US launches new strikes on Iran, targeting missile sites and boats"
+      },
+      {
+        "title": "Netanyahu says Israel will intensify strikes against Hezbollah",
+        "url": "https://www.bbc.com/news/articles/cewppdk1187o?at_medium=RSS&at_campaign=rss",
+        "raw": "Netanyahu says Israel will intensify strikes against Hezbollah The Israeli military hits targets in eastern Lebanon after the prime minister announces further strikes. ",
+        "published": "Tue, 26 Ma",
+        "source": "国际新闻",
+        "summary": "Netanyahu says Israel will intensify strikes against Hezbollah"
+      },
+      {
+        "title": "Russia threatens more Kyiv strikes and tells foreign nationals to leave",
+        "url": "https://www.bbc.com/news/articles/c1e22n55zn4o?at_medium=RSS&at_campaign=rss",
+        "raw": "Russia threatens more Kyiv strikes and tells foreign nationals to leave It comes after the Ukrainian capital suffered one of the biggest aerial assaults of the war overnight on Saturday.",
+        "published": "Tue, 26 Ma",
+        "source": "国际新闻",
+        "summary": "Russia threatens more Kyiv strikes and tells foreign nationals to leave"
+      },
+      {
+        "title": "Australia confirms first diphtheria death amid worst outbreak in decades",
+        "url": "https://www.bbc.com/news/articles/c759q6y26w3o?at_medium=RSS&at_campaign=rss",
+        "raw": "Australia confirms first diphtheria death amid worst outbreak in decades Most cases are in the Northern Territory with some also in Western Australia, South Australia and Queensland.",
+        "published": "Tue, 26 Ma",
+        "source": "国际新闻",
+        "summary": "Australia confirms first diphtheria death amid worst outbreak in decades"
+      },
+      {
+        "title": "Wave of child abuse cases shakes schools in Paris",
+        "url": "https://www.bbc.com/news/articles/c8e8gx2d7j4o?at_medium=RSS&at_campaign=rss",
+        "raw": "Wave of child abuse cases shakes schools in Paris A school assistant goes on trial accused of sexual mistreatment of children in his care, in the latest case to rock the Paris school system.",
+        "published": "Mon, 25 Ma",
+        "source": "国际新闻",
+        "summary": "Wave of child abuse cases shakes schools in Paris"
+      }
+    ]
+  }
+}
