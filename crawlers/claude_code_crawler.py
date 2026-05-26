@@ -168,18 +168,14 @@ def fetch_all(github_token: str) -> list[dict]:
     wechat = fetch_wechat_via_bing()
     print(f"  → {len(wechat)} 条")
 
-    # 合并去重，保证三个来源都有内容
+    # 三个来源各自独立，按顺序合并去重，总数控制在10条
     seen = set()
     result = []
-    # 先各取前3条保证来源多样性
-    for item in github[:3] + bili[:3] + wechat[:3]:
+    for item in github + bili + wechat:
         if item["url"] not in seen:
             seen.add(item["url"])
             result.append(item)
-    # 再补充剩余的
-    for item in github[3:] + bili[3:] + wechat[3:]:
-        if item["url"] not in seen and len(result) < 20:
-            seen.add(item["url"])
-            result.append(item)
+        if len(result) >= 10:
+            break
 
-    return result[:20]
+    return result
