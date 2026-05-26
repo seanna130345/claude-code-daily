@@ -2,6 +2,8 @@ import httpx
 import time
 import random
 from datetime import datetime, timedelta
+import xml.etree.ElementTree as ET
+from bs4 import BeautifulSoup
 
 
 HEADERS = {
@@ -9,7 +11,6 @@ HEADERS = {
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
 }
 
-# 相关度关键词权重
 RELEVANCE_KEYWORDS = [
     "claude code", "claude-code", "anthropic", "claude cli",
     "claude agent", "claude mcp", "claude tool",
@@ -17,21 +18,15 @@ RELEVANCE_KEYWORDS = [
 
 
 def _relevance_score(item: dict) -> float:
-    """计算与 Claude Code 的相关度分数（0-1）"""
     text = (item.get("title", "") + " " + item.get("raw", "")).lower()
-    score = 0.0
-    for kw in RELEVANCE_KEYWORDS:
-        if kw in text:
-            score += 1.0
+    score = sum(1.0 for kw in RELEVANCE_KEYWORDS if kw in text)
     return min(score / 3.0, 1.0)
 
 
 def _combined_score(item: dict) -> float:
-    """相关度（60%）+ 星标数归一化（40%）"""
+    import math
     relevance = _relevance_score(item)
     stars = item.get("stars", 0)
-    # 星标数用 log 归一化，500星以上视为满分
-    import math
     star_score = min(math.log1p(stars) / math.log1p(500), 1.0)
     return relevance * 0.6 + star_score * 0.4
 
@@ -41,7 +36,6 @@ def fetch_github(token: str) -> list[dict]:
     headers = {**HEADERS, "Authorization": f"token {token}", "Accept": "application/vnd.github+json"}
     since = (datetime.utcnow() - timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    # 搜索仓库（扩大到7天，取更多候选再排序）
     url = "https://api.github.com/search/repositories"
     params = {
         "q": f'"claude code" OR "claude-code" OR "anthropic claude" created:>{since[:10]}',
@@ -67,7 +61,6 @@ def fetch_github(token: str) -> list[dict]:
 
     time.sleep(random.uniform(1, 2))
 
-    # 搜索 Issues/Discussions
     url2 = "https://api.github.com/search/issues"
     params2 = {
         "q": f"claude code in:title created:>{since[:10]} type:issue",
@@ -90,66 +83,89 @@ def fetch_github(token: str) -> list[dict]:
     except Exception as e:
         print(f"[GitHub issue] 错误: {e}")
 
-    # 综合排序：相关度60% + 星标数40%
     results.sort(key=_combined_score, reverse=True)
     return results[:10]
 
 
 def fetch_bilibili() -> list[dict]:
+    """通过 RSSHub 获取哔哩哔哩 Claude Code 相关视频"""
     results = []
-    url = "https://api.bilibili.com/x/web-interface/search/type"
-    params = {
-        "search_type": "video",
-        "keyword": "Claude Code",
-        "order": "pubdate",
-        "duration": 0,
-        "page": 1,
-        "page_size": 10,
-    }
-    try:
-        resp = httpx.get(url, headers=HEADERS, params=params, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
-        for item in data.get("data", {}).get("result", [])[:10]:
-            bvid = item.get("bvid", "")
-            title = item.get("title", "").replace('<em class="keyword">', "").replace("</em>", "")
-            results.append({
-                "source": "哔哩哔哩",
-                "title": title,
-                "url": f"https://www.bilibili.com/video/{bvid}",
-                "raw": title + " " + item.get("description", "")[:300],
-                "stars": 0,
-                "published": datetime.fromtimestamp(item.get("pubdate", 0)).strftime("%Y-%m-%d") if item.get("pubdate") else "",
-            })
-    except Exception as e:
-        print(f"[哔哩哔哩] 错误: {e}")
+    # 尝试多个 RSSHub 公共实例
+    rsshub_instances = [
+        "https://rsshub.app",
+        "https://rss.shab.fun",
+        "https://rsshub.rssforever.com",
+    ]
+    keyword = "Claude Code"
+    for base in rsshub_instances:
+        url = f"{base}/bilibili/search/{keyword}/pubdate"
+        try:
+            resp = httpx.get(url, headers=HEADERS, timeout=15)
+            resp.raise_for_status()
+            root = ET.fromstring(resp.content)
+            for item in root.findall(".//item")[:10]:
+                title = item.findtext("title", "")
+                link = item.findtext("link", "")
+                desc = BeautifulSoup(item.findtext("description", ""), "html.parser").get_text()[:300]
+                pub = item.findtext("pubDate", "")[:10] if item.findtext("pubDate") else datetime.now().strftime("%Y-%m-%d")
+                if title and link:
+                    results.append({
+                        "source": "哔哩哔哩",
+                        "title": title,
+                        "url": link,
+                        "raw": title + " " + desc,
+                        "stars": 0,
+                        "published": pub,
+                    })
+            if results:
+                print(f"  [哔哩哔哩] 使用实例: {base}")
+                break
+        except Exception as e:
+            print(f"  [哔哩哔哩] {base} 失败: {e}")
+            continue
     return results
 
 
-def fetch_wechat_via_bing() -> list[dict]:
+def fetch_wechat_via_sogou() -> list[dict]:
+    """通过搜狗微信搜索获取公众号文章"""
     results = []
-    query = 'site:mp.weixin.qq.com "Claude Code"'
-    url = "https://www.bing.com/search"
-    params = {"q": query, "count": 10, "freshness": "Week"}
+    url = "https://weixin.sogou.com/weixin"
+    params = {
+        "type": 2,  # 2=文章
+        "query": "Claude Code",
+        "ie": "utf8",
+        "s_from": "input",
+        "_sug_": "n",
+        "_sug_type_": "",
+    }
+    headers = {
+        **HEADERS,
+        "Referer": "https://weixin.sogou.com/",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    }
     try:
-        resp = httpx.get(url, headers=HEADERS, params=params, timeout=15)
+        resp = httpx.get(url, headers=headers, params=params, timeout=15)
         resp.raise_for_status()
-        from bs4 import BeautifulSoup
         soup = BeautifulSoup(resp.text, "html.parser")
-        for li in soup.select("li.b_algo")[:10]:
-            a = li.select_one("h2 a")
-            snippet = li.select_one(".b_caption p")
-            if a and "mp.weixin.qq.com" in a.get("href", ""):
-                results.append({
-                    "source": "微信公众号",
-                    "title": a.get_text(strip=True),
-                    "url": a["href"],
-                    "raw": a.get_text(strip=True) + " " + (snippet.get_text(strip=True) if snippet else ""),
-                    "stars": 0,
-                    "published": datetime.now().strftime("%Y-%m-%d"),
-                })
+        for item in soup.select("ul.news-list li")[:10]:
+            title_el = item.select_one("h3 a") or item.select_one(".txt-box h3 a")
+            snippet_el = item.select_one("p.txt-info") or item.select_one(".txt-box p")
+            if not title_el:
+                continue
+            href = title_el.get("href", "")
+            # 搜狗返回的是跳转链接，保留原样
+            if not href.startswith("http"):
+                href = "https://weixin.sogou.com" + href
+            results.append({
+                "source": "微信公众号",
+                "title": title_el.get_text(strip=True),
+                "url": href,
+                "raw": title_el.get_text(strip=True) + " " + (snippet_el.get_text(strip=True) if snippet_el else ""),
+                "stars": 0,
+                "published": datetime.now().strftime("%Y-%m-%d"),
+            })
     except Exception as e:
-        print(f"[微信/Bing] 错误: {e}")
+        print(f"[微信/搜狗] 错误: {e}")
     return results
 
 
@@ -159,16 +175,16 @@ def fetch_all(github_token: str) -> list[dict]:
     print(f"  → {len(github)} 条")
 
     time.sleep(random.uniform(1, 2))
-    print("[Claude Code] 抓取哔哩哔哩...")
+    print("[Claude Code] 抓取哔哩哔哩(RSSHub)...")
     bili = fetch_bilibili()
     print(f"  → {len(bili)} 条")
 
     time.sleep(random.uniform(1, 2))
-    print("[Claude Code] 抓取微信公众号(Bing)...")
-    wechat = fetch_wechat_via_bing()
+    print("[Claude Code] 抓取微信公众号(搜狗)...")
+    wechat = fetch_wechat_via_sogou()
     print(f"  → {len(wechat)} 条")
 
-    # 三个来源各自独立，按顺序合并去重，总数控制在10条
+    # 三个来源各自独立，合并去重，总数控制在10条
     seen = set()
     result = []
     for item in github + bili + wechat:
