@@ -9,7 +9,7 @@ MODEL = "claude-haiku-4-5-20251001"
 MAX_RETRIES = 3
 
 
-def _call_api(headers: dict, prompt: str) -> str:
+def _call_api(headers: dict, prompt: str, max_tokens: int = 400) -> str:
     for attempt in range(MAX_RETRIES):
         try:
             resp = httpx.post(
@@ -18,7 +18,7 @@ def _call_api(headers: dict, prompt: str) -> str:
                 json={
                     "model": MODEL,
                     "messages": [{"role": "user", "content": prompt}],
-                    "max_tokens": 150,
+                    "max_tokens": max_tokens,
                     "temperature": 0.3,
                 },
                 timeout=30,
@@ -47,18 +47,24 @@ def summarize_batch(items: list[dict]) -> list[dict]:
     }
 
     for i, item in enumerate(items):
-        raw = item.get("raw", item.get("title", ""))[:500]
+        raw = item.get("raw", item.get("title", ""))[:800]
         source = item.get("source", "")
         title = item.get("title", "")
-        prompt = f"请用中文写一句话摘要（不超过80字），直接输出摘要，不加任何前缀：\n\n来源：{source}\n标题：{title}\n内容：{raw}"
+        prompt = (
+            f"请用中文介绍以下内容，要求：\n"
+            f"1. 清楚说明这个项目/资讯的核心内容、功能或意义\n"
+            f"2. 语言简洁自然，不加任何前缀或标签\n"
+            f"3. 长度100-200字\n\n"
+            f"来源：{source}\n标题：{title}\n内容：{raw}"
+        )
 
         try:
-            summary = _call_api(headers, prompt)
+            summary = _call_api(headers, prompt, max_tokens=400)
             item["summary"] = summary
             print(f"  [{i+1}/{len(items)}] {title[:25]}... ✓")
         except Exception as e:
             print(f"  [{i+1}/{len(items)}] 摘要失败: {e}")
-            item["summary"] = title  # 降级用标题
+            item["summary"] = title
 
         if i < len(items) - 1:
             time.sleep(0.3)
