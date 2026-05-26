@@ -87,70 +87,29 @@ def fetch_github(token: str) -> list[dict]:
 
 
 def fetch_bilibili() -> list[dict]:
-    """通过哔哩哔哩网页搜索获取 Claude Code 相关视频"""
+    """用 Bing 搜索哔哩哔哩视频（B站直接API在境外被封，降级用Bing）"""
     results = []
-    url = "https://search.bilibili.com/all"
-    params = {
-        "keyword": "Claude Code",
-        "order": "pubdate",
-        "duration": 0,
-        "tids": 0,
-        "page": 1,
-    }
-    headers = {
-        **HEADERS,
-        "Referer": "https://www.bilibili.com",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    }
     try:
-        resp = httpx.get(url, headers=headers, params=params, timeout=15)
+        url = "https://www.bing.com/search"
+        params = {"q": 'site:bilibili.com/video "Claude Code"', "count": 10}
+        resp = httpx.get(url, headers=HEADERS, params=params, timeout=15)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-        for item in soup.select(".bili-video-card, .video-item, [class*='video-card']")[:10]:
-            title_el = item.select_one("h3, .title, [class*='title']")
-            link_el = item.select_one("a[href*='/video/']")
-            if not title_el or not link_el:
-                continue
-            href = link_el.get("href", "")
-            if href.startswith("//"):
-                href = "https:" + href
-            title = title_el.get_text(strip=True)
-            results.append({
-                "source": "哔哩哔哩",
-                "title": title,
-                "url": href,
-                "raw": title,
-                "stars": 0,
-                "published": datetime.now().strftime("%Y-%m-%d"),
-            })
+        for li in soup.select("li.b_algo")[:10]:
+            a = li.select_one("h2 a")
+            snippet = li.select_one(".b_caption p")
+            href = a.get("href", "") if a else ""
+            if a and "bilibili.com/video" in href:
+                results.append({
+                    "source": "哔哩哔哩",
+                    "title": a.get_text(strip=True),
+                    "url": href,
+                    "raw": a.get_text(strip=True) + " " + (snippet.get_text(strip=True) if snippet else ""),
+                    "stars": 0,
+                    "published": datetime.now().strftime("%Y-%m-%d"),
+                })
     except Exception as e:
-        print(f"[哔哩哔哩] 网页抓取失败: {e}")
-
-    # 降级：用 Bing 搜索 B 站视频
-    if not results:
-        try:
-            bing_url = "https://www.bing.com/search"
-            bing_params = {"q": 'site:bilibili.com/video "Claude Code"', "count": 8}
-            resp2 = httpx.get(bing_url, headers=HEADERS, params=bing_params, timeout=15)
-            resp2.raise_for_status()
-            soup2 = BeautifulSoup(resp2.text, "html.parser")
-            for li in soup2.select("li.b_algo")[:8]:
-                a = li.select_one("h2 a")
-                snippet = li.select_one(".b_caption p")
-                if a and "bilibili.com/video" in a.get("href", ""):
-                    results.append({
-                        "source": "哔哩哔哩",
-                        "title": a.get_text(strip=True),
-                        "url": a["href"],
-                        "raw": a.get_text(strip=True) + " " + (snippet.get_text(strip=True) if snippet else ""),
-                        "stars": 0,
-                        "published": datetime.now().strftime("%Y-%m-%d"),
-                    })
-            if results:
-                print(f"  [哔哩哔哩] 降级使用 Bing 搜索，获取 {len(results)} 条")
-        except Exception as e:
-            print(f"[哔哩哔哩] Bing降级也失败: {e}")
-
+        print(f"[哔哩哔哩] 错误: {e}")
     return results
 
 
@@ -203,7 +162,7 @@ def fetch_all(github_token: str) -> list[dict]:
     print(f"  → {len(github)} 条")
 
     time.sleep(random.uniform(1, 2))
-    print("[Claude Code] 抓取哔哩哔哩(RSSHub)...")
+    print("[Claude Code] 抓取哔哩哔哩(Bing)...")
     bili = fetch_bilibili()
     print(f"  → {len(bili)} 条")
 
