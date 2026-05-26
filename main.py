@@ -9,7 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from crawlers.claude_code_crawler import fetch_all as fetch_claude_code
-from crawlers.news_crawler import fetch_ai_news, fetch_tech_news, fetch_world_news
+from crawlers.news_crawler import fetch_github_trending, fetch_ai_news, fetch_tech_news, fetch_world_news
 from summarizer import summarize_batch
 from generate_html import render_html
 from wxpusher_sender import send_to_wechat
@@ -26,8 +26,13 @@ def main():
     print(f"=== 每日科技日报 {TODAY} ===\n")
 
     # 1. 抓取数据
-    print("--- 抓取 Claude Code ---")
+    print("--- 抓取 GitHub Trending Top10 ---")
+    github_trending = fetch_github_trending(GITHUB_TOKEN, count=10)
+    print(f"  → {len(github_trending)} 条")
+
+    print("\n--- 抓取 Claude Code ---")
     claude_items = fetch_claude_code(GITHUB_TOKEN)
+    print(f"  → {len(claude_items)} 条")
 
     print("\n--- 抓取全球AI ---")
     ai_items = fetch_ai_news()
@@ -40,11 +45,12 @@ def main():
 
     # 2. 生成摘要
     print("\n--- 生成摘要 ---")
-    all_items = claude_items + ai_items + tech_items + world_items
+    all_items = github_trending + claude_items + ai_items + tech_items + world_items
     all_items = summarize_batch(all_items)
 
-    # 按来源重新分组
-    claude_final = [x for x in all_items if x in claude_items][:10]
+    # 按来源重新分组（保持原始顺序）
+    trending_final = [x for x in all_items if x in github_trending]
+    claude_final = [x for x in all_items if x in claude_items]
     ai_final = [x for x in all_items if x in ai_items][:10]
     tech_final = [x for x in all_items if x in tech_items][:5]
     world_final = [x for x in all_items if x in world_items][:5]
@@ -52,6 +58,7 @@ def main():
     data = {
         "date": TODAY,
         "sections": {
+            "github_trending": trending_final,
             "claude_code": claude_final,
             "ai_news": ai_final,
             "tech_news": tech_final,

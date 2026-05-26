@@ -28,6 +28,7 @@ def _format_message(data: dict) -> tuple[str, str]:
             lines.append(f"   > {summary}")
         lines.append("")
 
+    add_section("GitHub 每日 Top10", sections.get("github_trending", []), 10)
     add_section("Claude Code 项目/资讯", sections.get("claude_code", []), 10)
     add_section("全球AI动态 Top 10", sections.get("ai_news", []), 10)
     add_section("科技发展 Top 5", sections.get("tech_news", []), 5)

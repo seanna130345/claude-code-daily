@@ -27,6 +27,7 @@ def render_html(data: dict, output_path: str):
             </div>"""
         return f'<div class="section" id="{section_id}"><h2>{title}</h2>{rows}</div>'
 
+    trending_items = sections.get("github_trending", [])
     claude_items = sections.get("claude_code", [])
     ai_items = sections.get("ai_news", [])
     tech_items = sections.get("tech_news", [])
@@ -69,12 +70,14 @@ def render_html(data: dict, output_path: str):
   <div class="date">{date_str} · 自动生成</div>
 </header>
 <nav>
-  <a href="#claude-code" class="active">Claude Code ({len(claude_items)})</a>
+  <a href="#github-trending" class="active">GitHub Top10 ({len(trending_items)})</a>
+  <a href="#claude-code">Claude Code ({len(claude_items)})</a>
   <a href="#ai-news">全球AI ({len(ai_items)})</a>
   <a href="#tech-news">科技 ({len(tech_items)})</a>
   <a href="#world-news">国际新闻 ({len(world_items)})</a>
 </nav>
 <main>
+  {render_section(f"GitHub 每日 Top 10（按标星排名）", trending_items, "github-trending")}
   {render_section(f"Claude Code 项目/资讯 · Top {len(claude_items)}", claude_items, "claude-code")}
   {render_section(f"全球AI动态 · Top {len(ai_items)}", ai_items, "ai-news")}
   {render_section(f"科技发展 · Top {len(tech_items)}", tech_items, "tech-news")}

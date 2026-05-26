@@ -72,6 +72,42 @@ def _parse_rss(url: str, count: int = 5) -> list[dict]:
         return []
 
 
+def fetch_github_trending(token: str = "", count: int = 10) -> list[dict]:
+    """GitHub 每日新增 Star 最多的 Top10 仓库"""
+    results = []
+    from datetime import timedelta
+    since = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    headers = {
+        **HEADERS,
+        "Accept": "application/vnd.github+json",
+    }
+    if token:
+        headers["Authorization"] = f"token {token}"
+
+    url = "https://api.github.com/search/repositories"
+    params = {
+        "q": f"created:>{since}",
+        "sort": "stars",
+        "order": "desc",
+        "per_page": count,
+    }
+    try:
+        resp = httpx.get(url, headers=headers, params=params, timeout=15)
+        resp.raise_for_status()
+        for item in resp.json().get("items", [])[:count]:
+            results.append({
+                "source": "GitHub Trending",
+                "title": item["full_name"],
+                "url": item["html_url"],
+                "raw": f"{item['full_name']}: {item.get('description', '')} Stars:{item.get('stargazers_count', 0)} Language:{item.get('language', '')}",
+                "stars": item.get("stargazers_count", 0),
+                "published": item.get("created_at", "")[:10],
+            })
+    except Exception as e:
+        print(f"[GitHub Trending] 错误: {e}")
+    return results
+
+
 def fetch_hackernews(count: int = 10) -> list[dict]:
     """HackerNews Top Stories"""
     results = []
