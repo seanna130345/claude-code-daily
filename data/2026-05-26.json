@@ -6,7 +6,7 @@
         "source": "GitHub",
         "title": "realrossmanngroup/no_ai_slop_writing_rules",
         "url": "https://github.com/realrossmanngroup/no_ai_slop_writing_rules",
-        "raw": "realrossmanngroup/no_ai_slop_writing_rules: Claude Code reference: write in Louis Rossmann's voice, never like AI slop. Portable CLAUDE.md plus skills. Stars:166",
+        "raw": "realrossmanngroup/no_ai_slop_writing_rules: Claude Code reference: write in Louis Rossmann's voice, never like AI slop. Portable CLAUDE.md plus skills. Stars:169",
         "published": "2026-05-25",
         "summary": "realrossmanngroup/no_ai_slop_writing_rules"
       },
@@ -14,7 +14,7 @@
         "source": "GitHub",
         "title": "cclank/lanshu-awesome-ai-video-kit",
         "url": "https://github.com/cclank/lanshu-awesome-ai-video-kit",
-        "raw": "cclank/lanshu-awesome-ai-video-kit: 做企业 AI 视频项目逼出来的工具包 · 411 prompt · 15 模型 · 7 Claude Skill · 14 篇方法论 Stars:53",
+        "raw": "cclank/lanshu-awesome-ai-video-kit: 做企业 AI 视频项目逼出来的工具包 · 411 prompt · 15 模型 · 7 Claude Skill · 14 篇方法论 Stars:68",
         "published": "2026-05-25",
         "summary": "cclank/lanshu-awesome-ai-video-kit"
       },
@@ -22,17 +22,17 @@
         "source": "GitHub",
         "title": "xiaomoBoy/claude-writing-skills",
         "url": "https://github.com/xiaomoBoy/claude-writing-skills",
-        "raw": "xiaomoBoy/claude-writing-skills: A toolkit of Claude Code skills for long-form content creators: research, score, rewrite, and publish. Stars:22",
+        "raw": "xiaomoBoy/claude-writing-skills: A toolkit of Claude Code skills for long-form content creators: research, score, rewrite, and publish. Stars:23",
         "published": "2026-05-25",
         "summary": "xiaomoBoy/claude-writing-skills"
       },
       {
         "source": "GitHub",
-        "title": "UditAkhourii/adhd",
-        "url": "https://github.com/UditAkhourii/adhd",
-        "raw": "UditAkhourii/adhd: ADHD — a skill for coding agents. Tree-of-thought with pruning, built on the Claude Agent SDK. Fans out parallel divergent thoughts under different cognitive frames, scores, prunes traps, deepens the survivors. The no-brainer skill for creative and interdisciplinary work. Stars:21",
+        "title": "code-yeongyu/lazycodex",
+        "url": "https://github.com/code-yeongyu/lazycodex",
+        "raw": "code-yeongyu/lazycodex: LazyCodex: Codex for no-brainers. You don't need to think. Just prompt with ultrawork. Stars:20",
         "published": "2026-05-25",
-        "summary": "UditAkhourii/adhd"
+        "summary": "code-yeongyu/lazycodex"
       },
       {
         "source": "GitHub",
@@ -52,19 +52,19 @@
       },
       {
         "source": "GitHub",
-        "title": "code-yeongyu/lazycodex",
-        "url": "https://github.com/code-yeongyu/lazycodex",
-        "raw": "code-yeongyu/lazycodex: LazyCodex: Codex for no-brainers. You don't need to think. Just prompt with ultrawork. Stars:18",
-        "published": "2026-05-25",
-        "summary": "code-yeongyu/lazycodex"
-      },
-      {
-        "source": "GitHub",
         "title": "umputun/fya",
         "url": "https://github.com/umputun/fya",
         "raw": "umputun/fya: PTY-backed Claude Code wrapper that provides claude -p compatible output Stars:15",
         "published": "2026-05-24",
         "summary": "umputun/fya"
+      },
+      {
+        "source": "GitHub",
+        "title": "Laith0003/ux-skill",
+        "url": "https://github.com/Laith0003/ux-skill",
+        "raw": "Laith0003/ux-skill: ux-skill: 18 slash commands, 5 sub-agents, deterministic linter, 72 brand DESIGN.md specs (Apple, Stripe, Linear, Figma, Tesla) for Claude Code. Audit, generate, polish UI; design systems; accessibility; SEO; microcopy; motion. Anti-AI-slop. React, Next, Vue, Blade, Astro. MIT. Stars:13",
+        "published": "2026-05-24",
+        "summary": "Laith0003/ux-skill"
       },
       {
         "source": "GitHub",
@@ -76,14 +76,22 @@
       },
       {
         "source": "GitHub",
-        "title": "Laith0003/ux-skill",
-        "url": "https://github.com/Laith0003/ux-skill",
-        "raw": "Laith0003/ux-skill: ux-skill: 18 slash commands, 5 sub-agents, deterministic linter, 72 brand DESIGN.md specs (Apple, Stripe, Linear, Figma, Tesla) for Claude Code. Audit, generate, polish UI; design systems; accessibility; SEO; microcopy; motion. Anti-AI-slop. React, Next, Vue, Blade, Astro. MIT. Stars:12",
+        "title": "charlieviettq/awesome-agent-skill",
+        "url": "https://github.com/charlieviettq/awesome-agent-skill",
+        "raw": "charlieviettq/awesome-agent-skill: Curated skill pack for LLM agents in engineer and science workflow (Cursor & Claude ready). Stars:12",
         "published": "2026-05-24",
-        "summary": "Laith0003/ux-skill"
+        "summary": "charlieviettq/awesome-agent-skill"
       }
     ],
     "ai_news": [
+      {
+        "title": "DynIP – Dynamic DNS with RFC 2136, IPv6, DNSSEC, and BYOD",
+        "url": "https://dynip.dev/",
+        "raw": "DynIP – Dynamic DNS with RFC 2136, IPv6, DNSSEC, and BYOD",
+        "published": "2026-05-26",
+        "source": "全球AI",
+        "summary": "DynIP – Dynamic DNS with RFC 2136, IPv6, DNSSEC, and BYOD"
+      },
       {
         "title": "Using AI to write better code more slowly",
         "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
@@ -91,14 +99,6 @@
         "published": "2026-05-26",
         "source": "全球AI",
         "summary": "Using AI to write better code more slowly"
-      },
-      {
-        "title": "The User Is Visibly Frustrated",
-        "url": "https://pscanf.com/s/354/",
-        "raw": "The User Is Visibly Frustrated",
-        "published": "2026-05-26",
-        "source": "全球AI",
-        "summary": "The User Is Visibly Frustrated"
       },
       {
         "title": "Taking a walk may lead to more creativity than sitting, study finds (2014)",
@@ -109,20 +109,20 @@
         "summary": "Taking a walk may lead to more creativity than sitting, study finds (2014)"
       },
       {
+        "title": "Use Boring Languages with LLMs",
+        "url": "https://jry.io/writing/use-boring-languages-with-llms/",
+        "raw": "Use Boring Languages with LLMs",
+        "published": "2026-05-26",
+        "source": "全球AI",
+        "summary": "Use Boring Languages with LLMs"
+      },
+      {
         "title": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
         "url": "https://earthiongame.com/",
         "raw": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
         "published": "2026-05-26",
         "source": "全球AI",
         "summary": "Earthion: A New Mega Drive-Style Shoot-Em-Up"
-      },
-      {
-        "title": "Ask HN: Is anyone working at least 4 hours daily on an Apple Vision Pro?",
-        "url": "https://news.ycombinator.com/item?id=48275508",
-        "raw": "Ask HN: Is anyone working at least 4 hours daily on an Apple Vision Pro?",
-        "published": "2026-05-26",
-        "source": "全球AI",
-        "summary": "Ask HN: Is anyone working at least 4 hours daily on an Apple Vision Pro?"
       },
       {
         "title": "What ClickUp’s mass layoff tells us about the future of work",
