@@ -1,270 +1,88 @@
 {
   "date": "2026-05-27",
   "sections": {
-    "github_trending": [
+    "world_news": [
       {
-        "source": "GitHub Trending",
-        "title": "GOROman/nullevi03",
-        "url": "https://github.com/GOROman/nullevi03",
-        "raw": "GOROman/nullevi03: None Stars:26 Language:Shell",
-        "stars": 26,
-        "published": "2026-05-27",
-        "summary": "这是一个Shell脚本项目，目前在GitHub上获得26个星标。项目名称为nullevi03，由GOROman维护。\n\n从项目名称和Shell语言的特性来看，这很可能是一个系统工具或自动化脚本集合。考虑到其在GitHub Trending上的出现，它可能提供了某种实用的系统管理、配置或部署功能。\n\n由于项目描述为\"None\"，具体功能细节不太明确。不过作为Shell项目能上Trending，通常意味着它解决了开发者或系统管理员的某个常见问题，或提供了便捷的自动化方案。\n\n如果你需要了解更多细节，建议直接访问项目的GitHub仓库查看README文档和代码实现。"
+        "title": "Dozens killed in Lebanon as Israel intensifies strikes",
+        "url": "https://www.bbc.com/news/articles/cx211rgngp0o?at_medium=RSS&at_campaign=rss",
+        "raw": "Dozens killed in Lebanon as Israel intensifies strikes Israel says it struck 100 Hezbollah infrastructure sites and fighters in Lebanon, after PM Benjamin Netanyahu vows to \"crush\" the Iran-backed group.",
+        "published": "Wed, 27 Ma",
+        "source": "国际新闻",
+        "summary": "以色列对黎巴嫩加强军事打击，造成数十人丧生。以色列总理内塔尼亚胡誓言要\"摧毁\"伊朗支持的真主党组织，并称已对该组织的100个基础设施目标和战斗人员进行了打击。这次军事行动是以色列与真主党之间持续紧张局势的升级，反映了中东地区安全形势的恶化。冲突导致大量平民伤亡，引发国际社会对地区稳定的担忧。"
       },
       {
-        "source": "GitHub Trending",
-        "title": "mli/docs",
-        "url": "https://github.com/mli/docs",
-        "raw": "mli/docs: None Stars:8 Language:MDX",
-        "stars": 8,
-        "published": "2026-05-27",
-        "summary": "这是一个在GitHub Trending上的文档项目。mli/docs使用MDX格式编写，MDX是一种结合Markdown和React的标记语言，允许在文档中嵌入交互式组件。\n\n该项目目前获得8个星标，主要用于存储和管理文档内容。通过MDX格式，开发者可以创建更加动态和交互式的文档体验，而不仅限于静态的Markdown文本。这种方式特别适合技术文档、API文档或教程类内容，能够提供更好的用户体验和代码示例展示。\n\n项目虽然目前关注度不高，但代表了现代文档编写的一个趋势——将文档从纯静态内容升级为可交互的动态内容。"
+        "title": "Iran condemns US strikes as 'gross violation' of ceasefire",
+        "url": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss",
+        "raw": "Iran condemns US strikes as 'gross violation' of ceasefire The attacks took place while Iranian and Qatari negotiators were in Doha for peace talks.",
+        "published": "Tue, 26 Ma",
+        "source": "国际新闻",
+        "summary": "伊朗谴责美国空袭违反停火协议。伊朗和卡塔尔谈判代表当时正在多哈进行和平谈判，美国却发动了空袭。伊朗方面认为这是对停火协议的严重违反，表示美国的军事行动破坏了正在进行的外交努力。这一事件发生在双方进行和平谈判的敏感时期，凸显了中东地区局势的复杂性和紧张局面。伊朗的谴责反映了对美国军事行动的强烈不满，可能会对后续的和平谈判产生负面影响。"
       },
       {
-        "source": "GitHub Trending",
-        "title": "itsajchan/bd-web-research-agents",
-        "url": "https://github.com/itsajchan/bd-web-research-agents",
-        "raw": "itsajchan/bd-web-research-agents: None Stars:6 Language:Python",
-        "stars": 6,
-        "published": "2026-05-27",
-        "summary": "这是一个Python项目，用于构建基于网络搜索的研究代理。项目利用大语言模型和网络搜索能力，自动化地收集、分析和整理互联网信息，帮助用户进行深度研究和信息汇总。\n\n该项目的核心功能包括：自动化网络信息检索、多源数据聚合、智能内容分析和总结。通过集成搜索引擎和AI模型，代理可以独立完成复杂的研究任务，从而提高信息收集效率。\n\n这类工具适用于学术研究、市场分析、竞品调研等需要大量信息整合的场景，能够显著降低手动搜索和整理的时间成本。"
+        "title": "Russia threatens more Kyiv strikes and tells foreign nationals to leave",
+        "url": "https://www.bbc.com/news/articles/c1e22n55zn4o?at_medium=RSS&at_campaign=rss",
+        "raw": "Russia threatens more Kyiv strikes and tells foreign nationals to leave It comes after the Ukrainian capital suffered one of the biggest aerial assaults of the war overnight on Saturday.",
+        "published": "Tue, 26 Ma",
+        "source": "国际新闻",
+        "summary": "俄罗斯威胁将对基辅进行更多空袭，并要求外国公民离开。这一声明发出之际，乌克兰首都基辅在周六夜间遭受了战争以来规模最大的空中轰炸之一。俄罗斯军方表示将继续对乌克兰进行军事打击，同时警告在基辅的外国人员应立即撤离该地区。这反映了俄乌冲突的持续升级，基辅作为乌克兰的政治和经济中心，一直是俄罗斯军事行动的重点目标。外国公民的撤离警告表明局势的严峻性，也可能影响国际组织和外交活动在该地区的运作。"
       },
       {
-        "source": "GitHub Trending",
-        "title": "LiuYan-89937/BigOpenLLMSearch",
-        "url": "https://github.com/LiuYan-89937/BigOpenLLMSearch",
-        "raw": "LiuYan-89937/BigOpenLLMSearch: None Stars:3 Language:TypeScript",
-        "stars": 3,
-        "published": "2026-05-27",
-        "summary": "我无法访问外部网络来查看这个 GitHub 项目的具体内容。根据项目名称 BigOpenLLMSearch 来看，这似乎是一个与大型开源语言模型搜索相关的项目，但我需要实际查看项目的 README 或代码才能准确介绍其核心功能。\n\n如果你能提供项目的描述、README 内容或主要代码文件，我可以为你生成符合要求的中文介绍。或者，你也可以直接分享项目链接或相关信息。"
+        "title": "Can EU find a Russia whisperer to mediate an end to war in Ukraine?",
+        "url": "https://www.bbc.com/news/articles/cqxpp73wqero?at_medium=RSS&at_campaign=rss",
+        "raw": "Can EU find a Russia whisperer to mediate an end to war in Ukraine? With the US pulling out of trilateral talks with Russia and Ukraine, the EU is looking for potential candidates to step in.",
+        "published": "Tue, 26 Ma",
+        "source": "国际新闻",
+        "summary": "欧盟正在寻找能够与俄罗斯进行有效沟通的中介人，以推动乌克兰战争的和平解决。随着美国退出与俄罗斯和乌克兰的三方谈判，欧盟面临着填补这一外交空白的压力。这位潜在的\"俄罗斯耳语者\"需要具备与莫斯科建立信任关系的能力，同时也要得到乌克兰和西方的认可。欧盟正在评估哪些国家或政治人物具备这样的条件，以便在当前复杂的地缘政治局势中发挥调解作用，推动冲突各方回到谈判桌前。"
       },
       {
-        "source": "GitHub Trending",
-        "title": "CortexReach/wechat-article-hub",
-        "url": "https://github.com/CortexReach/wechat-article-hub",
-        "raw": "CortexReach/wechat-article-hub: None Stars:3 Language:None",
-        "stars": 3,
-        "published": "2026-05-27",
-        "summary": "我无法提供有意义的介绍，因为这个项目的信息不完整。从你提供的数据来看，该项目缺少关键信息：\n\n- 没有项目描述（Description 为 None）\n- 没有编程语言标识\n- 星标数极少（仅 3 个）\n- 缺少 README 或其他文档说明\n\n建议你直接访问 GitHub 上的 [CortexReach/wechat-article-hub](https://github.com/CortexReach/wechat-article-hub) 仓库查看完整的项目信息，包括 README、代码和提交历史，这样才能准确了解项目的实际功能和用途。\n\n如果你能提供项目的 README 内容或更详细的描述，我可以帮你生成相应的中文介绍。"
-      },
-      {
-        "source": "GitHub Trending",
-        "title": "codinghub300-ch/leadership-analytics-employee-attrition",
-        "url": "https://github.com/codinghub300-ch/leadership-analytics-employee-attrition",
-        "raw": "codinghub300-ch/leadership-analytics-employee-attrition: A machine learning project designed to analyze leadership-related employee data and predict employee attrition risk using Logistic Regression, Random Forest, and SVM models to support HR decision-making and improve employee retention strategies. Stars:2 Language:Python",
-        "stars": 2,
-        "published": "2026-05-27",
-        "summary": "这是一个员工流失预测项目，使用机器学习技术分析与领导力相关的员工数据。项目采用逻辑回归、随机森林和支持向量机三种模型，预测员工离职风险。通过识别可能离职的员工，帮助人力资源部门制定更有针对性的留任策略，改进员工保留率。该项目用Python开发，为企业HR决策提供数据支持，具有实际的业务应用价值。"
-      },
-      {
-        "source": "GitHub Trending",
-        "title": "vigneshwar-lokoji/Email-Agent",
-        "url": "https://github.com/vigneshwar-lokoji/Email-Agent",
-        "raw": "vigneshwar-lokoji/Email-Agent: AI-powered email assistant — monitors Gmail in real-time, classifies emails (job/personal/bank/spam), drafts context-aware replies, tracks job applications in Google Sheets, and manages everything through Telegram. Built with LangGraph + Gemini 2.5 Flash + Gmail Pub/Sub Stars:2 Language:Python",
-        "stars": 2,
-        "published": "2026-05-27",
-        "summary": "Email-Agent 是一个基于人工智能的邮件助手项目。它能实时监控 Gmail 邮箱，自动对邮件进行分类（工作、个人、银行、垃圾邮件等），并根据邮件内容生成智能回复。项目还支持将求职申请信息自动记录到 Google Sheets 中进行追踪管理。用户可以通过 Telegram 机器人界面管理所有功能，无需直接操作邮箱。该项目采用 LangGraph、Gemini 2.5 Flash 和 Gmail Pub/Sub 等技术栈构建，用 Python 开发，目前在 GitHub 获得 2 个星标。"
-      },
-      {
-        "source": "GitHub Trending",
-        "title": "xiamuzhiyi/CF-IPpowershell-",
-        "url": "https://github.com/xiamuzhiyi/CF-IPpowershell-",
-        "raw": "xiamuzhiyi/CF-IPpowershell-: 可通过powershell自定义优选 Stars:2 Language:PowerShell",
-        "stars": 2,
-        "published": "2026-05-27",
-        "summary": "这是一个PowerShell脚本项目，用于通过Cloudflare的IP地址进行自定义优选。项目允许用户利用PowerShell脚本来筛选和优化Cloudflare提供的IP地址，找到性能最佳的节点。这对于需要加速网络连接或改善访问体验的用户很有帮助，特别是在网络环境受限的地区。通过自定义优选机制，用户可以根据自己的需求选择最适合的IP地址，从而获得更稳定、更快速的网络连接。该项目目前在GitHub上获得了2个Star，使用PowerShell语言开发。"
-      },
-      {
-        "source": "GitHub Trending",
-        "title": "codinghub300-ch/internet-usage-time-series-analysis",
-        "url": "https://github.com/codinghub300-ch/internet-usage-time-series-analysis",
-        "raw": "codinghub300-ch/internet-usage-time-series-analysis: A data analysis project combining interactive choropleth map visualization and time series analysis using Python. The project explores global internet usage trends and analyzes weekly loan applications using ARIMA modeling and statistical diagnostics. Stars:2 Language:Python",
-        "stars": 2,
-        "published": "2026-05-27",
-        "summary": "这是一个Python数据分析项目，专注于互联网使用趋势和金融数据的深度分析。项目结合了交互式地图可视化和时间序列分析技术，通过choropleth地图展示全球互联网使用情况的地理分布特征。同时采用ARIMA模型对周度贷款申请数据进行建模，并进行统计诊断验证模型效果。项目整合了地理信息可视化与时间序列预测两个重要的数据分析领域，适合学习如何处理多维度数据和构建预测模型。"
-      },
-      {
-        "source": "GitHub Trending",
-        "title": "vigneshwar-lokoji/walmart-revenue-prediction-fred-retail-sales",
-        "url": "https://github.com/vigneshwar-lokoji/walmart-revenue-prediction-fred-retail-sales",
-        "raw": "vigneshwar-lokoji/walmart-revenue-prediction-fred-retail-sales: Evaluating whether the FRED monthly U.S. retail sales index (RSXFS) can serve as a leading indicator for Walmart's quarterly revenue. Uses 15 years of data (2010–2025) expanding-window out-of-sample evaluation, naive baselines, OLS signal models and diagnostic analysis. Finding: FRED signal does not reliably beat a simple seasonal trend baseline. Stars:2 Language:Jupyter Notebook",
-        "stars": 2,
-        "published": "2026-05-27",
-        "summary": "这是一个关于沃尔玛收入预测的数据分析项目。研究者使用美联储经济数据库（FRED）中的美国零售销售指数，探索它是否能作为沃尔玛季度收入的领先指标。项目采用15年历史数据（2010-2025），通过扩展窗口的样本外评估方法，对比了朴素基准模型、普通最小二乘法信号模型等多种方法。最终发现：FRED信号在预测沃尔玛收入方面并未显著优于简单的季节性趋势基准。该项目用Jupyter Notebook实现，提供了完整的诊断分析过程。"
+        "title": "Russia 'relentlessly targeting' critical infrastructure and democracy, GCHQ says",
+        "url": "https://www.bbc.com/news/articles/c4g44gprnnvo?at_medium=RSS&at_campaign=rss",
+        "raw": "Russia 'relentlessly targeting' critical infrastructure and democracy, GCHQ says The spy agency's head will set out threats facing the UK and the measures she believes need to be taken to confront them on Wednesday.",
+        "published": "Tue, 26 Ma",
+        "source": "国际新闻",
+        "summary": "英国政府通信总部（GCHQ）负责人警告，俄罗斯正在持续针对关键基础设施和民主制度发动攻击。该机构负责人将在周三公开阐述英国面临的安全威胁，以及应对这些威胁所需采取的措施。这一声明反映了西方国家对俄罗斯网络威胁的持续关注，涉及能源、通信等战略性基础设施的安全，以及对民主进程的潜在干扰。英国政府正在加强防御措施，应对日益复杂的国家级网络威胁。"
       }
     ],
-    "claude_code": [
+    "china_news": [
       {
-        "source": "GitHub",
-        "title": "ray-amjad/claude-code-workflow-creator",
-        "url": "https://github.com/ray-amjad/claude-code-workflow-creator",
-        "raw": "ray-amjad/claude-code-workflow-creator: A Claude Code skill for authoring Workflow tool scripts: deterministic multi-agent orchestration. Preview of an unreleased feature.",
-        "stars": 56,
-        "published": "2026-05-22",
-        "summary": "这是一个Claude Code技能项目，用于创建工作流工具脚本。它实现了确定性的多智能体编排功能，允许开发者通过Claude定义和管理多个AI代理的协作流程。\n\n项目的核心意义在于提供了一种结构化的方式来组织复杂的多代理任务。通过工作流脚本，用户可以精确控制不同代理之间的交互顺序和逻辑，确保执行结果的可预测性和一致性。这对于需要多步骤、多角色协作的自动化任务特别有用。\n\n该项目目前处于未发布功能的预览阶段，展示了Claude在智能体编排领域的探索方向，为未来的AI工作流自动化奠定了基础。"
-      },
-      {
-        "source": "GitHub Issue",
-        "title": "Claude Code drift detected: v2.1.152",
-        "url": "https://github.com/other-yuka/kyoli-gam/issues/3",
-        "raw": "Claude Code drift detected: v2.1.152 ## Claude Code drift\n\n`.github/workflows/claude-code-drift-watch.yml` detected drift against `@anthropic-ai/claude-code@2.1.152` on `2026-05-27T01:48:46.857Z`.\n\n### How kyoli handles this\n\nKyoli keeps Claude Code compatibility explicit for both Server Mode and OpenCode Plugin Mode. Compat-range-only",
-        "stars": 0,
+        "title": "前两天，我们在亦庄听到了AI最真实的声音｜2026 AI Partner大会金句实录",
+        "url": "https://36kr.com/p/3826932509364869?f=rss",
+        "raw": "前两天，我们在亦庄听到了AI最真实的声音｜2026 AI Partner大会金句实录 \n当大模型API调用成本一年内骤降超过80%，百万Token仅需几分钱时，产业竞争便不再纠结于技术指标的高低，而是回归到最朴素的价值衡量——能否在实际场景中降本增效。行业的聚光灯，从实验室的榜单，转向了真实的生产线、医院诊室、物流仓库和城市管理后台。\n2026年，谁能在复杂场景中解决真问题，谁才是这场变革的主角。\n5月19日至20日，以“带着AI去前线”为主题的2026 AI Partner·北京亦庄AI+产业大会在北京经开区通明湖会展中心举办。大会由北京经开区管委会指导、36氪主办、国家信创园承办，设置9场圆桌对话、22场主题演讲以及一场别开生面的“世界咖啡”AI+产业对接会。60位国内领军",
         "published": "2026-05-27",
-        "summary": "这是一个关于 Claude Code 版本漂移的自动检测通知。系统发现项目中的 GitHub 工作流配置文件与 Claude Code 官方包版本 2.1.152 之间存在不匹配。Kyoli 是一个维护工具，它通过明确管理 Claude Code 的兼容性范围来解决这个问题，确保在服务器模式和 OpenCode 插件模式下都能保持版本一致性。这种自动化检测机制帮助开发团队及时发现并修复潜在的版本不兼容问题，防止因版本漂移导致的功能异常。"
+        "source": "国内新闻",
+        "summary": "# 2026 AI Partner大会：AI产业从技术竞争转向实际应用\n\n大模型API成本在一年内下降超80%，推动AI产业竞争重心发生转变。当技术成本不再是瓶颈后，行业焦点从实验室的性能指标转向真实场景的降本增效。医疗诊断、物流管理、城市治理等生产一线成为AI应用的主战场。\n\n5月19-20日举办的2026 AI Partner·北京亦庄AI+产业大会汇聚60位行业领军人物，通过9场圆桌对话、22场主题演讲和产业对接会，探讨如何在复杂场景中解决实际问题。大会传递的核心信号是：2026年，谁能在生产线、医院、仓库等真实环境中创造价值，谁就是AI变革的真正主角。"
       },
       {
-        "source": "GitHub",
-        "title": "jianshuo/ccglass",
-        "url": "https://github.com/jianshuo/ccglass",
-        "raw": "jianshuo/ccglass: See what your coding agent (Claude Code, Codex, Kimi) sends to the model — local proxy + web dashboard",
-        "stars": 306,
-        "published": "2026-05-22",
-        "summary": "ccglass 是一个本地代理工具，用于监控和可视化编码代理（如 Claude Code、Codex、Kimi）与模型之间的通信内容。\n\n这个项目的核心功能是拦截编码助手发送给 AI 模型的请求，通过 Web 仪表板实时展示这些交互过程。开发者可以清楚地看到代码上下文、提示词、参数等详细信息，帮助理解编码代理的工作原理和决策过程。\n\nccglass 对于调试、优化提示词、学习 AI 代理行为以及确保数据安全都很有价值。它让开发者获得了对编码助手\"黑盒\"操作的透明度，是研究和改进 AI 辅助编程的实用工具。"
-      },
-      {
-        "source": "GitHub",
-        "title": "realrossmanngroup/no_ai_slop_writing_rules",
-        "url": "https://github.com/realrossmanngroup/no_ai_slop_writing_rules",
-        "raw": "realrossmanngroup/no_ai_slop_writing_rules: Claude Code reference: write in Louis Rossmann's voice, never like AI slop. Portable CLAUDE.md plus skills.",
-        "stars": 211,
-        "published": "2026-05-25",
-        "summary": "这是一个由Louis Rossmann维护的GitHub项目，旨在为Claude AI提供写作指南。项目包含一套规则和参考文档，帮助AI以Louis Rossmann的独特风格进行写作，避免生成千篇一律的AI文本。\n\n项目的核心是一个可移植的CLAUDE.md文件，配合相关技能模块，让开发者能够将这些写作规范集成到自己的Claude配置中。通过这些指导原则，AI可以生成更具个性、更自然流畅的内容，摒弃常见的AI生成文本的生硬感和模板化特征。\n\n这个项目对于希望让AI输出更具人格化、更接近真实人类写作风格的开发者很有参考价值。"
-      },
-      {
-        "source": "GitHub",
-        "title": "aref-vc/tufte-claude-skill",
-        "url": "https://github.com/aref-vc/tufte-claude-skill",
-        "raw": "aref-vc/tufte-claude-skill: Claude Code skill that turns 'make me a chart' into a Tufte-compliant chart. Distilled from Edward Tufte's three foundational books.",
-        "stars": 185,
-        "published": "2026-05-23",
-        "summary": "这是一个Claude代码技能项目，能将用户的简单需求\"给我做个图表\"转化为符合爱德华·图夫特设计原则的高质量可视化。项目基于图夫特在其三部经典著作中阐述的数据可视化理论，包括数据墨水比、信息密度和视觉完整性等核心概念。\n\n通过这个技能，用户可以快速生成遵循图夫特美学标准的图表，避免常见的可视化误区，如过度装饰、信息冗余等。项目将复杂的设计原则自动化，让非专业设计师也能创建专业、优雅的数据展示。这对数据分析、报告制作和信息传达都很有实用价值。"
-      },
-      {
-        "source": "GitHub",
-        "title": "chefkannofriend-source/mbbb-baker-agent",
-        "url": "https://github.com/chefkannofriend-source/mbbb-baker-agent",
-        "raw": "chefkannofriend-source/mbbb-baker-agent: Claude Code subagent for pastry recipe lookup and Baker's Percentage calculation",
-        "stars": 128,
-        "published": "2026-05-22",
-        "summary": "这是一个基于Claude的代码子代理项目，专门用于烘焙领域。它的主要功能包括两个方面：一是提供糕点食谱的查询和推荐，帮助用户快速找到所需的烘焙配方；二是计算面包师百分比（Baker's Percentage），这是烘焙行业的标准计量方法，以面粉重量为基准（100%），计算其他材料的相对比例。\n\n该项目利用Claude的AI能力，使开发者能够构建更智能的烘焙助手应用。通过这个子代理，用户可以获得精准的配方指导和专业的烘焙计算支持，适合烘焙爱好者、专业烘焙师或相关应用开发者使用。"
-      },
-      {
-        "source": "GitHub",
-        "title": "NabilAziz99/agent-runtime",
-        "url": "https://github.com/NabilAziz99/agent-runtime",
-        "raw": "NabilAziz99/agent-runtime: Python port of Claude Code's agent-runtime architecture, on LangChain",
-        "stars": 118,
-        "published": "2026-05-25",
-        "summary": "这是一个Python项目，将Claude Code的agent-runtime架构移植到LangChain框架上。项目的核心是实现一个智能代理运行时系统，能够让AI助手像Claude Code一样自主执行代码、调用工具和完成复杂任务。\n\n通过LangChain的集成，该项目提供了一套完整的代理编排机制，包括任务规划、工具调用、代码执行和结果反馈等功能。开发者可以基于这个架构构建自己的AI代理应用，实现自动化工作流和智能问题解决。这对于想要快速开发具有代码执行能力的AI应用的开发者很有参考价值。"
-      },
-      {
-        "source": "GitHub",
-        "title": "kingbootoshi/directional-prompting",
-        "url": "https://github.com/kingbootoshi/directional-prompting",
-        "raw": "kingbootoshi/directional-prompting: Outcome-first plus directional language. A two-layer skill for writing prompts, agent directives, and skill descriptions. Works in Claude Code and Codex CLI.",
-        "stars": 100,
-        "published": "2026-05-21",
-        "summary": "这是一个关于提示词工程的开源项目。它提出了一种两层结构的提示词写作方法，结合\"结果优先\"和\"方向性语言\"的理念。这个方法特别适用于编写AI提示词、代理指令和技能描述。\n\n项目的核心价值在于提供了一套系统化的框架，帮助用户更有效地与AI模型（特别是Claude）进行交互。通过强调预期结果和清晰的方向指引，可以让AI更准确地理解用户意图，生成更符合需求的输出。\n\n该项目兼容Claude Code和Codex CLI等开发工具，使开发者能够在实际工作流中直接应用这套方法，提高提示词的质量和AI交互的效率。"
-      },
-      {
-        "source": "GitHub",
-        "title": "jaychempan/coding-with-beat",
-        "url": "https://github.com/jaychempan/coding-with-beat",
-        "raw": "jaychempan/coding-with-beat: 🎵 将音乐搬进AI终端 · 打造Coding专属智能DJ · 听歌新范式 · 交互式音乐 ｜A retro pixel DJ for Claude Code / Codex CLI / Terminal with Apple Music / QQ Music / Local Music — plays music, shows synced lyrics, and 😱 panics when your tests fail. ",
-        "stars": 85,
-        "published": "2026-05-21",
-        "summary": "# Coding with Beat\n\n这是一个为编程环境设计的智能DJ应用。它将音乐播放功能集成到AI代码编辑器和终端中，支持Apple Music、QQ音乐和本地音乐。应用能够实时显示歌词同步、播放音乐，并在代码测试失败时产生有趣的\"惊慌\"反应。项目采用复古像素风格设计，为开发者打造了一个交互式的编码伴侣，让编程过程更加生动有趣，提供了一种全新的音乐体验范式。"
-      },
-      {
-        "source": "GitHub",
-        "title": "vidanov/aws-architecture-diagram-skill",
-        "url": "https://github.com/vidanov/aws-architecture-diagram-skill",
-        "raw": "vidanov/aws-architecture-diagram-skill: Reusable skill for generating AWS architecture diagrams in draw.io format. Works with Kiro CLI and Claude Code.",
-        "stars": 67,
-        "published": "2026-05-22",
-        "summary": "这是一个可复用的技能模块，用于自动生成AWS架构图。它能将架构设计转换为draw.io格式的图表，方便在draw.io中直接打开和编辑。该项目与Kiro CLI和Claude Code集成，让开发者可以通过命令行或代码编辑器快速生成专业的AWS架构可视化。这对于需要频繁绘制基础设施图表的团队特别有用，能显著提高文档编写和架构沟通的效率。"
-      }
-    ],
-    "ai_news": [
-      {
-        "title": "Erin Brockovich made a map to track data centers around the country",
-        "url": "https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/",
-        "raw": "Erin Brockovich made a map to track data centers around the country",
+        "title": "经过华为、传音、拓竹历练，95后打造AI母婴界特斯拉｜36氪首发",
+        "url": "https://36kr.com/p/3826922264286083?f=rss",
+        "raw": "经过华为、传音、拓竹历练，95后打造AI母婴界特斯拉｜36氪首发 \n作者 | 张子怡\n编辑 | 袁斯来\n硬氪获悉，AI母婴智能硬件品牌珂迪Coddie（以下简称“Coddie”）完成天使轮融资，融资金额数千万元，由钟鼎资本投资，向阳资本担任独家财务顾问。\nCoddie团队于2026年初组建，由95后连续创业者何鋡威创立。何鋡威毕业于德国慕尼黑工业大学，先后任职华为、传音控股、拓竹科技等全球化科技企业。技术负责人毕业于国内顶级高校计算机专业，曾就职半导体龙头上市公司，负责大疆与Insta360影像IC方案落地；后加入国家“小巨人”第三代半导体企业担任产品负责人，具备复杂产品研发的深厚技术背景，以及前沿方案的系统整合能力。\n当前全球母婴家庭面临养育压力大、成本高",
         "published": "2026-05-27",
-        "source": "全球AI",
-        "summary": "我无法完成这个请求。你提供的内容信息不完整——标题和正文内容相同，都只是一句话，没有提供足够的细节信息让我理解这个项目或资讯的实际内容。\n\n为了给你写出准确的介绍，我需要：\n- 完整的文章内容或更详细的描述\n- 这个数据中心地图项目的具体目的（是为了环保监测、能源消耗追踪，还是其他用途）\n- 埃琳·布罗克维奇（Erin Brockovich）为什么要做这个项目\n\n如果你能提供更多信息，我很乐意用中文为你总结。"
+        "source": "国内新闻",
+        "summary": "珂迪（Coddie）是一个AI母婴智能硬件品牌，由95后连续创业者何鋡威创立。团队成员来自华为、传音、拓竹等知名科技企业，具有深厚的硬件研发和技术整合能力。公司近期完成数千万元天使轮融资，由钟鼎资本投资。珂迪致力于通过AI技术和智能硬件产品，解决全球母婴家庭面临的养育压力大、成本高等问题，被业界称为\"AI母婴界特斯拉\"。该项目代表了新一代创业者在消费硬件领域的创新探索，结合了前沿AI技术与母婴场景的实际需求。"
       },
       {
-        "title": "AI Tools Are Only as Good as Your Judgment – and That's the Point",
-        "url": "https://theaileverageweekly.com/posts/your-ai-tools-are-only-as-good-as-your-judgment-and-that-s-the-point.html",
-        "raw": "AI Tools Are Only as Good as Your Judgment – and That's the Point",
+        "title": "化险为夷的洛克王国，给所有长青游戏上了一课",
+        "url": "https://36kr.com/p/3826354349412992?f=rss",
+        "raw": "化险为夷的洛克王国，给所有长青游戏上了一课 \n文丨果脯\n2026年5月21日，腾讯魔方工作室群开发的《洛克王国：世界》上线了S2赛季更新。这款基于13年经典IP、以精灵收集养成为核心的大世界游戏，在2026年3月底正式上线后迅速成为年度爆款。据官方数据，游戏上线9天用户量便突破3000万，全平台预约人数达6000万，DAU达到1300万。 \nS2赛季上线前，这款产品更是被寄予厚望，腾讯方面称其“有望成为下一款长青产品”。此时，距离《三角洲行动》正式官宣跻身“长青游戏”，也才过去一个季度。 \n出乎所有人意料的是，5月21日S2赛季更新后，事情迅速脱离了轨道。 \n几天之内，玩家社区出现大量争议，游戏B站官方动态评论数一度突破百万。彼时，玩家",
         "published": "2026-05-27",
-        "source": "全球AI",
-        "summary": "这篇文章强调了AI工具的核心价值在于使用者的判断力。AI本身只是一个辅助手段，其效能完全取决于用户如何运用它、如何评估其输出结果的质量。文章的核心观点是，AI工具不会自动解决问题，反而要求使用者具备更强的批判性思维和决策能力。用户需要理解AI的局限性，学会验证和质疑AI生成的内容，而不是盲目信任。这种\"人在回路\"的模式实际上是AI工具设计的初衷——它们旨在增强人的能力，而非替代人的思考。因此，掌握AI工具的关键不在于技术本身，而在于培养良好的判断力和批判精神。"
+        "source": "国内新闻",
+        "summary": "洛克王国的长青之路\n\n《洛克王国：世界》是腾讯基于13年经典IP开发的精灵收集养成游戏。上线后表现亮眼，9天用户突破3000万，DAU达1300万，被寄予成为\"长青产品\"的厚望。然而S2赛季更新后，游戏陷入危机——玩家社区出现大量争议，官方动态评论数突破百万。这个案例反映了长青游戏面临的挑战：爆款热度难以维持，版本更新容易引发玩家不满。洛克王国如何化解危机、实现长期运营，为其他游戏提供了宝贵经验。"
       },
       {
-        "title": "Chemistry behind the Garden Grove chemical tank",
-        "url": "https://www.science.org/content/blog-post/methyl-methacrylate-tank",
-        "raw": "Chemistry behind the Garden Grove chemical tank",
+        "title": "36氪首发｜男士美妆品牌「GREENLAB绿所」获宝顶创投战略投资，张耀东出任公司董事",
+        "url": "https://36kr.com/p/3825817310368385?f=rss",
+        "raw": "36氪首发｜男士美妆品牌「GREENLAB绿所」获宝顶创投战略投资，张耀东出任公司董事 \n36氪获悉，无感化面部理容品牌「GREENLAB绿所」（以下简称“绿所”）近日宣布完成千万级新一轮融资，本轮由宝顶创投战略投资。融资完成后，宝顶创投创始合伙人张耀东将出任绿所公司董事，参与品牌战略、产品矩阵、渠道经营等方面的长期建设。\n这也是继2025年完成Pre-A轮融资后，绿所在半年左右时间内再次获得外部资本加注。据了解，本轮资金将主要用于新品研发量产、品牌建设、渠道经营及组织能力提升等方面。\n绿所是36氪持续关注的品牌，定位“无感化面部理容”，重点面向“精致懒”的年轻男性用户。所谓“无感化”，指的是用户在购买、使用和呈现效果上都尽量没有心理负担：产品要自然、方便、高效，不需要复杂技巧，",
         "published": "2026-05-27",
-        "source": "全球AI",
-        "summary": "我无法完成这个请求。你提供的内容标题和正文完全相同，都只是\"Chemistry behind the Garden Grove chemical tank\"，没有实际的文章内容。\n\n要让我用中文介绍这个项目或资讯，我需要：\n- 完整的文章内容或详细描述\n- 关于 Garden Grove 化学罐的具体信息（发生了什么事、涉及哪些化学物质、为什么重要等）\n\n如果你能提供完整的内容或链接，我很乐意为你用中文总结。"
+        "source": "国内新闻",
+        "summary": "GREENLAB绿所是一个专注于男士美妆的品牌，近日获得宝顶创投的战略投资，融资规模达千万级。宝顶创投创始合伙人张耀东将担任公司董事，参与品牌战略和渠道建设。这是绿所在半年内的第二轮融资，继2025年Pre-A轮后再获资本支持。品牌定位\"无感化面部理容\"，主要面向追求便利的年轻男性消费者，强调产品自然、易用、高效的特点，降低用户的心理负担。本轮融资将用于新品研发、品牌建设和渠道拓展。"
       },
       {
-        "title": "Cloudflare Flagship",
-        "url": "https://developers.cloudflare.com/flagship/",
-        "raw": "Cloudflare Flagship",
+        "title": "硅谷AI一线观察：一人花掉50万美金Token背后的大厂焦虑",
+        "url": "https://36kr.com/p/3826390617870984?f=rss",
+        "raw": "硅谷AI一线观察：一人花掉50万美金Token背后的大厂焦虑 \n文｜周鑫雨 邓咏仪\n编辑｜张雨忻\n硅谷持续了两个多月的Token-Maxxing（Token军备竞赛）焦虑，在Meta以一种戏谑的方式按下了休止符。\n前情大家都知道了：2026年3月，为了鼓吹自己是一家“AI-Native”公司，Meta曾在内部上线了一个“Claudeonomics（Claude经济学）”榜单：员工消耗的Token越多，排名就越高；垫底的员工，有被裁的风险。\n不过，当我们在4月末来到硅谷，Meta的朋友带来了故事的后续：榜单上线一个月后，第一名的员工将Token消耗刷到了近50万美金/月，折合近3000亿个Token。\n不久后，Meta下架了这个榜单。至于下架原因，公司内没",
         "published": "2026-05-27",
-        "source": "全球AI",
-        "summary": "我注意到你提供的内容信息不完整——只有标题\"Cloudflare Flagship\"，没有具体的项目描述或资讯内容。\n\n为了给你一个准确的中文介绍，我需要更多信息：\n\n- Cloudflare Flagship 具体是什么产品或服务？\n- 它的主要功能或特性是什么？\n- 这条资讯的核心要点是什么？\n\n如果你能提供完整的内容描述或链接，我就能按照你的要求用100-200字的简洁中文介绍它。"
-      },
-      {
-        "title": "Stripe is friendly to \"friendly fraud\"",
-        "url": "https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/",
-        "raw": "Stripe is friendly to \"friendly fraud\"",
-        "published": "2026-05-27",
-        "source": "全球AI",
-        "summary": "这篇文章讨论了支付平台Stripe在处理\"友好欺诈\"问题上的不足。友好欺诈是指消费者在收到商品或服务后，通过向银行声称未收到或未授权交易来申请退款，实际上是一种变相的诈骗行为。\n\n文章指出Stripe在防范这类欺诈时存在漏洞，可能对商家造成经济损失。这类欺诈虽然看似\"友好\"，但实际上伤害了诚实的商家和平台的信誉。该问题反映了支付处理行业在平衡消费者保护和商家权益之间的挑战，也提示企业需要加强风控措施和欺诈检测机制。"
-      },
-      {
-        "title": "DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search",
-        "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
-        "raw": "DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search Google overhauled Search at I/O 2026, replacing blue links with AI agents. The backlash has been swift. DuckDuckGo app installs spiked 30% as users seek a way out.",
-        "published": "Tue, 26 Ma",
-        "source": "全球AI",
-        "summary": "DuckDuckGo的安装量增长了30%，反映出用户对谷歌搜索新方向的不满。谷歌在2026年I/O大会上彻底改革了搜索引擎，用AI代理取代了传统的蓝色链接结果。这一激进的改变引发了用户的强烈反弹，许多人转向DuckDuckGo寻求替代方案。这个趋势表明，尽管AI技术不断进步，但用户仍然重视搜索结果的透明度和自主选择权，不希望被强制使用AI生成的内容。DuckDuckGo因其隐私保护和传统搜索体验而获得更多关注。"
-      },
-      {
-        "title": "OpenRouter more than doubles valuation to $1.3B in a year",
-        "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
-        "raw": "OpenRouter more than doubles valuation to $1.3B in a year OpenRouter has raised a $113 million Series B led by CapitalG. Its 5x growth in usage over six months indicates the multi-AI-model future is here.",
-        "published": "Tue, 26 Ma",
-        "source": "全球AI",
-        "summary": "OpenRouter 是一个 AI 模型聚合平台，最近完成了 1.13 亿美元的 B 轮融资，由谷歌旗下的 CapitalG 领投。这轮融资使其估值在一年内翻倍多，达到 13 亿美元。\n\nOpenRouter 的核心价值在于整合多个 AI 模型提供商的服务，让开发者可以通过统一接口访问不同的大语言模型，包括 OpenAI、Anthropic、Meta 等。用户可以根据需求灵活选择模型，优化成本和性能。\n\n过去六个月内，OpenRouter 的使用量增长了 5 倍，这充分说明多模型时代已经到来。随着 AI 应用的普及，开发者越来越需要灵活的模型选择和成本优化方案，OpenRouter 正是抓住了这一市场机遇。"
-      },
-      {
-        "title": "This startup is betting India’s gig economy can train the world’s robots",
-        "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
-        "raw": "This startup is betting India’s gig economy can train the world’s robots Human Archive, a startup founded by UC Berkeley and Stanford researchers, is paying gig workers in India to wear camera-equipped caps and sensor devices to collect the real-world physical training dat",
-        "published": "Tue, 26 Ma",
-        "source": "全球AI",
-        "summary": "一家由加州大学伯克利分校和斯坦福大学研究人员创办的初创公司Human Archive，正在利用印度的零工经济为全球机器人收集训练数据。该公司向印度零工支付报酬，让他们佩戴配备摄像头的帽子和传感器设备，在真实世界环境中采集物理训练数据。这种模式充分利用了印度庞大的零工劳动力资源和相对较低的成本，为AI和机器人领域的模型训练提供高质量的现实数据。这反映了全球AI产业对真实世界数据的迫切需求，同时也展现了新兴市场在AI基础设施建设中的重要角色。"
-      },
-      {
-        "title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
-        "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
-        "raw": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies.",
-        "published": "Tue, 26 Ma",
-        "source": "全球AI",
-        "summary": "环球音乐集团与TikTok续签协议，共同打击未授权AI音乐。多年来，环球音乐集团一直推动各大平台、流媒体服务和AI公司实施更严格的内容审核政策。此次续约反映了音乐产业对AI生成音乐的持续关注。协议旨在防止未经授权的音乐作品在TikTok平台上传播，保护音乐人的知识产权。通过加强合作，双方希望建立更有效的监管机制，确保AI技术的使用符合版权法规，同时为创作者提供更好的保护。这一举措标志着传统音乐产业与新兴短视频平台在应对AI挑战上的积极态度。"
-      },
-      {
-        "title": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29",
-        "url": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
-        "raw": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29 Save up to $410 on your TechCrunch Disrupt 2026 pass before prices increase on May 29 at 11:59 p.m. PT. Register here to join the tech epicenter in San Francisco.",
-        "published": "Tue, 26 Ma",
-        "source": "全球AI",
-        "summary": "TechCrunch Disrupt 2026是一场在旧金山举办的科技盛会。目前正在进行早鸟票价优惠，购票者可以节省最多410美元。这个优惠截止日期是5月29日晚上11:59（太平洋时间），之后票价将上调。感兴趣的科技从业者和爱好者可以通过注册参加这场汇聚全球科技精英的活动，了解最新的技术趋势和创新项目。"
+        "source": "国内新闻",
+        "summary": "这篇报道讲述了硅谷科技大厂在AI时代的焦虑与荒诞现象。Meta曾推出内部排行榜，以员工消耗的Token数量衡量其AI应用能力，试图激励员工拥抱AI。然而这一举措引发了\"Token军备竞赛\"，员工为了排名靠前而疯狂消耗Token，最终有人月消耗达50万美元。这种极端现象暴露了大厂在AI转型中的焦虑——既想展示自己是\"AI原生\"公司，又难以找到合理的评估标准。最终Meta被迫下架榜单，这场闹剧也反映了整个硅谷在AI浪潮中的困境与迷茫。"
       }
     ],
     "tech_news": [
@@ -274,7 +92,7 @@
         "raw": "UK Visa Portal spilled thousands of applicants’ passports and selfies online — and hasn’t fixed the leak The third-party website exposed applicants' sensitive documents as part of the U.K. visa application process. Instead of fixing the issue, the company sent attorneys.",
         "published": "Tue, 26 Ma",
         "source": "科技",
-        "summary": "英国签证申请门户网站出现严重数据泄露事件。一个第三方网站在处理英国签证申请过程中，意外暴露了数千名申请人的护照和自拍照等敏感文件到互联网上。更令人担忧的是，负责该网站的公司并未采取措施修复这一安全漏洞，反而向发现问题的人士发送律师函进行威胁。这起事件暴露了英国签证申请流程中的严重安全隐患，涉及大量申请人的个人隐私信息面临风险，同时也反映出相关公司对数据保护的不负责任态度。"
+        "summary": "英国签证门户网站出现严重数据泄露事件。该第三方平台在处理英国签证申请过程中，意外将数千名申请者的护照照片和自拍照等敏感文件暴露在网络上。更令人担忧的是，负责该平台的公司并未采取措施修复这一漏洞，反而向发现问题的人士发送律师函进行威胁。这起事件暴露了英国签证申请流程中的严重安全隐患，涉及大量个人隐私信息的泄露风险，引发了对政府外包服务商数据保护能力的质疑。"
       },
       {
         "title": "What we’re looking for in Startup Battlefield 2026, and how to apply in time for the May 27 deadline",
@@ -282,7 +100,7 @@
         "raw": "What we’re looking for in Startup Battlefield 2026, and how to apply in time for the May 27 deadline Startup Battlefield applications are due tomorrow, so now's the time to put the finishing touches on your submission!",
         "published": "Tue, 26 Ma",
         "source": "科技",
-        "summary": "Startup Battlefield 2026 是一个创业公司竞赛项目，面向有潜力的初创企业开放申请。该竞赛为创业者提供展示产品、获得投资者关注和融资机会的平台。申请截止日期为5月27日，有意参赛的创业团队需要在此前完成提交。竞赛通常会评估企业的创新性、市场潜力、团队实力等因素，入选者可获得在大型科技活动上展示的机会，同时吸引风投和媒体关注。这是初创企业快速融资和获得曝光的重要途径。"
+        "summary": "Startup Battlefield 2026 是一个创业公司竞赛项目，面向有潜力的初创企业开放申请。该竞赛为创业者提供展示产品、获得投资者关注和融资机会的平台。申请截止日期为5月27日，有意参赛的创业团队需要在此前完成提交。竞赛通常会评估企业的创新性、市场潜力、团队实力等因素，入选者可获得展示机会、媒体曝光和可能的投资对接。这是初创企业快速成长和获得资本支持的重要途径。"
       },
       {
         "title": "Trump administration permits Volvo to keep selling connected cars in the US",
@@ -290,7 +108,7 @@
         "raw": "Trump administration permits Volvo to keep selling connected cars in the US Volvo, which is majority owned by China's Geely Holdings, said it can now move forward with its expansion plans for its U.S. factory. ",
         "published": "Tue, 26 Ma",
         "source": "科技",
-        "summary": "特朗普政府已批准沃尔沃继续在美国销售互联网汽车。沃尔沃由中国吉利控股公司多数持股，该公司表示现在可以推进其美国工厂的扩张计划。这一决定意味着沃尔沃获得了继续在美国市场销售具有联网功能车型的许可，尽管存在关于中国资本在美国汽车产业中角色的安全考量。这对沃尔沃的美国业务发展是一个重要利好，使其能够加快本土生产和市场扩展。"
+        "summary": "特朗普政府已批准沃尔沃继续在美国销售互联网汽车。沃尔沃由中国吉利控股公司多数持股，该公司表示现在可以推进其美国工厂的扩张计划。这一决定意味着尽管存在中国资本背景的潜在安全顾虑，美国政府仍允许沃尔沃的联网车型在美国市场销售。这对沃尔沃在北美的业务发展具有重要意义，使其能够继续投资和扩大美国制造业务。此举反映了特朗普政府在处理外资汽车企业时的务实态度，平衡了国家安全考量与经济发展需求。"
       },
       {
         "title": "Trump administration wants nuclear startups to use plutonium for their reactors",
@@ -309,46 +127,140 @@
         "summary": "DuckDuckGo的安装量增长了30%，这反映了用户对谷歌搜索新方向的不满。谷歌在2026年I/O大会上彻底改革了搜索引擎，用AI代理替代了传统的蓝色链接结果。这一激进的改变引发了用户的强烈反弹，许多人转向DuckDuckGo寻求替代方案。这个趋势表明，尽管AI技术不断进步，但用户仍然重视传统、透明的搜索体验，不希望被强制使用AI驱动的搜索方式。DuckDuckGo因其隐私保护和简洁的搜索结果而获得更多关注。"
       }
     ],
-    "world_news": [
+    "ai_news": [
       {
-        "title": "Dozens killed in Lebanon as Israel intensifies strikes",
-        "url": "https://www.bbc.com/news/articles/cx211rgngp0o?at_medium=RSS&at_campaign=rss",
-        "raw": "Dozens killed in Lebanon as Israel intensifies strikes Israel says it struck 100 Hezbollah infrastructure sites and fighters in Lebanon, after PM Benjamin Netanyahu vows to \"crush\" Hezbollah.",
-        "published": "Wed, 27 Ma",
-        "source": "国际新闻",
-        "summary": "以色列对黎巴嫩加强军事打击，造成数十人丧生。以色列总理内塔尼亚胡誓言要\"摧毁\"真主党，随后以色列军方宣称已轰炸了黎巴嫩境内约100个真主党基础设施目标和战斗人员阵地。这次军事行动是以色列与真主党之间持续紧张局势的升级，反映了中东地区安全形势的恶化。此次打击造成了大量人员伤亡，引发国际社会对地区冲突进一步扩大的担忧。"
+        "title": "DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search",
+        "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
+        "raw": "DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search Google overhauled Search at I/O 2026, replacing blue links with AI agents. The backlash has been swift. DuckDuckGo app installs spiked 30% as users seek a way out.",
+        "published": "Tue, 26 Ma",
+        "source": "全球AI",
+        "summary": "DuckDuckGo的安装量增长了30%，反映出用户对谷歌搜索新方向的不满。谷歌在2026年I/O大会上彻底改革了搜索引擎，用AI代理取代了传统的蓝色链接结果。这一激进的改变引发了用户的强烈反弹，许多人转向DuckDuckGo寻求替代方案。这个趋势表明，尽管AI技术不断进步，但用户仍然重视搜索结果的透明度和自主选择权。DuckDuckGo因其隐私保护和传统搜索体验而获得关注，成为用户逃离谷歌AI搜索的出口。"
       },
       {
-        "title": "Iran condemns US strikes as 'gross violation' of ceasefire",
-        "url": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss",
-        "raw": "Iran condemns US strikes as 'gross violation' of ceasefire The attacks took place while Iranian and Qatari negotiators were in Doha for peace talks.",
+        "title": "OpenRouter more than doubles valuation to $1.3B in a year",
+        "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
+        "raw": "OpenRouter more than doubles valuation to $1.3B in a year OpenRouter has raised a $113 million Series B led by CapitalG. Its 5x growth in usage over six months indicates the multi-AI-model future is here.",
         "published": "Tue, 26 Ma",
-        "source": "国际新闻",
-        "summary": "伊朗谴责美国空袭违反停火协议。伊朗和卡塔尔谈判代表当时正在多哈进行和平谈判，美国却发动了空袭。伊朗方面认为这是对停火协议的严重违反，表示美国的军事行动破坏了正在进行的外交努力。这一事件发生在敏感的谈判时期，凸显了中东地区紧张局势的复杂性。美国的军事行动与同时进行的和平谈判形成了鲜明对比，引发了国际社会对地区局势升级的担忧。"
+        "source": "全球AI",
+        "summary": "OpenRouter 是一个 AI 模型聚合平台，最近完成了 1.13 亿美元的 B 轮融资，由谷歌旗下的 CapitalG 领投。这轮融资使其估值在一年内翻倍多，达到 13 亿美元。\n\nOpenRouter 的核心价值在于整合多个 AI 模型提供商的接口，让开发者可以通过统一的 API 访问不同的大语言模型，包括 OpenAI、Anthropic、Meta 等。用户可以灵活选择模型、对比性能和成本，实现最优的应用体验。\n\n过去六个月内，OpenRouter 的使用量增长了 5 倍，充分说明多模型时代已经到来。随着 AI 应用的普及，开发者越来越需要灵活的模型选择和成本优化方案，OpenRouter 正是抓住了这一市场需求。"
       },
       {
-        "title": "Russia threatens more Kyiv strikes and tells foreign nationals to leave",
-        "url": "https://www.bbc.com/news/articles/c1e22n55zn4o?at_medium=RSS&at_campaign=rss",
-        "raw": "Russia threatens more Kyiv strikes and tells foreign nationals to leave It comes after the Ukrainian capital suffered one of the biggest aerial assaults of the war overnight on Saturday.",
+        "title": "This startup is betting India’s gig economy can train the world’s robots",
+        "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
+        "raw": "This startup is betting India’s gig economy can train the world’s robots Human Archive, a startup founded by UC Berkeley and Stanford researchers, is paying gig workers in India to wear camera-equipped caps and sensor devices to collect the real-world physical training data that AI and robotics labs are racing to acquire.",
         "published": "Tue, 26 Ma",
-        "source": "国际新闻",
-        "summary": "俄罗斯威胁将对基辅进行更多空袭，并要求外国公民离开。这一声明发出之际，乌克兰首都基辅在周六夜间遭受了战争以来规模最大的空中轰炸之一。俄方的威胁表明其继续对乌克兰进行军事打击的意图，同时要求外国人撤离可能是为了减少平民伤亡或为进一步军事行动做准备。这反映了俄乌冲突的持续升级，基辅作为乌克兰的政治和经济中心，成为俄罗斯重点打击的目标。"
+        "source": "全球AI",
+        "summary": "Human Archive 是一家由加州大学伯克利分校和斯坦福大学研究人员创办的初创公司。该公司通过向印度零工经济中的工作者支付报酬，让他们佩戴配备摄像头的帽子和传感器设备，收集真实世界的物理数据。这些数据被用于训练全球的人工智能和机器人实验室。\n\n这种模式充分利用了印度庞大的零工劳动力资源，为AI和机器人领域急需的高质量训练数据提供了新的来源。通过这种方式，Human Archive 既为印度工作者创造了收入机会，也为全球机器人和AI研究加速提供了支持。"
       },
       {
-        "title": "Can EU find a Russia whisperer to mediate an end to war in Ukraine?",
-        "url": "https://www.bbc.com/news/articles/cqxpp73wqero?at_medium=RSS&at_campaign=rss",
-        "raw": "Can EU find a Russia whisperer to mediate an end to war in Ukraine? With the US pulling out of trilateral talks with Russia and Ukraine, the EU is looking for potential candidates to step in.",
+        "title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
+        "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
+        "raw": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies.",
         "published": "Tue, 26 Ma",
-        "source": "国际新闻",
-        "summary": "欧盟正在寻找能够与俄罗斯进行有效沟通的中介人，以促成乌克兰战争的和平解决。随着美国退出与俄罗斯和乌克兰的三方谈判，欧盟面临着填补这一外交空白的压力。这反映了当前国际局势的复杂性——美国政策的调整使得欧盟需要独立承担更多的和平调解责任。欧盟正在评估哪些国家或政治人物具备足够的影响力和信誉，能够在俄乌双方之间建立沟通桥梁。这一举措表明欧盟在乌克兰问题上正在加强自主性，同时也凸显了当前国际和平谈判的困难与挑战。"
+        "source": "全球AI",
+        "summary": "环球音乐集团与TikTok续签协议，共同打击未授权AI音乐。多年来，环球音乐集团一直推动各大平台、流媒体服务和AI公司实施更严格的内容审核政策。此次续约反映了音乐产业对AI生成音乐的持续关注。协议旨在防止未经授权的音乐作品在平台上传播，保护音乐人的知识产权。通过加强合作，双方希望建立更有效的监管机制，确保AI技术的使用符合版权法规，同时为创意产业的健康发展创造良好环境。"
       },
       {
-        "title": "Russia 'relentlessly targeting' critical infrastructure and democracy, GCHQ says",
-        "url": "https://www.bbc.com/news/articles/c4g44gprnnvo?at_medium=RSS&at_campaign=rss",
-        "raw": "Russia 'relentlessly targeting' critical infrastructure and democracy, GCHQ says The spy agency's head will set out threats facing the UK and the measures she believes need to be taken to confront them on Wednesday.",
+        "title": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29",
+        "url": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
+        "raw": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29 Save up to $410 on your TechCrunch Disrupt 2026 pass before prices increase on May 29 at 11:59 p.m. PT. Register here to join the tech epicenter in San Francisco.",
         "published": "Tue, 26 Ma",
-        "source": "国际新闻",
-        "summary": "英国政府通信总部（GCHQ）负责人警告，俄罗斯正在持续针对关键基础设施和民主制度发动攻击。该机构负责人将在周三公开阐述英国面临的安全威胁，以及应对这些威胁所需采取的措施。这一声明反映了西方国家对俄罗斯网络威胁的持续关注，涉及能源、通信等战略性基础设施的安全，以及对民主进程的潜在干扰。GCHQ的警告强调了加强网络防御和国家安全的紧迫性。"
+        "source": "全球AI",
+        "summary": "TechCrunch Disrupt 2026是一场在旧金山举办的科技盛会。目前正在进行早鸟票价优惠，购票者可以节省最多410美元。这个优惠截止日期是5月29日晚上11:59（太平洋时间），之后票价将上调。感兴趣的科技从业者和爱好者可以通过注册参加这场汇聚全球科技精英的活动，了解最新的技术趋势和创新项目。"
+      }
+    ],
+    "github_trending": [
+      {
+        "source": "GitHub Trending",
+        "title": "GOROman/nullevi03",
+        "url": "https://github.com/GOROman/nullevi03",
+        "raw": "GOROman/nullevi03: None Stars:39 Language:Shell",
+        "stars": 39,
+        "published": "2026-05-27",
+        "summary": "这是一个Shell脚本项目，目前在GitHub上获得39个星标。项目名称为nullevi03，由GOROman维护。\n\n从项目名称和Shell语言的特性来看，这很可能是一个系统工具或自动化脚本集合。考虑到它出现在GitHub Trending中，说明最近有一定的关注度。不过由于项目描述信息有限，具体的功能细节需要查看项目的README文件才能了解。\n\n如果你对这个项目感兴趣，建议直接访问其GitHub仓库页面，查看详细的项目说明、代码实现和使用文档，以便更好地理解其核心功能和应用场景。"
+      },
+      {
+        "source": "GitHub Trending",
+        "title": "mli/docs",
+        "url": "https://github.com/mli/docs",
+        "raw": "mli/docs: None Stars:13 Language:MDX",
+        "stars": 13,
+        "published": "2026-05-27",
+        "summary": "mli/docs 是一个文档项目，采用 MDX 格式编写。MDX 是一种结合了 Markdown 和 JSX 的标记语言，允许在文档中直接嵌入交互式 React 组件，使文档更加动态和可交互。\n\n这个项目通常用于构建现代化的文档网站，特别适合需要展示代码示例、交互式演示或动态内容的技术文档。通过 MDX，开发者可以在保持 Markdown 简洁性的同时，灵活地添加自定义组件和交互功能，提升文档的用户体验。\n\n该项目在 GitHub Trending 中出现，说明它在开源社区获得了关注，可能是某个知名项目的文档库或文档框架示例。"
+      },
+      {
+        "source": "GitHub Trending",
+        "title": "mane23-ai/solaria",
+        "url": "https://github.com/mane23-ai/solaria",
+        "raw": "mane23-ai/solaria: Shared skill operations layer for Claude, Codex, personas, ontology, trigger evaluation, and runtime governance Stars:7 Language:Python",
+        "stars": 7,
+        "published": "2026-05-27",
+        "summary": "Solaria 是一个为 AI 助手设计的共享技能操作层。它为 Claude、Codex 等大语言模型提供统一的技能管理框架，包括人物角色定义、本体论构建、触发器评估和运行时治理等核心功能。\n\n这个项目的意义在于标准化 AI 助手的能力调用方式，使不同的 AI 模型能够以一致的方式访问和执行各类技能操作。通过提供本体论支持和触发器机制，Solaria 让 AI 系统能够更智能地选择和执行合适的操作。运行时治理功能则确保了 AI 行为的可控性和安全性。这对构建可靠、可扩展的 AI 应用系统具有重要意义。"
+      },
+      {
+        "source": "GitHub Trending",
+        "title": "itsajchan/bd-web-research-agents",
+        "url": "https://github.com/itsajchan/bd-web-research-agents",
+        "raw": "itsajchan/bd-web-research-agents: None Stars:6 Language:Python",
+        "stars": 6,
+        "published": "2026-05-27",
+        "summary": "这是一个Python项目，用于构建基于网络搜索的研究代理。项目通过集成网络爬取和信息检索能力，让AI代理能够自主搜索、收集和分析互联网上的信息，完成复杂的研究任务。\n\n该项目的核心意义在于扩展AI助手的能力范围——不仅能处理已有知识，还能主动获取最新信息。这对需要实时数据支撑的应用场景特别有价值，比如市场研究、竞品分析、新闻追踪等。\n\n项目目前还在早期阶段（仅6个Star），但代表了AI代理向更自主、更实用方向发展的趋势。它为开发者提供了一个框架基础，可以在此基础上构建更复杂的自动化研究工具。"
+      },
+      {
+        "source": "GitHub Trending",
+        "title": "Haouo/DAE-Pipeline-CPU",
+        "url": "https://github.com/Haouo/DAE-Pipeline-CPU",
+        "raw": "Haouo/DAE-Pipeline-CPU: An small in-order, decoupled frontend-backend, pipeline CPU which implements RV32I_Zicsr and boots FreeRTOS. Stars:6 Language:C",
+        "stars": 6,
+        "published": "2026-05-27",
+        "summary": "DAE-Pipeline-CPU 是一个轻量级的顺序执行 CPU 设计项目。它采用解耦的前端-后端流水线架构，实现了 RISC-V 的 RV32I 和 Zicsr 指令集扩展。该项目的核心特点是能够成功启动并运行 FreeRTOS 实时操作系统，证明了其设计的完整性和可用性。\n\n这个项目用 C 语言实现，适合学习 CPU 设计原理、流水线架构和嵌入式系统开发。通过解耦设计，前端负责指令获取和译码，后端负责执行和访存，提高了设计的模块化程度。对于计算机体系结构的学习者和爱好者来说，这是一个很好的参考实现。"
+      }
+    ],
+    "claude_code": [
+      {
+        "source": "GitHub",
+        "title": "ray-amjad/claude-code-workflow-creator",
+        "url": "https://github.com/ray-amjad/claude-code-workflow-creator",
+        "raw": "ray-amjad/claude-code-workflow-creator: A Claude Code skill for authoring Workflow tool scripts: deterministic multi-agent orchestration. Preview of an unreleased feature.",
+        "stars": 56,
+        "published": "2026-05-22",
+        "summary": "这是一个Claude Code技能项目，用于创建工作流工具脚本。它实现了确定性的多智能体编排功能，允许开发者通过Claude定义和管理多个AI代理的协作流程。\n\n项目的核心意义在于提供了一种结构化的方式来组织复杂的多代理任务。通过工作流脚本，用户可以精确控制不同代理之间的交互顺序和逻辑，确保执行结果的可预测性和一致性。这对于需要多步骤、多角色协作的自动化任务特别有用。\n\n该项目目前是一个未发布功能的预览版本，展示了Claude在智能体编排领域的探索方向。"
+      },
+      {
+        "source": "GitHub",
+        "title": "jianshuo/ccglass",
+        "url": "https://github.com/jianshuo/ccglass",
+        "raw": "jianshuo/ccglass: See what your coding agent (Claude Code, Codex, Kimi) sends to the model — local proxy + web dashboard",
+        "stars": 307,
+        "published": "2026-05-22",
+        "summary": "ccglass 是一个本地代理工具，用于监控和可视化编码代理（如 Claude Code、Codex、Kimi）与模型之间的通信内容。\n\n这个项目的核心功能是拦截编码助手发送给 AI 模型的请求，通过 Web 仪表板实时展示这些交互过程。开发者可以清楚地看到代码上下文、提示词、参数等详细信息，帮助理解编码代理的工作原理和决策过程。\n\nccglass 对于调试、优化提示词、学习 AI 编码工具的行为特别有用。它提供了透明度和可观测性，让开发者能够更好地控制和理解自动化编码流程。"
+      },
+      {
+        "source": "GitHub",
+        "title": "realrossmanngroup/no_ai_slop_writing_rules",
+        "url": "https://github.com/realrossmanngroup/no_ai_slop_writing_rules",
+        "raw": "realrossmanngroup/no_ai_slop_writing_rules: Claude Code reference: write in Louis Rossmann's voice, never like AI slop. Portable CLAUDE.md plus skills.",
+        "stars": 211,
+        "published": "2026-05-25",
+        "summary": "这是一个由真实罗斯曼集团维护的GitHub项目，旨在为Claude AI提供写作指导规则。项目的核心目标是让AI生成的内容采用路易斯·罗斯曼（Louis Rossmann）的独特风格和语气，避免生成那种千篇一律的\"AI味儿\"文本。\n\n项目包含一个可移植的CLAUDE.md文件和相关技能集，开发者可以将这些规则集成到自己的Claude配置中。通过这些预设指令，用户能够让Claude在回复时保持真实、个性化的表达方式，而不是生成那种生硬、模板化的AI文本。这对于希望维持品牌声音一致性或个人风格的内容创作者特别有用。"
+      },
+      {
+        "source": "GitHub",
+        "title": "aref-vc/tufte-claude-skill",
+        "url": "https://github.com/aref-vc/tufte-claude-skill",
+        "raw": "aref-vc/tufte-claude-skill: Claude Code skill that turns 'make me a chart' into a Tufte-compliant chart. Distilled from Edward Tufte's three foundational books.",
+        "stars": 186,
+        "published": "2026-05-23",
+        "summary": "这是一个Claude代码技能项目，能将用户的简单需求\"给我做个图表\"转化为符合爱德华·图夫特设计原则的高质量数据可视化。项目基于图夫特在其三部经典著作中阐述的数据可视化理论，包括最小化墨迹比、强调数据而非装饰、以及提高信息密度等核心原则。通过这个技能，用户可以轻松生成遵循专业设计标准的图表，避免常见的可视化误区，使数据呈现更清晰有效。这对需要快速生成高质量图表的开发者和数据分析师特别有用。"
+      },
+      {
+        "source": "GitHub",
+        "title": "chefkannofriend-source/mbbb-baker-agent",
+        "url": "https://github.com/chefkannofriend-source/mbbb-baker-agent",
+        "raw": "chefkannofriend-source/mbbb-baker-agent: Claude Code subagent for pastry recipe lookup and Baker's Percentage calculation",
+        "stars": 128,
+        "published": "2026-05-22",
+        "summary": "我无法访问外部网络资源来查看这个 GitHub 项目的具体内容。\n\n如果你能提供项目的 README 文件、描述或相关代码片段，我可以帮你用中文介绍。或者，如果你已经了解这个项目的细节，也可以告诉我，我来帮你组织成符合要求的介绍文案。"
       }
     ]
   }
