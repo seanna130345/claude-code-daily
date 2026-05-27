@@ -31,105 +31,96 @@ _CSS = """\
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { background: var(--bg); color: var(--ink); font-family: var(--fb); font-size: 15px; }
+body { background: var(--bg); color: var(--ink); font-family: var(--fb); font-size: 19px; }
 
 /* ── Header ── */
-header {
-  background: var(--white);
-  border-bottom: 1px solid var(--bdr);
-}
+header { background: var(--white); border-bottom: 1px solid var(--bdr); }
 .header-band {
-  background: var(--teal);
-  padding: 7px 32px;
+  background: var(--teal); padding: 9px 32px;
   display: flex; align-items: center; justify-content: space-between;
 }
 .header-band-text {
-  font-family: var(--fm); font-size: 10px; letter-spacing: .15em;
-  text-transform: uppercase; color: rgba(255,255,255,.75);
+  font-family: var(--fm); font-size: 12px; letter-spacing: .12em;
+  text-transform: uppercase; color: rgba(255,255,255,.8);
 }
 .live-dot {
-  width: 6px; height: 6px; border-radius: 50%;
+  width: 7px; height: 7px; border-radius: 50%;
   background: #5effd8; display: inline-block;
-  margin-right: 7px; animation: blink 2s ease-in-out infinite;
+  margin-right: 8px; animation: blink 2s ease-in-out infinite;
 }
 .header-body {
-  max-width: 920px; margin: 0 auto;
-  padding: 32px 28px 28px;
+  max-width: 1000px; margin: 0 auto; padding: 36px 32px 30px;
   display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;
 }
-.header-title {}
 h1 {
-  font-family: var(--fh); font-size: clamp(30px, 5.5vw, 56px);
+  font-family: var(--fh); font-size: clamp(36px, 5.5vw, 64px);
   font-weight: 700; color: var(--ink); letter-spacing: -.025em; line-height: 1.08;
   font-style: italic;
 }
-.header-desc {
-  font-size: 13px; color: var(--ink3); margin-top: 10px; line-height: 1.5;
-}
-.header-stats {
-  display: flex; gap: 20px; flex-shrink: 0; padding-bottom: 4px;
-}
+.header-desc { font-size: 15px; color: var(--ink3); margin-top: 10px; line-height: 1.5; }
+.header-stats { display: flex; gap: 28px; flex-shrink: 0; padding-bottom: 4px; }
 .stat { text-align: center; }
-.stat-n {
-  font-family: var(--fh); font-size: 28px; font-weight: 700;
-  color: var(--teal); line-height: 1;
-}
-.stat-l { font-size: 11px; color: var(--ink3); margin-top: 3px; }
+.stat-n { font-family: var(--fh); font-size: 36px; font-weight: 700; color: var(--teal); line-height: 1; }
+.stat-l { font-size: 13px; color: var(--ink3); margin-top: 4px; }
 
-/* ── Nav ── */
+/* ── Nav (tab switcher) ── */
 nav {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(255,255,255,.95); backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.97); backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--bdr);
 }
 .nav-wrap {
-  max-width: 920px; margin: 0 auto; padding: 0 28px;
+  max-width: 1000px; margin: 0 auto; padding: 0 32px;
   display: flex; overflow-x: auto; scrollbar-width: none;
 }
 nav::-webkit-scrollbar { display: none; }
 nav a {
-  font-family: var(--fb); font-size: 12.5px; font-weight: 500;
+  font-family: var(--fb); font-size: 15px; font-weight: 500;
   color: var(--ink2); text-decoration: none;
-  padding: 12px 15px; white-space: nowrap;
-  border-bottom: 2px solid transparent; margin-bottom: -1px;
+  padding: 15px 18px; white-space: nowrap;
+  border-bottom: 2.5px solid transparent; margin-bottom: -1px;
   transition: color .18s, border-color .18s;
+  cursor: pointer;
 }
 nav a:hover { color: var(--ink); }
 nav a.active { color: var(--teal); border-bottom-color: var(--teal); }
 
-/* ── Main ── */
-main { max-width: 920px; margin: 0 auto; padding: 28px 28px 80px; }
+/* ── Main: section carousel ── */
+.main-outer { max-width: 1000px; margin: 0 auto; padding: 32px 32px 80px; }
 
-/* ── Section card ── */
+.sections-slider {
+  display: flex;
+  overflow: hidden; /* JS controls scroll */
+}
+
+/* ── Section panel ── */
 .s {
+  flex: 0 0 100%;
   background: var(--card);
   border: 1px solid var(--bdr);
-  border-radius: 12px;
-  margin-bottom: 20px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0,0,0,.04);
-  animation: rise .4s both;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  animation: rise .35s both;
+  /* panels are shown/hidden via JS, not scroll */
+  display: none;
 }
-.s:nth-child(1){animation-delay:.00s} .s:nth-child(2){animation-delay:.05s}
-.s:nth-child(3){animation-delay:.10s} .s:nth-child(4){animation-delay:.15s}
-.s:nth-child(5){animation-delay:.20s} .s:nth-child(6){animation-delay:.25s}
-.s:nth-child(7){animation-delay:.30s}
+.s.active { display: block; }
 
 .sh {
-  display: flex; align-items: center; gap: 10px;
-  padding: 14px 20px;
-  border-bottom: 1px solid var(--bdr);
+  display: flex; align-items: center; gap: 12px;
+  padding: 18px 26px; border-bottom: 1px solid var(--bdr);
 }
 .s-icon {
-  width: 28px; height: 28px; border-radius: 7px;
+  width: 34px; height: 34px; border-radius: 9px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 14px; flex-shrink: 0;
+  font-size: 18px; flex-shrink: 0;
 }
-.sh h2 { font-family: var(--fb); font-size: 14px; font-weight: 600; color: var(--ink); flex: 1; }
+.sh h2 { font-family: var(--fb); font-size: 17px; font-weight: 600; color: var(--ink); flex: 1; }
 .sh .cnt {
-  font-family: var(--fm); font-size: 10.5px; color: var(--ink3);
+  font-family: var(--fm); font-size: 12px; color: var(--ink3);
   background: var(--bg); border: 1px solid var(--bdr);
-  padding: 2px 8px; border-radius: 20px;
+  padding: 3px 11px; border-radius: 20px;
 }
 
 /* section color themes */
@@ -141,47 +132,69 @@ main { max-width: 920px; margin: 0 auto; padding: 28px 28px 80px; }
 .s-github .s-icon { background: var(--slate-bg); color: var(--slate); }
 .s-claude .s-icon { background: var(--amber-bg); color: var(--amber); }
 
-/* ── Item ── */
+/* ── Item (vertical list inside panel) ── */
 .item {
-  display: flex; gap: 14px; padding: 14px 20px;
+  display: flex; gap: 16px; padding: 20px 26px;
   border-bottom: 1px solid var(--bdr);
   transition: background .15s;
-  cursor: pointer;
 }
 .item:last-child { border-bottom: none; }
 .item:hover { background: #fbfaf8; }
 
 .rk {
-  font-family: var(--fm); font-size: 11px; color: var(--bdr2);
-  min-width: 18px; padding-top: 3px; flex-shrink: 0;
-  font-weight: 500;
+  font-family: var(--fm); font-size: 13px; color: var(--bdr2);
+  min-width: 22px; padding-top: 4px; flex-shrink: 0; font-weight: 600;
 }
-
 .bd { flex: 1; min-width: 0; }
-
 .tt {
-  display: block; font-family: var(--fb); font-size: 14.5px; font-weight: 500;
-  color: var(--ink); text-decoration: none; line-height: 1.55;
-  margin-bottom: 6px; transition: color .15s;
+  display: block; font-family: var(--fb); font-size: 17px; font-weight: 600;
+  color: var(--ink); text-decoration: none; line-height: 1.6;
+  margin-bottom: 8px; transition: color .15s;
 }
 .tt:hover { color: var(--teal); }
-
-.mt { display: flex; gap: 7px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; }
+.mt { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
 .sc {
-  font-family: var(--fm); font-size: 10px; font-weight: 500;
+  font-family: var(--fm); font-size: 12px; font-weight: 500;
   color: var(--teal); background: var(--teal-bg);
-  padding: 2px 8px; border-radius: 5px;
+  padding: 3px 10px; border-radius: 5px;
 }
-.dt { font-family: var(--fm); font-size: 10px; color: var(--ink3); }
+.dt { font-family: var(--fm); font-size: 12px; color: var(--ink3); }
+.sm { font-size: 16px; color: var(--ink2); line-height: 1.85; }
 
-.sm { font-size: 13px; color: var(--ink2); line-height: 1.75; }
+.empty { font-size: 16px; color: var(--ink3); padding: 28px; font-style: italic; }
 
-.empty { font-size: 13px; color: var(--ink3); padding: 20px; font-style: italic; }
+/* ── Section nav bar (prev/next + dots) ── */
+.sec-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 26px; margin-top: 20px;
+  background: var(--white); border: 1px solid var(--bdr);
+  border-radius: 14px;
+}
+.sec-nav-btn {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--fb); font-size: 14px; font-weight: 500;
+  color: var(--ink2); background: none; border: 1px solid var(--bdr);
+  border-radius: 8px; padding: 8px 16px; cursor: pointer;
+  transition: all .18s;
+}
+.sec-nav-btn:hover:not(:disabled) { background: var(--teal); border-color: var(--teal); color: #fff; }
+.sec-nav-btn:disabled { opacity: .3; cursor: default; }
+.sec-dots { display: flex; gap: 7px; align-items: center; }
+.sec-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--bdr2); transition: background .2s, transform .2s, width .2s;
+  cursor: pointer;
+}
+.sec-dot.active { background: var(--teal); transform: scale(1.25); width: 20px; border-radius: 4px; }
+.sec-counter {
+  font-family: var(--fm); font-size: 12px; color: var(--ink3);
+  min-width: 40px; text-align: center;
+}
 
 /* ── Footer ── */
 footer {
-  text-align: center; padding: 28px 20px;
-  font-family: var(--fm); font-size: 10px; letter-spacing: .1em;
+  text-align: center; padding: 32px 20px; margin-top: 8px;
+  font-family: var(--fm); font-size: 12px; letter-spacing: .1em;
   text-transform: uppercase; color: var(--ink3);
   border-top: 1px solid var(--bdr);
 }
@@ -194,30 +207,53 @@ footer {
 
 @media (max-width: 640px) {
   .header-body { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .header-stats { gap: 16px; }
-  h1 { font-size: 30px; }
-  main { padding: 20px 16px 60px; }
-  .sh { padding: 12px 16px; }
-  .item { padding: 12px 16px; }
-  .header-band { padding: 7px 16px; }
+  .header-stats { gap: 18px; }
+  h1 { font-size: 34px; }
+  .main-outer { padding: 20px 16px 60px; }
+  .sh { padding: 15px 18px; }
+  .item { padding: 16px 18px; }
+  .header-band { padding: 9px 16px; }
+  .sec-nav { padding: 12px 16px; }
+  .sec-nav-btn { padding: 7px 12px; font-size: 13px; }
 }"""
 
 _JS = """\
-const links = document.querySelectorAll('nav a');
-const secs  = document.querySelectorAll('.s');
-links.forEach(a => a.addEventListener('click', function() {
-  links.forEach(x => x.classList.remove('active'));
-  this.classList.add('active');
-}));
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const id = e.target.id;
-      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
-    }
-  });
-}, { rootMargin: '-15% 0px -65% 0px' });
-secs.forEach(s => obs.observe(s));"""
+const SECTIONS = ['world-news','china-news','tech-news','ai-news','robot-news','github-trending','claude-code'];
+const panels   = SECTIONS.map(id => document.getElementById(id));
+const navLinks = document.querySelectorAll('nav a');
+const dots     = document.querySelectorAll('.sec-dot');
+const counter  = document.querySelector('.sec-counter');
+const prevBtn  = document.querySelector('.btn-sec-prev');
+const nextBtn  = document.querySelector('.btn-sec-next');
+let cur = 0;
+
+function showSection(n) {
+  cur = Math.max(0, Math.min(n, SECTIONS.length - 1));
+  panels.forEach((p, i) => p.classList.toggle('active', i === cur));
+  navLinks.forEach((a, i) => a.classList.toggle('active', i === cur));
+  dots.forEach((d, i) => d.classList.toggle('active', i === cur));
+  if (counter) counter.textContent = (cur + 1) + ' / ' + SECTIONS.length;
+  if (prevBtn) prevBtn.disabled = cur === 0;
+  if (nextBtn) nextBtn.disabled = cur === SECTIONS.length - 1;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+navLinks.forEach((a, i) => {
+  a.addEventListener('click', e => { e.preventDefault(); showSection(i); });
+});
+dots.forEach((d, i) => d.addEventListener('click', () => showSection(i)));
+if (prevBtn) prevBtn.addEventListener('click', () => showSection(cur - 1));
+if (nextBtn) nextBtn.addEventListener('click', () => showSection(cur + 1));
+
+/* swipe support */
+let tx = 0;
+document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+document.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) showSection(dx < 0 ? cur + 1 : cur - 1);
+}, { passive: true });
+
+showSection(0);"""
 
 _ICONS = {
     "world-news":      ("🌍", "s-world"),
@@ -268,6 +304,12 @@ def render_html(data: dict, output_path: str):
         )
         return f'<section class="s {cls}" id="{section_id}">{head}{rows}</section>'
 
+    n_sec = 7
+    dots_html = "".join(
+        f'<span class="sec-dot{"  active" if i == 0 else ""}"></span>'
+        for i in range(n_sec)
+    )
+
     html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -297,7 +339,7 @@ def render_html(data: dict, output_path: str):
 </header>
 <nav>
   <div class="nav-wrap">
-    <a href="#world-news" class="active">🌍 国际新闻</a>
+    <a href="#world-news">🌍 国际新闻</a>
     <a href="#china-news">🇨🇳 国内新闻</a>
     <a href="#tech-news">💡 全球科技</a>
     <a href="#ai-news">🤖 全球 AI</a>
@@ -306,15 +348,23 @@ def render_html(data: dict, output_path: str):
     <a href="#claude-code">✦ Claude Code</a>
   </div>
 </nav>
-<main>
-  {render_section("国际新闻事件 Top 5",    w,  "world-news")}
-  {render_section("国内新闻 Top 5",        c,  "china-news")}
-  {render_section("全球科技动态 Top 5",    t,  "tech-news")}
-  {render_section("全球 AI 动态 Top 5",    a,  "ai-news")}
-  {render_section("全球机器人动态 Top 5",  r,  "robot-news")}
-  {render_section("GitHub 每日 Top 5",     g,  "github-trending")}
-  {render_section("Claude Code 资讯 Top 5",cl, "claude-code")}
-</main>
+<div class="main-outer">
+  <div class="sections-slider">
+    {render_section("国际新闻事件 Top 5",    w,  "world-news")}
+    {render_section("国内新闻 Top 5",        c,  "china-news")}
+    {render_section("全球科技动态 Top 5",    t,  "tech-news")}
+    {render_section("全球 AI 动态 Top 5",    a,  "ai-news")}
+    {render_section("全球机器人动态 Top 5",  r,  "robot-news")}
+    {render_section("GitHub 每日 Top 5",     g,  "github-trending")}
+    {render_section("Claude Code 资讯 Top 5",cl, "claude-code")}
+  </div>
+  <div class="sec-nav">
+    <button class="sec-nav-btn btn-sec-prev" disabled>&#8592; 上一板块</button>
+    <div class="sec-dots">{dots_html}</div>
+    <span class="sec-counter">1 / {n_sec}</span>
+    <button class="sec-nav-btn btn-sec-next">下一板块 &#8594;</button>
+  </div>
+</div>
 <footer>数据每日自动更新 · Claude Haiku 生成摘要 · hot-topics-daily</footer>
 <script>{_JS}</script>
 </body>
