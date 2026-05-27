@@ -2,7 +2,7 @@
 
 每天早上 9 点（北京时间）自动抓取全球科技、AI、GitHub、Claude Code 最新资讯，生成中文摘要，推送到微信，并发布到 GitHub Pages 网页。
 
-**网页版**：https://seanna130345.github.io/claude-code-daily
+**网页版**：https://seanna130345.github.io/hot-topics-daily
 
 ---
 
