@@ -1,6 +1,6 @@
-# 每日科技日报
+# 你关注的热点 · hot-topics-daily
 
-每天早上 9 点（北京时间）自动抓取全球科技、AI、GitHub、Claude Code 最新资讯，生成中文摘要，推送到微信，并发布到 GitHub Pages 网页。
+每天早上 7:30（北京时间）自动抓取全球科技、AI、机器人、GitHub、Claude Code 最新资讯，生成中文摘要，推送到微信，并发布到 GitHub Pages 网页。
 
 **网页版**：https://seanna130345.github.io/hot-topics-daily
 
@@ -14,6 +14,7 @@
 | 国内新闻 Top 5 | 36kr、澎湃新闻、Bing | 5 条 |
 | 全球科技动态 Top 5 | TechCrunch、The Verge、Wired、Bing | 5 条 |
 | 全球 AI 动态 Top 5 | TechCrunch AI、MIT Technology Review、HackerNews、Bing | 5 条 |
+| 全球机器人动态 Top 5 | IEEE Spectrum、TechCrunch Robotics、Bing | 5 条 |
 | GitHub 每日 Top 5 | GitHub Search API（按新增 Star 排名） | 5 条 |
 | Claude Code 资讯 Top 5 | GitHub、哔哩哔哩、微信公众号（搜狗）、Reddit r/ClaudeAI | 5 条 |
 
@@ -24,7 +25,7 @@
 ### 整体流程
 
 ```
-GitHub Actions（每天 UTC 01:00 = 北京 09:00）
+GitHub Actions（每天 UTC 23:30 = 北京 07:30）
         │
         ▼
   1. 爬取数据（crawlers/）
@@ -49,6 +50,7 @@ GitHub Actions（每天 UTC 01:00 = 北京 09:00）
 - `fetch_china_news()`：依次请求 36kr RSS、澎湃新闻 RSS，再用 Bing 搜索补充，合并去重后取前 5 条
 - `fetch_tech_news()`：依次请求 TechCrunch RSS、The Verge RSS、Wired RSS，再用 Bing 搜索补充，合并去重后取前 5 条
 - `fetch_ai_news()`：依次请求 TechCrunch AI RSS、MIT Technology Review RSS、HackerNews API，再用 Bing 搜索补充，合并去重后取前 5 条
+- `fetch_robot_news()`：依次请求 IEEE Spectrum RSS、TechCrunch Robotics RSS，再用 Bing 搜索补充，合并去重后取前 5 条
 - `fetch_github_trending()`：调用 GitHub Search API，按 `created` 时间过滤近 1 天、按 Star 数降序，取前 5 条
 - `_parse_rss()`：通用 RSS/Atom 解析器，支持标准 RSS 和 Atom 两种格式
 - `_bing_search()`：直接请求 Bing 搜索页面，用 BeautifulSoup 解析结果，无需 API Key
@@ -85,13 +87,13 @@ GitHub Actions（每天 UTC 01:00 = 北京 09:00）
 ## 目录结构
 
 ```
-claude-code-daily/
+hot-topics-daily/
 ├── .github/
 │   └── workflows/
 │       └── daily.yml          # GitHub Actions 定时任务配置
 ├── crawlers/
 │   ├── __init__.py
-│   ├── news_crawler.py        # 通用新闻爬虫（国际/国内/科技/AI/GitHub）
+│   ├── news_crawler.py        # 通用新闻爬虫（国际/国内/科技/AI/机器人/GitHub）
 │   └── claude_code_crawler.py # Claude Code 专项爬虫
 ├── data/                      # 每日 JSON 存档（自动生成）
 │   └── YYYY-MM-DD.json
@@ -111,8 +113,8 @@ claude-code-daily/
 ### 1. Fork 或克隆仓库
 
 ```bash
-git clone https://github.com/seanna130345/claude-code-daily.git
-cd claude-code-daily
+git clone https://github.com/seanna130345/hot-topics-daily.git
+cd hot-topics-daily
 ```
 
 ### 2. 配置 GitHub Secrets
@@ -135,13 +137,13 @@ cd claude-code-daily
 
 ### 4. 手动触发测试
 
-在仓库 **Actions → 每日科技日报 → Run workflow** 中点击运行，验证配置是否正确。
+在仓库 **Actions → 你关注的热点 → Run workflow** 中点击运行，验证配置是否正确。
 
 ---
 
 ## 自动运行时间
 
-GitHub Actions 配置为每天 **UTC 01:00**（北京时间 09:00）自动运行。
+GitHub Actions 配置为每天 **UTC 23:30**（北京时间 07:30）自动运行。
 
 运行完成后：
 - `docs/index.html` 更新为当天日报
