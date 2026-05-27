@@ -32,6 +32,7 @@ def render_html(data: dict, output_path: str):
     ai_items = sections.get("ai_news", [])
     tech_items = sections.get("tech_news", [])
     world_items = sections.get("world_news", [])
+    china_items = sections.get("china_news", [])
 
     html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -70,18 +71,20 @@ def render_html(data: dict, output_path: str):
   <div class="date">{date_str} · 自动生成</div>
 </header>
 <nav>
-  <a href="#github-trending" class="active">GitHub Top10 ({len(trending_items)})</a>
-  <a href="#claude-code">Claude Code ({len(claude_items)})</a>
-  <a href="#ai-news">全球AI ({len(ai_items)})</a>
+  <a href="#world-news" class="active">国际新闻 ({len(world_items)})</a>
+  <a href="#china-news">国内新闻 ({len(china_items)})</a>
   <a href="#tech-news">科技 ({len(tech_items)})</a>
-  <a href="#world-news">国际新闻 ({len(world_items)})</a>
+  <a href="#ai-news">全球AI ({len(ai_items)})</a>
+  <a href="#github-trending">GitHub Top5 ({len(trending_items)})</a>
+  <a href="#claude-code">Claude Code ({len(claude_items)})</a>
 </nav>
 <main>
-  {render_section(f"GitHub 每日 Top 10（按标星排名）", trending_items, "github-trending")}
-  {render_section(f"Claude Code 项目/资讯 · Top {len(claude_items)}", claude_items, "claude-code")}
-  {render_section(f"全球AI动态 · Top {len(ai_items)}", ai_items, "ai-news")}
-  {render_section(f"科技发展 · Top {len(tech_items)}", tech_items, "tech-news")}
   {render_section(f"国际新闻事件 · Top {len(world_items)}", world_items, "world-news")}
+  {render_section(f"国内新闻 · Top {len(china_items)}", china_items, "china-news")}
+  {render_section(f"全球科技动态 · Top {len(tech_items)}", tech_items, "tech-news")}
+  {render_section(f"全球AI动态 · Top {len(ai_items)}", ai_items, "ai-news")}
+  {render_section(f"GitHub 每日 Top 5（按标星排名）", trending_items, "github-trending")}
+  {render_section(f"Claude Code 项目/资讯 · Top {len(claude_items)}", claude_items, "claude-code")}
 </main>
 <footer>数据每日自动更新 · 由 Claude Haiku 生成摘要</footer>
 <script>

@@ -156,6 +156,37 @@ def fetch_wechat_via_sogou() -> list[dict]:
     return results
 
 
+def fetch_reddit_claudeai() -> list[dict]:
+    """抓取 Reddit r/ClaudeAI 热门帖子"""
+    results = []
+    try:
+        headers = {**HEADERS, "Accept": "application/json"}
+        resp = httpx.get(
+            "https://www.reddit.com/r/ClaudeAI/hot.json",
+            headers=headers,
+            params={"limit": 10},
+            timeout=15,
+        )
+        resp.raise_for_status()
+        for post in resp.json().get("data", {}).get("children", [])[:10]:
+            d = post.get("data", {})
+            title = d.get("title", "")
+            url = d.get("url", "")
+            permalink = f"https://www.reddit.com{d.get('permalink', '')}"
+            selftext = d.get("selftext", "")[:300]
+            if title:
+                results.append({
+                    "source": "Reddit r/ClaudeAI",
+                    "title": title,
+                    "url": url if url and not url.startswith("https://www.reddit.com") else permalink,
+                    "raw": title + " " + selftext,
+                    "stars": d.get("score", 0),
+                    "published": datetime.now().strftime("%Y-%m-%d"),
+                })
+    except Exception as e:
+        print(f"[Reddit] 错误: {e}")
+    return results
+
 def fetch_all(github_token: str) -> list[dict]:
     print("[Claude Code] 抓取 GitHub...")
     github = fetch_github(github_token)
@@ -171,10 +202,14 @@ def fetch_all(github_token: str) -> list[dict]:
     wechat = fetch_wechat_via_sogou()
     print(f"  → {len(wechat)} 条")
 
-    # 三个来源各自独立，合并去重，总数控制在10条
+    time.sleep(random.uniform(1, 2))
+    print("[Claude Code] 抓取 Reddit r/ClaudeAI...")
+    reddit = fetch_reddit_claudeai()
+    print(f"  → {len(reddit)} 条")
+
     seen = set()
     result = []
-    for item in github + bili + wechat:
+    for item in github + bili + wechat + reddit:
         if item["url"] not in seen:
             seen.add(item["url"])
             result.append(item)

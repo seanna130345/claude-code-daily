@@ -25,14 +25,17 @@ def _format_message(data: dict) -> tuple[str, str]:
             url = item.get("url", "#")
             item_title = item.get("title", "")
             lines.append(f"{i}. [{item_title}]({url})")
-            lines.append(f"   > {summary}")
+            lines.append("")
+            lines.append(summary)
+            lines.append("")
         lines.append("")
 
-    add_section("GitHub 每日 Top10", sections.get("github_trending", []), 10)
-    add_section("Claude Code 项目/资讯", sections.get("claude_code", []), 10)
-    add_section("全球AI动态 Top 10", sections.get("ai_news", []), 10)
-    add_section("科技发展 Top 5", sections.get("tech_news", []), 5)
     add_section("国际新闻事件 Top 5", sections.get("world_news", []), 5)
+    add_section("国内新闻 Top 5", sections.get("china_news", []), 5)
+    add_section("全球科技动态 Top 5", sections.get("tech_news", []), 5)
+    add_section("全球AI动态 Top 5", sections.get("ai_news", []), 5)
+    add_section("GitHub 每日 Top 5", sections.get("github_trending", []), 5)
+    add_section("Claude Code 项目/资讯 Top 5", sections.get("claude_code", []), 5)
 
     if PAGES_URL:
         lines.append(f"---\n[查看完整网页日报]({PAGES_URL})")
