@@ -9,13 +9,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from crawlers.claude_code_crawler import fetch_all as fetch_claude_code
-from crawlers.news_crawler import fetch_github_trending, fetch_ai_news, fetch_tech_news, fetch_world_news, fetch_china_news
+from crawlers.news_crawler import fetch_github_trending, fetch_ai_news, fetch_tech_news, fetch_world_news, fetch_china_news, fetch_robot_news
 from summarizer import summarize_batch
 from generate_html import render_html
 from wxpusher_sender import send_to_wechat
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 TODAY = datetime.now().strftime("%Y-%m-%d")
+NOW_STR = datetime.now().strftime("%Y-%m-%d %H:%M")
 DATA_DIR = Path(__file__).parent / "data"
 DOCS_DIR = Path(__file__).parent / "docs"
 DATA_DIR.mkdir(exist_ok=True)
@@ -23,7 +24,7 @@ DOCS_DIR.mkdir(exist_ok=True)
 
 
 def main():
-    print(f"=== 每日科技日报 {TODAY} ===\n")
+    print(f"=== 你关注的热点 {NOW_STR} ===\n")
 
     # 1. 抓取数据
     print("--- 抓取国际新闻 ---")
@@ -38,6 +39,9 @@ def main():
     print("\n--- 抓取全球AI ---")
     ai_items = fetch_ai_news()
 
+    print("\n--- 抓取全球机器人 ---")
+    robot_items = fetch_robot_news()
+
     print("\n--- 抓取 GitHub Trending Top5 ---")
     github_trending = fetch_github_trending(GITHUB_TOKEN, count=5)
     print(f"  → {len(github_trending)} 条")
@@ -48,7 +52,7 @@ def main():
 
     # 2. 生成摘要
     print("\n--- 生成摘要 ---")
-    all_items = world_items + china_items + tech_items + ai_items + github_trending + claude_items
+    all_items = world_items + china_items + tech_items + ai_items + robot_items + github_trending + claude_items
     all_items = summarize_batch(all_items)
 
     # 按来源重新分组（保持原始顺序）
@@ -56,16 +60,18 @@ def main():
     china_final = [x for x in all_items if x in china_items][:5]
     tech_final = [x for x in all_items if x in tech_items][:5]
     ai_final = [x for x in all_items if x in ai_items][:5]
+    robot_final = [x for x in all_items if x in robot_items][:5]
     trending_final = [x for x in all_items if x in github_trending][:5]
     claude_final = [x for x in all_items if x in claude_items][:5]
 
     data = {
-        "date": TODAY,
+        "date": NOW_STR,
         "sections": {
             "world_news": world_final,
             "china_news": china_final,
             "tech_news": tech_final,
             "ai_news": ai_final,
+            "robot_news": robot_final,
             "github_trending": trending_final,
             "claude_code": claude_final,
         },

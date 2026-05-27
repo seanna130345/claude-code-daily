@@ -12,7 +12,7 @@ def _format_message(data: dict) -> tuple[str, str]:
     date_str = data.get("date", datetime.now().strftime("%Y-%m-%d"))
     sections = data.get("sections", {})
 
-    title = f"每日科技日报 {date_str}"
+    title = f"你关注的热点 {date_str}"
 
     lines = []
 
@@ -34,6 +34,7 @@ def _format_message(data: dict) -> tuple[str, str]:
     add_section("国内新闻 Top 5", sections.get("china_news", []), 5)
     add_section("全球科技动态 Top 5", sections.get("tech_news", []), 5)
     add_section("全球AI动态 Top 5", sections.get("ai_news", []), 5)
+    add_section("全球机器人动态 Top 5", sections.get("robot_news", []), 5)
     add_section("GitHub 每日 Top 5", sections.get("github_trending", []), 5)
     add_section("Claude Code 项目/资讯 Top 5", sections.get("claude_code", []), 5)
 

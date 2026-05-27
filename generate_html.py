@@ -2,7 +2,7 @@ from datetime import datetime
 
 
 def render_html(data: dict, output_path: str):
-    date_str = data.get("date", datetime.now().strftime("%Y-%m-%d"))
+    date_str = data.get("date", datetime.now().strftime("%Y-%m-%d %H:%M"))
     sections = data.get("sections", {})
 
     def render_section(title: str, items: list, section_id: str) -> str:
@@ -19,27 +19,27 @@ def render_html(data: dict, output_path: str):
             <div class="item">
               <div class="item-header">
                 <span class="num">{i}</span>
-                {source_badge}
-                <span class="pub-date">{pub}</span>
+                <div class="item-title"><a href="{url}" target="_blank" rel="noopener">{title_text}</a></div>
               </div>
-              <div class="item-title"><a href="{url}" target="_blank" rel="noopener">{title_text}</a></div>
+              <div class="item-meta">{source_badge}<span class="pub-date">{pub}</span></div>
               <div class="item-summary">{summary}</div>
             </div>"""
         return f'<div class="section" id="{section_id}"><h2>{title}</h2>{rows}</div>'
 
-    trending_items = sections.get("github_trending", [])
-    claude_items = sections.get("claude_code", [])
-    ai_items = sections.get("ai_news", [])
-    tech_items = sections.get("tech_news", [])
     world_items = sections.get("world_news", [])
     china_items = sections.get("china_news", [])
+    tech_items = sections.get("tech_news", [])
+    ai_items = sections.get("ai_news", [])
+    robot_items = sections.get("robot_news", [])
+    trending_items = sections.get("github_trending", [])
+    claude_items = sections.get("claude_code", [])
 
     html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>每日科技日报 · {date_str}</title>
+<title>你关注的热点 · {date_str}</title>
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f5; color: #333; }}
@@ -54,20 +54,21 @@ def render_html(data: dict, output_path: str):
   .section h2 {{ font-size: 16px; font-weight: 600; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid #eee; }}
   .item {{ padding: 12px 0; border-bottom: 1px solid #f0f0f0; }}
   .item:last-child {{ border-bottom: none; padding-bottom: 0; }}
-  .item-header {{ display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }}
-  .num {{ font-size: 12px; color: #999; min-width: 18px; }}
-  .badge {{ font-size: 11px; background: #f0f0f0; color: #666; padding: 2px 7px; border-radius: 10px; }}
-  .pub-date {{ font-size: 11px; color: #bbb; margin-left: auto; }}
+  .item-header {{ display: flex; align-items: flex-start; gap: 8px; margin-bottom: 4px; }}
+  .num {{ font-size: 12px; color: #999; min-width: 18px; padding-top: 2px; flex-shrink: 0; }}
   .item-title a {{ font-size: 14px; color: #1a1a2e; text-decoration: none; line-height: 1.5; }}
   .item-title a:hover {{ text-decoration: underline; }}
-  .item-summary {{ font-size: 13px; color: #666; margin-top: 4px; line-height: 1.6; }}
+  .item-meta {{ display: flex; align-items: center; gap: 8px; margin: 4px 0 4px 26px; }}
+  .badge {{ font-size: 11px; background: #f0f0f0; color: #666; padding: 2px 7px; border-radius: 10px; }}
+  .pub-date {{ font-size: 11px; color: #bbb; }}
+  .item-summary {{ font-size: 13px; color: #666; margin-top: 4px; margin-left: 26px; line-height: 1.6; }}
   .empty {{ color: #999; font-size: 14px; }}
   footer {{ text-align: center; padding: 24px; font-size: 12px; color: #bbb; }}
 </style>
 </head>
 <body>
 <header>
-  <h1>每日科技日报</h1>
+  <h1>你关注的热点</h1>
   <div class="date">{date_str} · 自动生成</div>
 </header>
 <nav>
@@ -75,6 +76,7 @@ def render_html(data: dict, output_path: str):
   <a href="#china-news">国内新闻 ({len(china_items)})</a>
   <a href="#tech-news">科技 ({len(tech_items)})</a>
   <a href="#ai-news">全球AI ({len(ai_items)})</a>
+  <a href="#robot-news">机器人 ({len(robot_items)})</a>
   <a href="#github-trending">GitHub Top5 ({len(trending_items)})</a>
   <a href="#claude-code">Claude Code ({len(claude_items)})</a>
 </nav>
@@ -83,6 +85,7 @@ def render_html(data: dict, output_path: str):
   {render_section(f"国内新闻 · Top {len(china_items)}", china_items, "china-news")}
   {render_section(f"全球科技动态 · Top {len(tech_items)}", tech_items, "tech-news")}
   {render_section(f"全球AI动态 · Top {len(ai_items)}", ai_items, "ai-news")}
+  {render_section(f"全球机器人动态 · Top {len(robot_items)}", robot_items, "robot-news")}
   {render_section(f"GitHub 每日 Top 5（按标星排名）", trending_items, "github-trending")}
   {render_section(f"Claude Code 项目/资讯 · Top {len(claude_items)}", claude_items, "claude-code")}
 </main>

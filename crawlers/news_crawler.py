@@ -216,3 +216,26 @@ def fetch_ai_news() -> list[dict]:
             item["source"] = "全球AI"
             unique.append(item)
     return unique[:5]
+
+
+def fetch_robot_news() -> list[dict]:
+    """全球机器人动态 Top5 — IEEE Spectrum + TechCrunch Robotics + Bing"""
+    print("[机器人] 抓取 IEEE Spectrum RSS...")
+    ieee = _parse_rss("https://spectrum.ieee.org/feeds/topic/robotics.rss", 5)
+    time.sleep(random.uniform(1, 2))
+
+    print("[机器人] 抓取 TechCrunch Robotics RSS...")
+    tc = _parse_rss("https://techcrunch.com/category/robotics/feed/", 5)
+    time.sleep(random.uniform(1, 2))
+
+    print("[机器人] 抓取 Bing...")
+    bing = _bing_search("robotics robot humanoid latest news 2026", 5)
+
+    combined = ieee + tc + bing
+    seen, unique = set(), []
+    for item in combined:
+        if item["url"] not in seen and item["url"]:
+            seen.add(item["url"])
+            item["source"] = "全球机器人"
+            unique.append(item)
+    return unique[:5]
