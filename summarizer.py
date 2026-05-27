@@ -5,7 +5,7 @@ import time
 
 API_KEY = os.environ.get("BLTCY_API_KEY", "")
 BASE_URL = "https://api.bltcy.ai/v1"
-MODEL = "qwen3.5-plus"
+MODEL = "claude-haiku-4-5-20251001"
 MAX_RETRIES = 3
 
 
