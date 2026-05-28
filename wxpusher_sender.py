@@ -33,6 +33,7 @@ def _format_message(data: dict) -> tuple[str, str]:
     add_section("国际新闻事件 Top 5", sections.get("world_news", []), 5)
     add_section("国内新闻 Top 5", sections.get("china_news", []), 5)
     add_section("全球科技动态 Top 5", sections.get("tech_news", []), 5)
+    add_section("国际财经 Top 5", sections.get("finance_news", []), 5)
     add_section("全球AI动态 Top 5", sections.get("ai_news", []), 5)
     add_section("全球机器人动态 Top 5", sections.get("robot_news", []), 5)
     add_section("GitHub 每日 Top 5", sections.get("github_trending", []), 5)

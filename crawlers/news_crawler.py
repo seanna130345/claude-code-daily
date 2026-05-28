@@ -239,3 +239,26 @@ def fetch_robot_news() -> list[dict]:
             item["source"] = "全球机器人"
             unique.append(item)
     return unique[:5]
+
+
+def fetch_finance_news() -> list[dict]:
+    """国际财经 Top5 — Reuters Business RSS + Bloomberg via Bing + Bing"""
+    print("[财经] 抓取 Reuters Business RSS...")
+    reuters = _parse_rss("https://feeds.reuters.com/reuters/businessNews", 5)
+    time.sleep(random.uniform(1, 2))
+
+    print("[财经] 抓取 Financial Times via Bing...")
+    ft = _bing_search("site:ft.com OR site:wsj.com OR site:bloomberg.com international finance economy 2026", 5)
+    time.sleep(random.uniform(1, 2))
+
+    print("[财经] 抓取 Bing 财经...")
+    bing = _bing_search("international finance economy stock market latest news 2026", 5)
+
+    combined = reuters + ft + bing
+    seen, unique = set(), []
+    for item in combined:
+        if item["url"] not in seen and item["url"]:
+            seen.add(item["url"])
+            item["source"] = "国际财经"
+            unique.append(item)
+    return unique[:5]

@@ -124,13 +124,14 @@ nav a.active { color: var(--teal); border-bottom-color: var(--teal); }
 }
 
 /* section color themes */
-.s-world  .s-icon { background: var(--rose-bg);  color: var(--rose); }
-.s-china  .s-icon { background: var(--amber-bg); color: var(--amber); }
-.s-tech   .s-icon { background: var(--sky-bg);   color: var(--sky); }
-.s-ai     .s-icon { background: var(--teal-bg);  color: var(--teal); }
-.s-robot  .s-icon { background: var(--sage-bg);  color: var(--sage); }
-.s-github .s-icon { background: var(--slate-bg); color: var(--slate); }
-.s-claude .s-icon { background: var(--amber-bg); color: var(--amber); }
+.s-world   .s-icon { background: var(--rose-bg);  color: var(--rose); }
+.s-china   .s-icon { background: var(--amber-bg); color: var(--amber); }
+.s-tech    .s-icon { background: var(--sky-bg);   color: var(--sky); }
+.s-finance .s-icon { background: var(--sage-bg);  color: var(--sage); }
+.s-ai      .s-icon { background: var(--teal-bg);  color: var(--teal); }
+.s-robot   .s-icon { background: var(--slate-bg); color: var(--slate); }
+.s-github  .s-icon { background: var(--rose-bg);  color: var(--rose); }
+.s-claude  .s-icon { background: var(--amber-bg); color: var(--amber); }
 
 /* ── Item (vertical list inside panel) ── */
 .item {
@@ -218,7 +219,7 @@ footer {
 }"""
 
 _JS = """\
-const SECTIONS = ['world-news','china-news','tech-news','ai-news','robot-news','github-trending','claude-code'];
+const SECTIONS = ['world-news','china-news','tech-news','finance-news','ai-news','robot-news','github-trending','claude-code'];
 const panels   = SECTIONS.map(id => document.getElementById(id));
 const navLinks = document.querySelectorAll('nav a');
 const dots     = document.querySelectorAll('.sec-dot');
@@ -259,6 +260,7 @@ _ICONS = {
     "world-news":      ("🌍", "s-world"),
     "china-news":      ("🇨🇳", "s-china"),
     "tech-news":       ("💡", "s-tech"),
+    "finance-news":    ("💹", "s-finance"),
     "ai-news":         ("🤖", "s-ai"),
     "robot-news":      ("⚙️", "s-robot"),
     "github-trending": ("⭐", "s-github"),
@@ -273,12 +275,13 @@ def render_html(data: dict, output_path: str):
     w  = sections.get("world_news", [])
     c  = sections.get("china_news", [])
     t  = sections.get("tech_news", [])
+    fi = sections.get("finance_news", [])
     a  = sections.get("ai_news", [])
     r  = sections.get("robot_news", [])
     g  = sections.get("github_trending", [])
     cl = sections.get("claude_code", [])
-    total = len(w) + len(c) + len(t) + len(a) + len(r) + len(g) + len(cl)
-    sections_count = sum(1 for x in [w, c, t, a, r, g, cl] if x)
+    total = len(w) + len(c) + len(t) + len(fi) + len(a) + len(r) + len(g) + len(cl)
+    sections_count = sum(1 for x in [w, c, t, fi, a, r, g, cl] if x)
 
     def render_section(title: str, items: list, section_id: str) -> str:
         icon, cls = _ICONS.get(section_id, ("📌", ""))
@@ -304,7 +307,7 @@ def render_html(data: dict, output_path: str):
         )
         return f'<section class="s {cls}" id="{section_id}">{head}{rows}</section>'
 
-    n_sec = 7
+    n_sec = 8
     dots_html = "".join(
         f'<span class="sec-dot{"  active" if i == 0 else ""}"></span>'
         for i in range(n_sec)
@@ -342,6 +345,7 @@ def render_html(data: dict, output_path: str):
     <a href="#world-news">🌍 国际新闻</a>
     <a href="#china-news">🇨🇳 国内新闻</a>
     <a href="#tech-news">💡 全球科技</a>
+    <a href="#finance-news">💹 国际财经</a>
     <a href="#ai-news">🤖 全球 AI</a>
     <a href="#robot-news">⚙️ 机器人</a>
     <a href="#github-trending">⭐ GitHub</a>
@@ -353,6 +357,7 @@ def render_html(data: dict, output_path: str):
     {render_section("国际新闻事件 Top 5",    w,  "world-news")}
     {render_section("国内新闻 Top 5",        c,  "china-news")}
     {render_section("全球科技动态 Top 5",    t,  "tech-news")}
+    {render_section("国际财经 Top 5",        fi, "finance-news")}
     {render_section("全球 AI 动态 Top 5",    a,  "ai-news")}
     {render_section("全球机器人动态 Top 5",  r,  "robot-news")}
     {render_section("GitHub 每日 Top 5",     g,  "github-trending")}

@@ -9,7 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from crawlers.claude_code_crawler import fetch_all as fetch_claude_code
-from crawlers.news_crawler import fetch_github_trending, fetch_ai_news, fetch_tech_news, fetch_world_news, fetch_china_news, fetch_robot_news
+from crawlers.news_crawler import fetch_github_trending, fetch_ai_news, fetch_tech_news, fetch_world_news, fetch_china_news, fetch_robot_news, fetch_finance_news
 from summarizer import summarize_batch
 from generate_html import render_html
 from wxpusher_sender import send_to_wechat
@@ -37,6 +37,9 @@ def main():
     print("\n--- 抓取全球科技 ---")
     tech_items = fetch_tech_news()
 
+    print("\n--- 抓取国际财经 ---")
+    finance_items = fetch_finance_news()
+
     print("\n--- 抓取全球AI ---")
     ai_items = fetch_ai_news()
 
@@ -53,13 +56,14 @@ def main():
 
     # 2. 生成摘要
     print("\n--- 生成摘要 ---")
-    all_items = world_items + china_items + tech_items + ai_items + robot_items + github_trending + claude_items
+    all_items = world_items + china_items + tech_items + finance_items + ai_items + robot_items + github_trending + claude_items
     all_items = summarize_batch(all_items)
 
     # 按来源重新分组（保持原始顺序）
     world_final = [x for x in all_items if x in world_items][:5]
     china_final = [x for x in all_items if x in china_items][:5]
     tech_final = [x for x in all_items if x in tech_items][:5]
+    finance_final = [x for x in all_items if x in finance_items][:5]
     ai_final = [x for x in all_items if x in ai_items][:5]
     robot_final = [x for x in all_items if x in robot_items][:5]
     trending_final = [x for x in all_items if x in github_trending][:5]
@@ -71,6 +75,7 @@ def main():
             "world_news": world_final,
             "china_news": china_final,
             "tech_news": tech_final,
+            "finance_news": finance_final,
             "ai_news": ai_final,
             "robot_news": robot_final,
             "github_trending": trending_final,
