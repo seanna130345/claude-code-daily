@@ -3,7 +3,7 @@
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -15,8 +15,9 @@ from generate_html import render_html
 from wxpusher_sender import send_to_wechat
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-TODAY = datetime.now().strftime("%Y-%m-%d")
-NOW_STR = datetime.now().strftime("%Y-%m-%d %H:%M")
+CST = timezone(timedelta(hours=8))
+TODAY = datetime.now(CST).strftime("%Y-%m-%d")
+NOW_STR = datetime.now(CST).strftime("%Y-%m-%d %H:%M")
 DATA_DIR = Path(__file__).parent / "data"
 DOCS_DIR = Path(__file__).parent / "docs"
 DATA_DIR.mkdir(exist_ok=True)
