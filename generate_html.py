@@ -62,6 +62,9 @@ h1 {
 .stat { text-align: center; }
 .stat-n { font-family: var(--fh); font-size: 36px; font-weight: 700; color: var(--teal); line-height: 1; }
 .stat-l { font-size: 13px; color: var(--ink3); margin-top: 4px; }
+.stat-gold .stat-n { color: #c8922a; }
+.gold-up { color: #2a9d5c; font-weight: 600; }
+.gold-down { color: #e05252; font-weight: 600; }
 
 /* ── Nav (tab switcher) ── */
 nav {
@@ -271,6 +274,7 @@ _ICONS = {
 def render_html(data: dict, output_path: str):
     date_str = data.get("date", datetime.now().strftime("%Y-%m-%d %H:%M"))
     sections = data.get("sections", {})
+    gold = data.get("gold", {})
 
     w  = sections.get("world_news", [])
     c  = sections.get("china_news", [])
@@ -307,6 +311,20 @@ def render_html(data: dict, output_path: str):
         )
         return f'<section class="s {cls}" id="{section_id}">{head}{rows}</section>'
 
+    # 金价显示
+    if gold and gold.get("price"):
+        sign = "+" if gold.get("change", 0) >= 0 else ""
+        pct = gold.get("change_pct", 0)
+        color_cls = "gold-up" if gold.get("change", 0) >= 0 else "gold-down"
+        gold_html = (
+            f'<div class="stat stat-gold">'
+            f'<div class="stat-n">¥{gold["price"]:.2f}</div>'
+            f'<div class="stat-l">今日金价/克 <span class="{color_cls}">{sign}{pct:.2f}%</span></div>'
+            f'</div>'
+        )
+    else:
+        gold_html = ""
+
     n_sec = 8
     dots_html = "".join(
         f'<span class="sec-dot{"  active" if i == 0 else ""}"></span>'
@@ -337,6 +355,7 @@ def render_html(data: dict, output_path: str):
     <div class="header-stats">
       <div class="stat"><div class="stat-n">{total}</div><div class="stat-l">今日资讯</div></div>
       <div class="stat"><div class="stat-n">{sections_count}</div><div class="stat-l">内容板块</div></div>
+      {gold_html}
     </div>
   </div>
 </header>

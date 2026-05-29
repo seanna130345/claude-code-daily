@@ -16,7 +16,7 @@ TODAY = datetime.now().strftime("%Y-%m-%d")
 
 def _parse_rss(url: str, count: int = 5) -> list[dict]:
     try:
-        resp = httpx.get(url, headers=HEADERS, timeout=15)
+        resp = httpx.get(url, headers=HEADERS, timeout=15, follow_redirects=True)
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
         ns = {"atom": "http://www.w3.org/2005/Atom"}

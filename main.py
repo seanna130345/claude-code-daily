@@ -8,11 +8,46 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
+import httpx
 from crawlers.claude_code_crawler import fetch_all as fetch_claude_code
 from crawlers.news_crawler import fetch_github_trending, fetch_ai_news, fetch_tech_news, fetch_world_news, fetch_china_news, fetch_robot_news, fetch_finance_news
 from summarizer import summarize_batch
 from generate_html import render_html
 from wxpusher_sender import send_to_wechat
+
+
+def fetch_gold_price() -> dict:
+    """抓取今日黄金现货价格（CNY/克），来源 Yahoo Finance"""
+    try:
+        gold_resp = httpx.get(
+            "https://query1.finance.yahoo.com/v8/finance/chart/GC=F",
+            params={"interval": "1d", "range": "1d"},
+            headers={"User-Agent": "Mozilla/5.0"},
+            timeout=10,
+        )
+        gold_resp.raise_for_status()
+        meta = gold_resp.json()["chart"]["result"][0]["meta"]
+        price_usd = meta["regularMarketPrice"]
+        prev_usd = meta.get("chartPreviousClose", price_usd)
+
+        cny_resp = httpx.get(
+            "https://query1.finance.yahoo.com/v8/finance/chart/USDCNY=X",
+            params={"interval": "1d", "range": "1d"},
+            headers={"User-Agent": "Mozilla/5.0"},
+            timeout=10,
+        )
+        cny_resp.raise_for_status()
+        usd_cny = cny_resp.json()["chart"]["result"][0]["meta"]["regularMarketPrice"]
+
+        oz_to_gram = 31.1035
+        price_cny = price_usd * usd_cny / oz_to_gram
+        prev_cny = prev_usd * usd_cny / oz_to_gram
+        change = price_cny - prev_cny
+        change_pct = change / prev_cny * 100 if prev_cny else 0
+        return {"price": price_cny, "change": change, "change_pct": change_pct}
+    except Exception as e:
+        print(f"[金价] 抓取失败: {e}")
+        return {}
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 CST = timezone(timedelta(hours=8))
@@ -28,7 +63,13 @@ def main():
     print(f"=== 你关注的热点 {NOW_STR} ===\n")
 
     # 1. 抓取数据
-    print("--- 抓取国际新闻 ---")
+    print("--- 抓取今日金价 ---")
+    gold = fetch_gold_price()
+    if gold:
+        sign = "+" if gold["change"] >= 0 else ""
+        print(f"  → ¥{gold['price']:.2f}/克 ({sign}{gold['change_pct']:.2f}%)")
+
+    print("\n--- 抓取国际新闻 ---")
     world_items = fetch_world_news()
 
     print("\n--- 抓取国内新闻 ---")
@@ -71,6 +112,7 @@ def main():
 
     data = {
         "date": NOW_STR,
+        "gold": gold,
         "sections": {
             "world_news": world_final,
             "china_news": china_final,
