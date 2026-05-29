@@ -14,30 +14,6 @@ HEADERS = {
 TODAY = datetime.now().strftime("%Y-%m-%d")
 
 
-def _bing_search(query: str, count: int = 5, freshness: str = "Day") -> list[dict]:
-    url = "https://www.bing.com/search"
-    params = {"q": query, "count": count, "freshness": freshness}
-    try:
-        resp = httpx.get(url, headers=HEADERS, params=params, timeout=15)
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
-        results = []
-        for li in soup.select("li.b_algo")[:count]:
-            a = li.select_one("h2 a")
-            snippet = li.select_one(".b_caption p")
-            if a:
-                results.append({
-                    "title": a.get_text(strip=True),
-                    "url": a.get("href", ""),
-                    "raw": a.get_text(strip=True) + " " + (snippet.get_text(strip=True) if snippet else ""),
-                    "published": TODAY,
-                })
-        return results
-    except Exception as e:
-        print(f"[Bing] {query[:30]} 错误: {e}")
-        return []
-
-
 def _parse_rss(url: str, count: int = 5) -> list[dict]:
     try:
         resp = httpx.get(url, headers=HEADERS, timeout=15)
@@ -115,23 +91,23 @@ def fetch_hackernews(count: int = 5) -> list[dict]:
 
 
 def fetch_world_news() -> list[dict]:
-    """国际新闻 Top5 — BBC + AP News + Al Jazeera + Bing"""
+    """国际新闻 Top5 — BBC + Reuters Top + Al Jazeera + NPR"""
     print("[国际] 抓取 BBC RSS...")
     bbc = _parse_rss("https://feeds.bbci.co.uk/news/world/rss.xml", 5)
-    time.sleep(random.uniform(1, 2))
-
-    print("[国际] 抓取 AP News RSS...")
-    ap = _parse_rss("https://rsshub.app/apnews/topics/apf-topnews", 5)
     time.sleep(random.uniform(1, 2))
 
     print("[国际] 抓取 Al Jazeera RSS...")
     alj = _parse_rss("https://www.aljazeera.com/xml/rss/all.xml", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[国际] 抓取 Bing...")
-    bing = _bing_search("international world news breaking today", 5)
+    print("[国际] 抓取 NPR RSS...")
+    npr = _parse_rss("https://feeds.npr.org/1001/rss.xml", 5)
+    time.sleep(random.uniform(1, 2))
 
-    combined = bbc + ap + alj + bing
+    print("[国际] 抓取 Guardian World RSS...")
+    guardian = _parse_rss("https://www.theguardian.com/world/rss", 5)
+
+    combined = bbc + alj + npr + guardian
     seen, unique = set(), []
     for item in combined:
         if item["url"] not in seen and item["url"]:
@@ -142,19 +118,23 @@ def fetch_world_news() -> list[dict]:
 
 
 def fetch_china_news() -> list[dict]:
-    """国内新闻 Top5 — 36kr + 搜狗新闻 + Bing"""
+    """国内新闻 Top5 — 36kr + 新浪科技 + InfoQ中文 + 少数派"""
     print("[国内] 抓取 36kr RSS...")
     kr36 = _parse_rss("https://36kr.com/feed", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[国内] 抓取 Bing 国内新闻...")
-    bing = _bing_search("中国 国内 新闻 今日 热点", 5)
+    print("[国内] 抓取 新浪科技 RSS...")
+    sina = _parse_rss("https://rss.sina.com.cn/news/china/focus15.xml", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[国内] 抓取 澎湃新闻 RSS...")
-    thepaper = _parse_rss("https://www.thepaper.cn/rss_cn.jsp", 5)
+    print("[国内] 抓取 InfoQ中文 RSS...")
+    infoq = _parse_rss("https://www.infoq.cn/feed", 5)
+    time.sleep(random.uniform(1, 2))
 
-    combined = kr36 + thepaper + bing
+    print("[国内] 抓取 少数派 RSS...")
+    sspai = _parse_rss("https://sspai.com/feed", 5)
+
+    combined = kr36 + sina + infoq + sspai
     seen, unique = set(), []
     for item in combined:
         if item["url"] not in seen and item["url"]:
@@ -165,7 +145,7 @@ def fetch_china_news() -> list[dict]:
 
 
 def fetch_tech_news() -> list[dict]:
-    """全球科技动态 Top5 — TechCrunch + The Verge + Wired + Bing"""
+    """全球科技动态 Top5 — TechCrunch + The Verge + Wired + Ars Technica"""
     print("[科技] 抓取 TechCrunch RSS...")
     tc = _parse_rss("https://techcrunch.com/feed/", 5)
     time.sleep(random.uniform(1, 2))
@@ -178,10 +158,10 @@ def fetch_tech_news() -> list[dict]:
     wired = _parse_rss("https://www.wired.com/feed/rss", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[科技] 抓取 Bing...")
-    bing = _bing_search("technology innovation news today 2026", 5)
+    print("[科技] 抓取 Ars Technica RSS...")
+    ars = _parse_rss("https://feeds.arstechnica.com/arstechnica/index", 5)
 
-    combined = tc + verge + wired + bing
+    combined = tc + verge + wired + ars
     seen, unique = set(), []
     for item in combined:
         if item["url"] not in seen and item["url"]:
@@ -192,7 +172,7 @@ def fetch_tech_news() -> list[dict]:
 
 
 def fetch_ai_news() -> list[dict]:
-    """全球AI动态 Top5 — TechCrunch AI + MIT TR + HackerNews + Bing"""
+    """全球AI动态 Top5 — TechCrunch AI + MIT TR + HackerNews + VentureBeat AI"""
     print("[全球AI] 抓取 TechCrunch AI RSS...")
     tc = _parse_rss("https://techcrunch.com/category/artificial-intelligence/feed/", 5)
     time.sleep(random.uniform(1, 2))
@@ -205,10 +185,10 @@ def fetch_ai_news() -> list[dict]:
     hn = fetch_hackernews(5)
     time.sleep(random.uniform(1, 2))
 
-    print("[全球AI] 抓取 Bing...")
-    bing = _bing_search("AI artificial intelligence latest news today 2026", 5)
+    print("[全球AI] 抓取 VentureBeat AI RSS...")
+    vb = _parse_rss("https://venturebeat.com/category/ai/feed/", 5)
 
-    combined = tc + mit + hn + bing
+    combined = tc + mit + hn + vb
     seen, unique = set(), []
     for item in combined:
         if item["url"] not in seen and item["url"]:
@@ -219,7 +199,7 @@ def fetch_ai_news() -> list[dict]:
 
 
 def fetch_robot_news() -> list[dict]:
-    """全球机器人动态 Top5 — IEEE Spectrum + TechCrunch Robotics + Bing"""
+    """全球机器人动态 Top5 — IEEE Spectrum + TechCrunch Robotics + The Robot Report"""
     print("[机器人] 抓取 IEEE Spectrum RSS...")
     ieee = _parse_rss("https://spectrum.ieee.org/feeds/topic/robotics.rss", 5)
     time.sleep(random.uniform(1, 2))
@@ -228,10 +208,10 @@ def fetch_robot_news() -> list[dict]:
     tc = _parse_rss("https://techcrunch.com/category/robotics/feed/", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[机器人] 抓取 Bing...")
-    bing = _bing_search("robotics robot humanoid latest news 2026", 5)
+    print("[机器人] 抓取 The Robot Report RSS...")
+    rr = _parse_rss("https://www.therobotreport.com/feed/", 5)
 
-    combined = ieee + tc + bing
+    combined = ieee + tc + rr
     seen, unique = set(), []
     for item in combined:
         if item["url"] not in seen and item["url"]:
@@ -242,19 +222,23 @@ def fetch_robot_news() -> list[dict]:
 
 
 def fetch_finance_news() -> list[dict]:
-    """国际财经 Top5 — Reuters Business RSS + Bloomberg via Bing + Bing"""
-    print("[财经] 抓取 Reuters Business RSS...")
-    reuters = _parse_rss("https://feeds.reuters.com/reuters/businessNews", 5)
+    """国际财经 Top5 — MarketWatch + CNBC + Investing.com + Yahoo Finance"""
+    print("[财经] 抓取 MarketWatch RSS...")
+    mw = _parse_rss("https://feeds.marketwatch.com/marketwatch/topstories/", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[财经] 抓取 Financial Times via Bing...")
-    ft = _bing_search("site:ft.com OR site:wsj.com OR site:bloomberg.com international finance economy 2026", 5)
+    print("[财经] 抓取 CNBC Finance RSS...")
+    cnbc = _parse_rss("https://www.cnbc.com/id/10000664/device/rss/rss.html", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[财经] 抓取 Bing 财经...")
-    bing = _bing_search("international finance economy stock market latest news 2026", 5)
+    print("[财经] 抓取 Investing.com RSS...")
+    investing = _parse_rss("https://www.investing.com/rss/news.rss", 5)
+    time.sleep(random.uniform(1, 2))
 
-    combined = reuters + ft + bing
+    print("[财经] 抓取 Yahoo Finance RSS...")
+    yahoo = _parse_rss("https://finance.yahoo.com/news/rssindex", 5)
+
+    combined = mw + cnbc + investing + yahoo
     seen, unique = set(), []
     for item in combined:
         if item["url"] not in seen and item["url"]:
