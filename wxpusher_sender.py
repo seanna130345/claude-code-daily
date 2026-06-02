@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 
-SEND_KEY = os.environ.get("SERVER_CHAN_KEY", "")
+SEND_KEYS = [k.strip() for k in os.environ.get("SERVER_CHAN_KEYS", os.environ.get("SERVER_CHAN_KEY", "")).split(",") if k.strip()]
 PAGES_URL = os.environ.get("PAGES_URL", "")
 
 
@@ -46,26 +46,26 @@ def _format_message(data: dict) -> tuple[str, str]:
 
 
 def send_to_wechat(data: dict) -> bool:
-    if not SEND_KEY:
-        print("[Server酱] 未配置 SERVER_CHAN_KEY，跳过推送")
+    if not SEND_KEYS:
+        print("[Server酱] 未配置 SERVER_CHAN_KEYS，跳过推送")
         return False
 
     title, content = _format_message(data)
-
-    try:
-        resp = httpx.post(
-            f"https://sctapi.ftqq.com/{SEND_KEY}.send",
-            data={"title": title, "desp": content},
-            timeout=15,
-        )
-        resp.raise_for_status()
-        result = resp.json()
-        if result.get("code") == 0:
-            print("[Server酱] 推送成功")
-            return True
-        else:
-            print(f"[Server酱] 推送失败: {result.get('message', '')}")
-            return False
-    except Exception as e:
-        print(f"[Server酱] 推送异常: {e}")
-        return False
+    success = 0
+    for key in SEND_KEYS:
+        try:
+            resp = httpx.post(
+                f"https://sctapi.ftqq.com/{key}.send",
+                data={"title": title, "desp": content},
+                timeout=15,
+            )
+            resp.raise_for_status()
+            result = resp.json()
+            if result.get("code") == 0:
+                print(f"[Server酱] 推送成功: {key[:8]}...")
+                success += 1
+            else:
+                print(f"[Server酱] 推送失败: {key[:8]}... {result.get('message', '')}")
+        except Exception as e:
+            print(f"[Server酱] 推送异常: {key[:8]}... {e}")
+    return success > 0

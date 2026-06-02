@@ -28,7 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BLTCY_API_KEY: ${{ secrets.BLTCY_API_KEY }}
-          SERVER_CHAN_KEY: ${{ secrets.SERVER_CHAN_KEY }}
+          SERVER_CHAN_KEYS: ${{ secrets.SERVER_CHAN_KEYS }}
           PAGES_URL: "https://seanna130345.github.io/hot-topics-daily"
         run: python main.py
 
