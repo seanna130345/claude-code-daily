@@ -222,23 +222,27 @@ def fetch_robot_news() -> list[dict]:
 
 
 def fetch_finance_news() -> list[dict]:
-    """国际财经 Top5 — FT + WSJ + CNBC + The Economist"""
-    print("[财经] 抓取 Financial Times RSS...")
-    ft = _parse_rss("https://www.ft.com/rss/home/uk", 5)
+    """国际财经 Top5 — Reuters + Bloomberg + WSJ + FT + CNBC"""
+    print("[财经] 抓取 Reuters Business RSS...")
+    reuters = _parse_rss("https://feeds.reuters.com/reuters/businessNews", 5)
+    time.sleep(random.uniform(1, 2))
+
+    print("[财经] 抓取 Bloomberg Markets RSS...")
+    bloomberg = _parse_rss("https://feeds.bloomberg.com/markets/news.rss", 5)
     time.sleep(random.uniform(1, 2))
 
     print("[财经] 抓取 WSJ Markets RSS...")
     wsj = _parse_rss("https://feeds.a.dj.com/rss/RSSMarketsMain.xml", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[财经] 抓取 CNBC Finance RSS...")
-    cnbc = _parse_rss("https://www.cnbc.com/id/10000664/device/rss/rss.html", 5)
+    print("[财经] 抓取 Financial Times RSS...")
+    ft = _parse_rss("https://www.ft.com/rss/home/uk", 5)
     time.sleep(random.uniform(1, 2))
 
-    print("[财经] 抓取 The Economist RSS...")
-    econ = _parse_rss("https://www.economist.com/finance-and-economics/rss.xml", 5)
+    print("[财经] 抓取 CNBC Finance RSS...")
+    cnbc = _parse_rss("https://www.cnbc.com/id/10000664/device/rss/rss.html", 5)
 
-    combined = ft + wsj + cnbc + econ
+    combined = reuters + bloomberg + wsj + ft + cnbc
     seen, unique = set(), []
     for item in combined:
         if item["url"] not in seen and item["url"]:
