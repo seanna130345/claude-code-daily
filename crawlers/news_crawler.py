@@ -222,11 +222,7 @@ def fetch_robot_news() -> list[dict]:
 
 
 def fetch_finance_news() -> list[dict]:
-    """国际财经 Top5 — Reuters + Bloomberg + WSJ + FT + CNBC"""
-    print("[财经] 抓取 Reuters Business RSS...")
-    reuters = _parse_rss("https://feeds.reuters.com/reuters/businessNews", 5)
-    time.sleep(random.uniform(1, 2))
-
+    """国际财经 Top5 — Bloomberg + WSJ + FT + CNBC + NPR Business"""
     print("[财经] 抓取 Bloomberg Markets RSS...")
     bloomberg = _parse_rss("https://feeds.bloomberg.com/markets/news.rss", 5)
     time.sleep(random.uniform(1, 2))
@@ -241,8 +237,12 @@ def fetch_finance_news() -> list[dict]:
 
     print("[财经] 抓取 CNBC Finance RSS...")
     cnbc = _parse_rss("https://www.cnbc.com/id/10000664/device/rss/rss.html", 5)
+    time.sleep(random.uniform(1, 2))
 
-    combined = reuters + bloomberg + wsj + ft + cnbc
+    print("[财经] 抓取 NPR Business RSS...")
+    npr = _parse_rss("https://feeds.npr.org/1006/rss.xml", 5)
+
+    combined = bloomberg + wsj + ft + cnbc + npr
     seen, unique = set(), []
     for item in combined:
         if item["url"] not in seen and item["url"]:
