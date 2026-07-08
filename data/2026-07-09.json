@@ -1,0 +1,356 @@
+{
+  "date": "2026-07-09 06:30",
+  "gold": {
+    "price": 892.8285990322632,
+    "change": 0.721133312971233,
+    "change_pct": 0.08083480305702796
+  },
+  "sections": {
+    "world_news": [
+      {
+        "title": "US launches more strikes on Iran with blasts reported in south of country",
+        "url": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&at_campaign=rss",
+        "raw": "US launches more strikes on Iran with blasts reported in south of country Trump says the attacks are \"retribution for yesterday's bombing of ships by Iran\". Iran earlier promised strong retaliation.",
+        "published": "Wed, 08 Ju",
+        "source": "国际新闻",
+        "summary": "美国对伊朗发动了新一轮空袭，伊朗南部传出爆炸声。特朗普表示这些攻击是对伊朗昨天轰炸船只的\"报复\"。此前伊朗承诺将进行强有力的反击。\n\n这一事件反映了美国与伊朗之间持续的军事对抗升级。双方互相指责对方发动攻击，形成了报复与反报复的循环。特朗普政府采取军事行动作为回应，而伊朗则宣称将进行更强烈的反制。这类地缘政治冲突可能导致中东地区局势进一步恶化，对全球安全和能源供应造成潜在影响。"
+      },
+      {
+        "title": "US strikes target Iranian military boats",
+        "url": "https://www.bbc.co.uk/news/videos/cn94nqzwpxwo?at_medium=RSS&at_campaign=rss",
+        "raw": "US strikes target Iranian military boats The US has launched the strikes on Iran in response to attacks on three oil tankers in the Strait of Hormuz.",
+        "published": "Wed, 08 Ju",
+        "source": "国际新闻",
+        "summary": "美国对伊朗军事船只进行了打击，以回应伊朗对霍尔木兹海峡三艘油轮的攻击事件。这次军事行动是美国针对伊朗在该地区日益激进活动采取的直接回应措施。霍尔木兹海峡是全球最重要的石油运输通道之一，油轮遇袭事件引发了国际社会对地区安全局势的担忧。美国此举旨在威慑伊朗进一步的军事挑衅，维护国际航运安全。这一事件反映了美伊两国在中东地区日益紧张的对立关系，可能对全球能源市场和地区稳定产生重要影响。"
+      },
+      {
+        "title": "Ukraine to get licence to produce Patriot missiles, Trump says",
+        "url": "https://www.bbc.co.uk/news/articles/ce8klree690o?at_medium=RSS&at_campaign=rss",
+        "raw": "Ukraine to get licence to produce Patriot missiles, Trump says Although the Patriots are highly effective against Russia's ballistic missiles, they also have lengthy production times.",
+        "published": "Wed, 08 Ju",
+        "source": "国际新闻",
+        "summary": "乌克兰将获得爱国者导弹的生产许可证。这是特朗普宣布的一项重要决定。爱国者导弹在对抗俄罗斯弹道导弹方面效能显著，但其生产周期较长。获得生产许可意味着乌克兰可以在本土制造这一关键防御武器，而不必完全依赖进口。这将增强乌克兰的防空能力和自主防卫力量，对其长期防御体系建设具有重要意义。这项决定反映了国际社会对乌克兰防卫需求的支持。"
+      },
+      {
+        "title": "German doctor jailed for murder of 15 patients and suspected of more",
+        "url": "https://www.bbc.co.uk/news/articles/cq819jyp2g7o?at_medium=RSS&at_campaign=rss",
+        "raw": "German doctor jailed for murder of 15 patients and suspected of more The German palliative care doctor has been sentenced to life imprisonment for killing 15 of his patients.",
+        "published": "Wed, 08 Ju",
+        "source": "国际新闻",
+        "summary": "一名德国姑息治疗医生因故意杀害15名患者被判终身监禁。这名医生涉嫌谋杀更多患者，目前正接受调查。该案件引发了对医疗机构监管、患者安全保护以及医疗伦理的深刻思考。此类案件虽然罕见，但暴露了医疗系统中可能存在的漏洞，包括对医生行为的监督不足和患者权益保护机制不完善。该事件推动各国加强对医疗专业人员的背景审查、行为监控和患者投诉处理机制，以防止类似悲剧再次发生。"
+      },
+      {
+        "title": "Teenager arrested after two girls, 13, seriously injured in German school attack",
+        "url": "https://www.bbc.co.uk/news/articles/c0qyvkgndzpo?at_medium=RSS&at_campaign=rss",
+        "raw": "Teenager arrested after two girls, 13, seriously injured in German school attack Police said a major operation was under way in the area of Welfen-Gymnasium secondary school in Schongau, Bavaria.",
+        "published": "Wed, 08 Ju",
+        "source": "国际新闻",
+        "summary": "德国巴伐利亚州肖瑙市的韦尔芬中学发生了一起严重暴力事件。一名少年在该校对两名13岁的女生进行了攻击，造成她们重伤。当地警方已逮捕了这名涉案少年，并在学校周边地区展开了大规模行动。这起事件引发了人们对校园安全的关注，也再次突出了德国在预防青少年暴力和保护学生方面面临的挑战。目前，警方正在调查事件的具体原因和动机。"
+      }
+    ],
+    "china_news": [
+      {
+        "title": "eVTOL 走向商业化，难点不只在“飞起来”",
+        "url": "https://36kr.com/p/3886750049808389?f=rss",
+        "raw": "eVTOL 走向商业化，难点不只在“飞起来” \n低空经济的热度，很多时候是从一架飞行器开始的。\n过去几年，eVTOL真机亮相、飞行汽车概念升温、低空航线试点、地方产业基金入场，让这个行业快速成为新兴产业里的高频词。相比传统无人机，eVTOL为代表的载人载货飞行器，显然承载了更大的想象力：它不仅指向低空物流、应急救援、城市治理，也指向未来城市空中交通、城际运输和立体出行。\n\n这股热度背后，更值得关注的不是市场空间想象，而是产业正在从概念展示进入审定、取证和运行体系建设阶段。公开资料显示，国内无人驾驶、电动垂直起降等新技术快速突破，已完成19个无人驾驶航空器型号审定工作，在审新兴航空器型号数量超过70个。\n与此同时，新修订的《中华人民共和国民",
+        "published": "2026-07-08",
+        "source": "国内新闻",
+        "summary": "eVTOL 是指电动垂直起降航空器，是低空经济发展的重要载体。与传统无人机不同，eVTOL 可载人载货，应用前景广阔，涵盖低空物流、应急救援、城市治理乃至未来城市空中交通等多个领域。当前，该产业已从概念阶段进入实质性发展阶段，国内已完成 19 个无人驾驶航空器型号审定，70 多个新兴航空器正在审批中。产业化的关键难点不仅在于技术突破和飞行器本身，更在于建立完善的审定、取证和运行体系，这是实现商业化运营的必要条件。"
+      },
+      {
+        "title": "从跨境电商到AI大模型：一个旅欧10年90后女生的两次出海",
+        "url": "https://36kr.com/p/3886574096265481?f=rss",
+        "raw": "从跨境电商到AI大模型：一个旅欧10年90后女生的两次出海 \n20世纪50年代，“日本制造”对世界来说意味着低廉的价格和三流的产品。到70年代日本家电崛起，巅峰时期美国市场三成的彩电都是日本产品。80年代，丰田、本田、日产等日本汽车品牌接棒家电走向世界。再往后，日本动漫、游戏、音乐等文化娱乐产业开始向海外输出并成为支柱产业。\n从廉价服装到二次元，日本输出海外的核心产品在过去七十年里换了好几轮，从侧面说明一国出海的主流产品从来不是固定的，会跟着国家的产业能力变迁。\n这种变迁的剧本也正在今天中国出海人的身上重演。2015年，李露薇从宁波赴法留学。彼时国内大厂刚开始试水跨境电商业务，中国商品开始借助亚马逊、速卖通、eBay等线上渠道进入欧美市场，海运等跨境物",
+        "published": "2026-07-08",
+        "source": "国内新闻",
+        "summary": "这篇文章讲述了一位旅欧10年的90后女性创业者李露薇的两次出海经历。她从2015年参与中国跨境电商浪潮开始，见证了中国商品通过亚马逊、速卖通等平台进入欧美市场。随后她又投身AI大模型领域，代表了中国出海产业的新旧交替。文章通过对比日本七十年出海历程的演变——从廉价商品到家电、汽车再到文化产业——说明了一个规律：国家的出海主流产品会随着产业能力升级而不断更新换代。这反映出中国也正经历类似的产业结构优化，从传统电商贸易向高新技术领域转变。"
+      },
+      {
+        "title": "地产AI进入落地战，深度智联又甩出一张牌",
+        "url": "https://36kr.com/p/3886709249241349?f=rss",
+        "raw": "地产AI进入落地战，深度智联又甩出一张牌 \n7月7日，易居（中国）控股有限公司董事局主席、总裁周忻再一次来到台前，给公司的AI产品站台，推出其核心战略产品“地产模数通——企业专属大模型一体机”。同时，克而瑞地产AI分析师“小瑞”正式上岗。\n不到两个月前，易居旗下的深度智联刚刚发布了全球首个房地产经纪人智能体“易居·小新”，用中立无佣模式替代传统中介。迹象显示，深度智联在加速AI产品落地。\n周忻说，地产模数通“是第一个开箱即用的硬软件结合的AI应用，我把它称之为DEEPLINK IN-HOUSE MODEL，它是一台机器，里面有芯片、API，有企业的各种数据、知识、knowhow，还有最上层的CoWork平台。这个是地产行业的第一个全新",
+        "published": "2026-07-08",
+        "source": "国内新闻",
+        "summary": "易居旗下深度智联推出\"地产模数通\"企业专属大模型一体机，这是地产行业首个集硬件、芯片、API和企业数据于一体的开箱即用AI应用。同时，克而瑞地产AI分析师\"小瑞\"正式上线。此前不到两月，深度智联已发布房地产经纪人智能体\"易居·小新\"，采用中立无佣模式替代传统中介。这些举措表明深度智联正加速推进AI产品在地产行业的落地应用，通过AI大模型和智能体赋能地产企业和经纪服务。"
+      },
+      {
+        "title": "氪星晚报｜德国：人工智能推动德国初创企业创纪录增长；雷军回应SkyNomad上市时间；SpaceX AI将于明日向公众开放Grok4.5",
+        "url": "https://36kr.com/p/3886678879727880?f=rss",
+        "raw": "氪星晚报｜德国：人工智能推动德国初创企业创纪录增长；雷军回应SkyNomad上市时间；SpaceX AI将于明日向公众开放Grok4.5 \n大公司：\n雷军回应SkyNomad上市时间\n36氪��悉，7月8日，小米创办人，董事长兼CEO @雷军 在个人账号官宣小米汽车新系列SkyNomad。其评论区下有网友询问车辆发布时间，雷军回复表示“快了”。\n必和必拓在世界最大铁矿石出口港口的工人将罢工8小时\n7月8日，工会表示，必和必拓集团位于西澳州Port Hedland铁矿石出口码头的工人将于7月16日举行8小时罢工。此次行动将涉及全球最大铁矿石出口港口的运营人员和维护人员，他们由联合港口工会代表。工会表示，员工寻求一项认同他们专业技能、艰苦工作条件以及重大个人成本的协议。\n本田在美国召回逾32万辆奥德赛，因倒车影像故障\n美国国家公路交",
+        "published": "2026-07-08",
+        "source": "国内新闻",
+        "summary": "这篇晚报汇总了科技和商业领域的几则重要新闻。德国依靠人工智能技术推动初创企业实现创纪录增长，展现了AI产业的经济带动力。小米创始人雷军宣布推出汽车新系列SkyNomad，并透露上市在即。SpaceX旗下AI产品Grok4.5即将向公众开放，进一步推进商业化进程。此外还涉及必和必拓工人罢工和本田汽车召回等国际商业事件。整体反映了全球科技、汽车和资源行业的最新动向。"
+      },
+      {
+        "title": "AI 视频全面成熟：Seedance 2.0 领衔，6 款主流工具深度横评",
+        "url": "https://36kr.com/p/3886403765596418?f=rss",
+        "raw": "AI 视频全面成熟：Seedance 2.0 领衔，6 款主流工具深度横评 \n2026年，AI视频生成赛道已迈入全面爆发的成熟竞速期，Seedance 2.0 的出圈更是让AI视频变成一场“全民狂欢”。\n短短两年间，AI视频从最初几秒的碎片化模糊画面，到如今分钟级长视频的连贯叙事、真实物理世界的精准还原，AI视频工具的迭代速度远超预期，AI视频工具完成了从“能用”到“好用”再到“专业”的三级跳，让创意落地的门槛降至新低——专业团队能用它预演大片，普通用户也能一键生成爆款短视频。\n在这场全球竞速中，每一款工具都在以独特的优势，定义着下一代视频创作的未来。\n为了让不同需求的读者都能选到适配的工具，我们耗时两周实测了国内外数十款AI视频生成产品，最终筛选出6款主流选手形成榜",
+        "published": "2026-07-08",
+        "source": "国内新闻",
+        "summary": "AI视频生成技术已进入成熟阶段。Sora 2.0等主流工具的突破让AI视频创作从专业领域走向大众。两年间，技术从秒级片段发展到分钟级连贯视频，物理还原度显著提升。这些工具将专业视频制作的门槛大幅降低，专业团队可用于前期预演，普通用户也能快速生成短视频内容。目前全球AI视频赛道竞争激烈，各工具凭借独特优势定义新一代视频创作形式。该文章对国内外主流产品进行了两周实测对比，为不同需求用户提供工具选型参考。"
+      }
+    ],
+    "tech_news": [
+      {
+        "title": "Feds demand autonomous vehicle companies stop interfering with first responders",
+        "url": "https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/",
+        "raw": "Feds demand autonomous vehicle companies stop interfering with first responders The National Highway Traffic Safety Administration said emergency scenes are not \"edge cases.\"",
+        "published": "Wed, 08 Ju",
+        "source": "科技",
+        "summary": "美国国家公路交通安全管理局（NHTSA）对自动驾驶汽车公司发出要求，要求其停止干扰应急响应人员的工作。该机构强调，紧急事故现场并非\"边界情况\"，而是自动驾驶系统必须能够正确应对的常见场景。\n\n这一举措反映了监管部门对自动驾驶技术安全性的严格把控。当前一些自动驾驶汽车在遇到警车、消防车或救护车时，可能无法正确识别并主动让行，甚至可能阻碍救援工作。NHTSA的要求意味着自动驾驶公司需要完善其系统，确保车辆能够识别紧急车辆的声光信号，并及时做出让路反应，保障公共安全和应急救援的顺利进行。"
+      },
+      {
+        "title": "Google’s deepfake detector system used to debunk McConnell hoax pic",
+        "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/",
+        "raw": "Google’s deepfake detector system used to debunk McConnell hoax pic Earlier this week, a picture seemed to show Kentucky Senator Mitch McConnell covered in tubes in a hospital bed in a state of extreme distress. It turned out to be an AI-generated fake.",
+        "published": "Wed, 08 Ju",
+        "source": "科技",
+        "summary": "Google开发的深度伪造检测系统最近成功识别了一张关于肯塔基州参议员米奇·麦康奈尔的虚假图片。这张图片显示麦康奈尔在医院病床上插满医疗管子，处于极度痛苦状态，实际上完全是由人工智能生成的虚假内容。\n\nGoogle的深度伪造检测技术能够分析图像特征，识别AI生成的伪造痕迹，从而区分真实照片和虚假内容。这个案例表明，随着AI生成技术日益成熟，深度伪造检测工具变得越来越重要。该系统有助于防止误信息传播，保护公众人物形象，维护信息真实性。这类技术对于应对日益增多的视觉欺骗手段具有重要意义。"
+      },
+      {
+        "title": "With EU backing, QuantumDiamonds aims to speed up chip manufacturing",
+        "url": "https://techcrunch.com/2026/07/08/with-eu-backing-quantumdiamonds-aims-to-speed-up-chip-manufacturing/",
+        "raw": "With EU backing, QuantumDiamonds aims to speed up chip manufacturing Like its U.S. counterpart, the European Chips Act aims to foster the semiconductor industry — in part thanks to state subsidies. One of the beneficiaries is QuantumDiamonds, a German startup that applies a novel approach to inspecting chips.",
+        "published": "Wed, 08 Ju",
+        "source": "科技",
+        "summary": "QuantumDiamonds是一家获得欧盟支持的德国初创公司，致力于加速芯片制造过程。该公司采用创新技术来检测芯片质量，这是芯片制造中的关键环节。在欧盟芯片法案的推动下，类似于美国的政策支持，欧洲通过国家补贴来促进半导体产业发展。QuantumDiamonds作为其中的受益者，利用先进的检测方法提高芯片制造效率，有助于缩短生产周期并提升产品质量，符合欧洲加强本土芯片产业竞争力的战略目标。"
+      },
+      {
+        "title": "Autonomous drone delivery startup Manna plots major US expansion",
+        "url": "https://techcrunch.com/2026/07/08/autonomous-drone-delivery-startup-manna-plots-major-u-s-expansion/",
+        "raw": "Autonomous drone delivery startup Manna plots major US expansion Manna is launching a U.S. operations and manufacturing facility in Tulsa, Oklahoma, that will eventually employ 1,000 people. ",
+        "published": "Wed, 08 Ju",
+        "source": "科技",
+        "summary": "Manna是一家自主无人机配送初创公司，计划在美国大幅扩张。公司将在俄克拉荷马州塔尔萨市建立美国运营和制造基地，最终将创造1000个就业机会。这一举措标志着Manna从欧洲市场向美国扩展的重要步骤，通过本地化的生产和运营能力，公司可以更高效地服务美国客户，降低物流成本。无人机配送技术正成为电商和快递行业的新方向，Manna的扩张反映了这一领域的商业前景和市场需求不断增长。"
+      },
+      {
+        "title": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’",
+        "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+        "raw": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’ Elon Musk's tech company released the newest version of Grok on Wednesday, promising a cheaper, more efficient alternative to other powerful AI models. ",
+        "published": "Wed, 08 Ju",
+        "source": "科技",
+        "summary": "SpaceX的AI公司发布了Grok 4.5，这是其旗舰AI模型的最新版本。埃隆·马斯克将其描述为\"Opus级别\"的模型，意味着它在性能上与业界顶级AI模型相当。Grok 4.5的核心优势在于提供了更具成本效益的解决方案，相比其他同等性能的强大AI模型，它更便宜且运算效率更高。这个发布体现了SpaceXAI在降低先进AI技术成本、让更多用户和企业能够访问高性能AI的努力。"
+      }
+    ],
+    "finance_news": [
+      {
+        "title": "Oil Extends Surge as Fresh US Strikes Against Iran Rattle Market",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-08/latest-oil-market-news-and-analysis-for-july-9",
+        "raw": "Oil Extends Surge as Fresh US Strikes Against Iran Rattle Market Oil extended a powerful surge as the US struck targets in Iran for a second day, raising risks for energy supplies from the region.",
+        "published": "Wed, 08 Ju",
+        "source": "国际财经",
+        "summary": "国际油价继续上涨，美国对伊朗进行了第二轮军事打击，加剧了市场对中东能源供应的担忧。伊朗作为重要的石油生产国，任何地区冲突都可能中断其石油出口，从而影响全球能源市场的稳定性。这种地缘政治紧张局势推高了原油价格，反映了投资者对能源短缺的预期。油价上升会增加全球能源成本，进而可能推高通胀压力，影响经济增长前景。市场普遍关注美伊局势进展，以及中东地区是否会出现更大规模冲突，这些因素都直接关系到未来石油供应的可靠性和价格走势。"
+      },
+      {
+        "title": "Harley-Davidson’s Credit Ratings Get Cut to Junk By S&amp;P",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-08/harley-davidson-s-credit-ratings-get-cut-to-junk-by-s-p",
+        "raw": "Harley-Davidson’s Credit Ratings Get Cut to Junk By S&amp;P S&P Global Ratings cut Harley-Davidson Inc.’s credit grades to junk status on Wednesday, citing the company’s strategy to start selling lower-cost motorcycles to boost revenue.",
+        "published": "Wed, 08 Ju",
+        "source": "国际财经",
+        "summary": "哈雷摩托车公司的信用评级被标普下调至垃圾级。标普全球评级公司周三宣布这一决定，主要原因是哈雷采取了新的商业策略——推出低价摩托车以增加收入。这一评级下调反映出投资者和评级机构对该公司战略转变的担忧。低价摩托车策略虽然可能扩大市场份额，但也可能削弱品牌溢价，影响利润率。信用评级从投资级下调至垃圾级意味着借贷成本将显著上升，这对公司的财务状况构成压力。这一事件凸显了传统摩托车制造商在应对市场变化时面临的挑战。"
+      },
+      {
+        "title": "SK Hynix US Offering Is More Than Seven Times Oversubscribed",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-08/sk-hynix-us-offering-is-more-than-seven-times-oversubscribed",
+        "raw": "SK Hynix US Offering Is More Than Seven Times Oversubscribed SK Hynix Inc.’s US listing is more than seven times oversubscribed, according to people familiar with the matter, as the South Korean memory chipmaker prepares to price its offering Thursday.",
+        "published": "Wed, 08 Ju",
+        "source": "国际财经",
+        "summary": "SK海力士美国上市融资受到投资者热烈追捧。这家韩国存储芯片制造商的美国首次公开募股认购倍数超过七倍，意味着投资者对该股的需求远超可用股份。这反映了市场对SK海力士业务前景的看好，特别是在全球芯片需求持续增长的背景下。高认购倍数通常预示着上市定价会相对理想，有利于公司筹集更多资金用于业务扩展和研发投入。该公司计划于周四对此次发行进行定价。"
+      },
+      {
+        "title": "Oil Gains, US Stock Futures Drop on New Strikes: Markets Wrap",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-08/stock-market-today-dow-s-p-live-updates",
+        "raw": "Oil Gains, US Stock Futures Drop on New Strikes: Markets Wrap Oil gained and US equity futures ticked lower after the US said it is striking Iran for the second straight day, an escalation of violence that threatens to choke shipping through the Strait of Hormuz.",
+        "published": "Wed, 08 Ju",
+        "source": "国际财经",
+        "summary": "美国对伊朗发动第二天空袭，引发市场剧烈波动。受此影响，国际油价上升，美国股指期货下跌。伊朗局势升级威胁到霍尔木兹海峡的航运安全，这条全球重要的石油运输通道面临风险。市场对供应链中断和地缘政治风险的担忧加剧，导致避险情绪上升。投资者转向能源商品寻求保护，同时对股票市场前景持谨慎态度。整体反映出国际冲突对全球金融市场的直接影响。"
+      },
+      {
+        "title": "Fmr. HUD Secretary on Toyota’s Texas Shift, Mexico Trade",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-08/former-hud-secretary-on-toyota-s-plant-expansion-video",
+        "raw": "Fmr. HUD Secretary on Toyota’s Texas Shift, Mexico Trade Henry Cisneros, former US Department of Housing and Urban Development Secretary and former Mayor of San Antonio, discussed the origins and significance of Toyota's investment in San Antonio. He recounted how Toyota executives chose San Antonio for a new plant after observing the high number of picku",
+        "published": "Wed, 08 Ju",
+        "source": "国际财经",
+        "summary": "丰田在德州投资的战略意义\n\n前美国住房和城市发展部长、圣安东尼奥前市长亨利·西斯内罗斯讨论了丰田在圣安东尼奥投资的历史背景和意义。根据他的回顾，丰田高管在考察圣安东尼奥后，被该地区的皮卡消费市场吸引，最终决定在此建设新工厂。这一投资决策涉及美国与墨西哥的贸易关系，反映了跨境供应链和地区经济发展的复杂考量。丰田的投资对圣安东尼奥的经济发展和就业机会具有重要影响。"
+      }
+    ],
+    "ai_news": [
+      {
+        "title": "Google’s deepfake detector system used to debunk McConnell hoax pic",
+        "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/",
+        "raw": "Google’s deepfake detector system used to debunk McConnell hoax pic Earlier this week, a picture seemed to show Kentucky Senator Mitch McConnell covered in tubes in a hospital bed in a state of extreme distress. It turned out to be an AI-generated fake.",
+        "published": "Wed, 08 Ju",
+        "source": "全球AI",
+        "summary": "Google开发的深度伪造检测系统成功识别了一张关于肯塔基州参议员米奇·麦康奈尔的虚假图片。这张图片显示麦康奈尔躺在医院病床上，身上布满导管，处于极度痛苦状态，实际上是由人工智能生成的伪造内容。\n\n这个事件展示了Google深度伪造检测技术的实际应用价值。随着AI生成技术的进步，虚假信息和伪造媒体日益泛滥，可能对政治、舆论和公众信任造成严重威胁。Google的检测系统能够识别这类AI生成的虚假内容，对于打击虚假信息、维护信息真实性具有重要意义。这反映了科技企业在应对AI滥用方面的探索和努力。"
+      },
+      {
+        "title": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’",
+        "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+        "raw": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’ Elon Musk's tech company released the newest version of Grok on Wednesday, promising a cheaper, more efficient alternative to other powerful AI models. ",
+        "published": "Wed, 08 Ju",
+        "source": "全球AI",
+        "summary": "埃隆·马斯克旗下的SpaceXAI公司发布了最新版本的AI助手Grok 4.5。根据马斯克的描述，这是一款\"Opus级别\"的模型，意味着它在性能上与业界顶级大模型相当。与其他强大的AI模型相比，Grok 4.5的优势在于成本更低、运行效率更高，为用户提供了一个更经济实惠的选择。这次发布标志着SpaceXAI在AI领域的又一次重要进展，旨在推动更高效、更亲民的AI技术普及。"
+      },
+      {
+        "title": "This startup thinks robotics is about to have its ChatGPT moment",
+        "url": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/",
+        "raw": "This startup thinks robotics is about to have its ChatGPT moment General Intuition is betting millions of hours of video game data can train the foundation models for physical AI, making it easier to build smarter robots with minimal real-world data.",
+        "published": "Wed, 08 Ju",
+        "source": "全球AI",
+        "summary": "General Intuition 这家初创公司认为机器人领域即将迎来类似 ChatGPT 的突破时刻。他们的核心策略是利用数百万小时的视频游戏数据来训练物理智能基础模型，从而大幅降低机器人开发的成本和难度。\n\n传统上，训练机器人需要大量真实世界的数据采集和标注，这个过程耗时耗力。General Intuition 的创新之处在于，借鉴了大语言模型的成功经验，用虚拟环境中的丰富数据替代现实数据，帮助机器人快速学习复杂的物理交互。这样一来，开发者只需少量真实世界数据就能训练出更智能的机器人，有望加速整个行业的发展步伐。"
+      },
+      {
+        "title": "Google Photos adds a new AI ‘Video Remix’ tool",
+        "url": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/",
+        "raw": "Google Photos adds a new AI ‘Video Remix’ tool The feature can do things like apply cinematic relighting to brighten up a dark clip, swap out a plain background for something fun, or add artistic styles to videos.",
+        "published": "Wed, 08 Ju",
+        "source": "全球AI",
+        "summary": "Google Photos 推出了一项名为\"视频混音\"的新 AI 工具，为视频编辑带来了创意新可能。这个功能能够对视频进行多种智能处理，包括应用电影级的补光效果来改善昏暗镜头的亮度，将平凡的背景替换为更有趣的场景，以及为视频添加艺术化风格滤镜。用户可以借助这项 AI 工具快速增强视频质感，无需专业编辑软件即可创作更具视觉吸引力的内容。这反映了 Google 在照片视频处理领域不断融合人工智能技术的努力，让普通用户也能轻松实现专业级的视频创意编辑。"
+      },
+      {
+        "title": "Why this CEO thinks video games make better training data than the internet",
+        "url": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
+        "raw": "Why this CEO thinks video games make better training data than the internet When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move through space and time — an essential skill for producing intell",
+        "published": "Wed, 08 Ju",
+        "source": "全球AI",
+        "summary": "这篇文章讨论了一位CEO的观点：相比互联网数据，电子游戏可能是训练AI的更好数据来源。\n\n当前的大语言模型如ChatGPT和Claude虽然在文本处理上表现优秀，但在理解物体如何在空间和时间中运动方面能力有限。而这种理解对于实现通用人工智能（AGI）至关重要。电子游戏提供的丰富视觉场景、复杂的物理互动和动态环境变化，能够帮助AI系统更好地学习现实世界的运动规律和因果关系。这个观点指出了当前AI训练数据的局限性，并提出游戏环境作为高质量训练数据的潜力。"
+      }
+    ],
+    "robot_news": [
+      {
+        "title": "IEEE Honors Robotics Pioneer Toshio Fukuda",
+        "url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
+        "raw": "IEEE Honors Robotics Pioneer Toshio Fukuda \nToshio Fukuda has been blazing trails for most of his career. He is considered to be one of the most prolific scholars in robotics, writing more than 2,000 research papers and authoring several books on the field. He’s an influential figure thanks to his pioneering work developing biomedical roboti",
+        "published": "Tue, 07 Ju",
+        "source": "全球机器人",
+        "summary": "福田敏男是机器人领域的先驱人物，被IEEE授予荣誉。他在机器人研究领域成果卓著，发表了超过2000篇学术论文，还著有多部专著。福田敏男因在生物医学机器人领域的开创性工作而备受瞩目，是该领域最多产的学者之一。他的研究贡献对机器人技术的发展产生了深远影响，为整个学科的进步做出了重要贡献。"
+      },
+      {
+        "title": "Japan Pioneered Humanoid Robots—Can It Now Catch China?",
+        "url": "https://spectrum.ieee.org/humanoid-robots-japan",
+        "raw": "Japan Pioneered Humanoid Robots—Can It Now Catch China? \n“In the future, the relationship between humans and robots will deepen, and the distinction between them will probably disappear.” This prediction, from one of the attendees at the recent Humanoids Summit in Tokyo, might have been unremarkable had it not come directly from an android that was first",
+        "published": "Sat, 04 Ju",
+        "source": "全球机器人",
+        "summary": "# 日本人形机器人产业面临中国竞争\n\n日本作为人形机器人领域的先驱国家，曾长期引领全球发展。然而，随着中国在机器人技术上的快速进步，日本的领先地位面临挑战。\n\n近期在东京召开的国际人形机器人峰会上，业内人士预测人类与机器人的关系将进一步深化，两者间的界限可能会逐渐模糊。这一观点反映了整个行业对未来的看好，同时也凸显了日本需要加快创新步伐来保持竞争优势的紧迫性。\n\n当前，日本需要在技术研发、产业化应用和国际合作等方面加强努力，才能在激烈的全球竞争中继续领先。"
+      },
+      {
+        "title": "Video Friday: An Earthbound Mars Rover for the Moon",
+        "url": "https://spectrum.ieee.org/video-friday-nasa-lunar-rover",
+        "raw": "Video Friday: An Earthbound Mars Rover for the Moon \nVideo Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.RSS 2026: 13–17 July 2026, SYDNEYSummer School on Multi",
+        "published": "Fri, 03 Ju",
+        "source": "全球机器人",
+        "summary": "这是IEEE Spectrum机器人频道的一个定期视频专栏。该栏目每周精选一期优质机器人视频内容，为读者呈现全球最新的机器人研发动态和技术亮点。本期重点介绍了一个有趣的项目——在地球上测试火星漫游车技术，为未来月球探测任务做准备。栏目还提供了未来几个月的机器人相关学术会议日历，如2026年7月在悉尼举办的学术活动。读者可以向栏目组提交相关事件信息以供收录。这个专栏是机器人爱好者和专业人士了解行业动态的重要资讯窗口。"
+      },
+      {
+        "title": "Video Friday: Give Robots a Hand",
+        "url": "https://spectrum.ieee.org/video-friday-robot-grippers",
+        "raw": "Video Friday: Give Robots a Hand \nVideo Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.RSS 2026: 13–17 July 2026, SYDNEYSummer School on Multi",
+        "published": "Fri, 26 Ju",
+        "source": "全球机器人",
+        "summary": "# Video Friday: 给机器人一只手\n\n《Video Friday》是IEEE Spectrum机器人栏目每周精选的优质机器人视频合集。该栏目定期为读者呈现业界最新、最有趣的机器人技术动态和创新应用。\n\n除了视频内容外，栏目还提供未来几个月的机器人领域活动日历，帮助从业者了解行业动态。栏目鼓励读者提交相关活动信息供后续刊登。此外，栏目还涵盖RSS 2026等重要会议信息，如7月13-17日在悉尼举办的机器人科学研讨会。\n\n这是一个整合视频、资讯和活动信息的综合性机器人内容平台，为机器人爱好者和专业人士提供行业动向追踪和学习资源。"
+      },
+      {
+        "title": "Video Friday: Do Robots Even Need Legs?",
+        "url": "https://spectrum.ieee.org/video-friday-agentic-ai-robot",
+        "raw": "Video Friday: Do Robots Even Need Legs? \nVideo Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.RSS 2026: 13–17 July 2026, SYDNEYSummer School on Multi",
+        "published": "Fri, 19 Ju",
+        "source": "全球机器人",
+        "summary": "# Video Friday: 机器人需要腿吗？\n\n这是IEEE Spectrum机器人栏目的每周视频精选栏目。该栏目汇集了全球最新有趣的机器人视频内容，同时发布未来几个月的机器人学术活动日历。本期主题聚焦于一个引人深思的问题：机器人到底是否需要腿？这反映了当代机器人设计中的一个根本性探讨——不同机器人形态的适应性和应用场景。栏目欢迎读者投稿相关活动信息，也分享了即将在2026年7月于悉尼举办的暑期多机器人学校活动等学术资源，旨在为全球机器人学者和爱好者提供一个交流和学习的平台。"
+      }
+    ],
+    "github_trending": [
+      {
+        "source": "GitHub Trending",
+        "title": "CWS6206/EasyLastSkill",
+        "url": "https://github.com/CWS6206/EasyLastSkill",
+        "raw": "CWS6206/EasyLastSkill: EasyLastSkill ist eine deutschsprachige Codex-/Agent-Skill fuer schnelle Recherchen zu den letzten Tagen eines Themas. Standardmaessig betrachtet sie die letzten 30 Tage und erstellt einen kompakten Bericht mit Quellen, Relevanzscore und Unsicherheiten. Stars:227 Language:Python",
+        "stars": 227,
+        "published": "2026-07-08",
+        "summary": "EasyLastSkill 是一个用 Python 开发的 AI 技能工具，专为快速研究某个主题的最新进展而设计。它默认查询过去 30 天的相关信息，自动生成包含来源、相关性评分和不确定性评估的精简报告。该工具支持德语，可集成到 Codex 或 Agent 系统中，帮助用户快速了解特定话题的最新动态。因其实用性已获得 227 个 Star。"
+      },
+      {
+        "source": "GitHub Trending",
+        "title": "withmarbleapp/os-taxonomy",
+        "url": "https://github.com/withmarbleapp/os-taxonomy",
+        "raw": "withmarbleapp/os-taxonomy: None Stars:216 Language:JavaScript",
+        "stars": 216,
+        "published": "2026-07-08",
+        "summary": "这是一个开源项目，提供了操作系统的分类体系和知识库。项目用JavaScript实现，包含了对不同操作系统的系统化分类、特性对比和相关文档。\n\n该项目的核心意义在于为开发者和研究人员提供一个结构化的参考资源，帮助理解操作系统之间的差异和关系。通过明确的分类方案，用户可以快速查阅特定操作系统的属性、兼容性信息和技术细节。这对于跨平台开发、系统选型或学习操作系统概念都很有帮助。\n\n目前项目获得了216个星标，说明在开发社区中有一定的关注度和实用价值。"
+      },
+      {
+        "source": "GitHub Trending",
+        "title": "x4gKing/3x-ui-Upgrade",
+        "url": "https://github.com/x4gKing/3x-ui-Upgrade",
+        "raw": "x4gKing/3x-ui-Upgrade: None Stars:150 Language:Dockerfile",
+        "stars": 150,
+        "published": "2026-07-08",
+        "summary": "这是一个基于3x-ui的升级项目，3x-ui是一个流行的xray面板管理工具。该项目主要用Dockerfile编写，用于容器化部署和管理。项目提供了对原始3x-ui的改进和优化，包括增强的用户界面、更好的性能和额外的功能特性。通过Docker容器化，用户可以更方便地在各种环境中快速部署xray代理服务的管理面板，简化了安装配置过程，提高了系统的可移植性和可维护性。该项目在GitHub上获得了150个星标，表明它在相关社区中有一定的关注度。"
+      },
+      {
+        "source": "GitHub Trending",
+        "title": "JackdawRespect/MecchaChameleonESP",
+        "url": "https://github.com/JackdawRespect/MecchaChameleonESP",
+        "raw": "JackdawRespect/MecchaChameleonESP: 🦎 MecchaChameleonESP – complete ESP tool for MECCHA CHAMELEON. Features ESP wallhack, player tracking, distance indicators, box ESP, snap lines, and more. Dominate the hide-and-seek battlefield! Stars:139 Language:Python",
+        "stars": 139,
+        "published": "2026-07-08",
+        "summary": "MecchaChameleonESP是一款针对MECCHA CHAMELEON游戏的ESP工具，用Python开发。它提供透视、玩家追踪、距离指示器、方框ESP、自动瞄准线等多项功能，帮助玩家在捉迷藏游戏中获得显著优势。该项目在GitHub上获得139个星标，表明在相关游戏社区中有一定的关注度。这类工具通常用于游戏辅助和竞技增强。"
+      },
+      {
+        "source": "GitHub Trending",
+        "title": "Nanako0129/pilotfish",
+        "url": "https://github.com/Nanako0129/pilotfish",
+        "raw": "Nanako0129/pilotfish: Multi-model orchestration layer for Claude Code — the frontier model plans, cheaper models execute, verification guards quality. One-prompt install. Stars:119 Language:None",
+        "stars": 119,
+        "published": "2026-07-08",
+        "summary": "Pilotfish 是一个多模型编排层，专为 Claude Code 设计。它采用分层策略优化成本和质量：由前沿模型（如 Claude 3.5 Sonnet）进行任务规划，由更廉价的模型执行具体操作，再通过验证机制确保输出质量。这种方案既保留了高级模型的规划能力，又降低了整体运行成本。项目支持一键安装，使用户能轻松部署多模型协作工作流。该工具特别适合需要平衡性能和成本的开发场景。"
+      }
+    ],
+    "claude_code": [
+      {
+        "source": "GitHub",
+        "title": "funador/claude-code-merge-queue",
+        "url": "https://github.com/funador/claude-code-merge-queue",
+        "raw": "funador/claude-code-merge-queue: The local merge queue for parallel Claude Code agents. ",
+        "stars": 293,
+        "published": "2026-07-02",
+        "summary": "Claude Code Merge Queue 是一个本地合并队列系统，专为并行运行的 Claude Code 代理设计。它解决了多个 AI 代理同时处理代码时的协调问题，通过队列机制管理和序列化代码合并操作，防止冲突和数据不一致。\n\n这个项目的核心意义在于：当多个 Claude Code 实例并行工作时，它们对同一代码库的修改可能产生冲突。该系统通过维护一个本地合并队列，确保所有代码变更按顺序被正确处理和合并，提高了并行开发的效率和安全性。\n\n适用于需要多个 AI 代理协作开发的场景，比如大型代码库的并行重构或多任务代码生成。"
+      },
+      {
+        "source": "GitHub",
+        "title": "Neeeophytee/finding-unknowns-skills",
+        "url": "https://github.com/Neeeophytee/finding-unknowns-skills",
+        "raw": "Neeeophytee/finding-unknowns-skills: 8 installable skills for Claude Code and OpenAI Codex, for finding your unknowns before they get expensive: blindspot pass, brainstorms, interviews, references, plans, notes, pitches, and a merge quiz. Community distillation, not official Anthropic.",
+        "stars": 133,
+        "published": "2026-07-05",
+        "summary": "这是一个为Claude Code和OpenAI Codex开发的技能工具集。它包含8个可安装的模块，帮助开发者在问题变得昂贵之前识别和解决知识盲点。具体功能包括盲点检测、头脑风暴、访谈、参考资料、计划制定、笔记整理、方案演讲和合并测验等。这个项目是社区贡献者整理汇总的成果，并非Anthropic官方出品。它的核心价值在于通过结构化的方法论，让开发者在项目初期就能发现潜在的知识缺陷和技术风险，从而避免后期的高成本修复。"
+      },
+      {
+        "source": "GitHub",
+        "title": "Kulaxyz/token-diet",
+        "url": "https://github.com/Kulaxyz/token-diet",
+        "raw": "Kulaxyz/token-diet: Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness.",
+        "stars": 566,
+        "published": "2026-07-03",
+        "summary": "Token Diet 是一个为编码 AI 代理设计的令牌优化工具，兼容 Claude Code、Codex、Cursor、Windsurf 和 Cline 等多个平台。它通过智能压缩和精简代码上下文，在保持代码正确性的前提下，显著降低 API 调用成本，平均可减少约 31% 的账单支出。\n\n该项目特别针对编码场景优化，自动识别和移除冗余信息，同时保留对 AI 理解和生成正确代码所必需的关键信息。对于频繁使用 AI 编码工具的开发者而言，Token Diet 能有效降低运营成本，使 AI 辅助编程更加经济高效。"
+      },
+      {
+        "source": "GitHub",
+        "title": "nagisanzenin/engram",
+        "url": "https://github.com/nagisanzenin/engram",
+        "raw": "nagisanzenin/engram: Evidence-based learning engine for Claude Code — first-principles curricula, free-recall verification with receipts, FSRS-scheduled memory, and explorable artifacts. Learn anything; keep it.",
+        "stars": 430,
+        "published": "2026-07-05",
+        "summary": "Engram 是一个为 Claude Code 设计的学习引擎。它采用循证学习方法，帮助用户高效掌握和保留知识。\n\n项目的核心功能包括：首一性原理课程设计，确保学习基础牢固；免费回忆验证机制，用\"收据\"记录学习成果，增强记忆确定性；FSRS 间隔重复算法，根据遗忘曲线智能安排复习时间，优化记忆效果；可交互的学习工件，让抽象概念更直观易懂。\n\nEngram 的目标是让学习者能够学习任何东西，并将其永久保存在记忆中。它结合了认知科学和现代 AI 能力，打造一个个性化、科学化的学习平台。"
+      },
+      {
+        "source": "GitHub",
+        "title": "Miguok/fable-harness",
+        "url": "https://github.com/Miguok/fable-harness",
+        "raw": "Miguok/fable-harness: Make Claude Code work like a disciplined engineer: OODA, multi-party adversarial review, model routing, fail-then-pass. Distilled from Fable to reinforce the Opus harness.",
+        "stars": 167,
+        "published": "2026-07-05",
+        "summary": "Fable-harness 是一个开发工具框架，旨在让 AI 代码生成更加严谨和可靠。它基于 OODA 循环（观察、定向、决策、行动）的方法论，引入多方对抗性审查机制，确保代码质量。该项目支持模型路由功能，能够根据任务特性智能选择最合适的模型处理。框架遵循\"先失败后通过\"的策略，通过测试驱动来验证代码正确性。这套系统源于 Fable 项目的实践，专门为强化 Claude Opus 模型的工程能力而设计，帮助开发者获得更加规范、经过充分验证的代码生成结果。"
+      }
+    ]
+  }
+}
